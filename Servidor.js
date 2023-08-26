@@ -1,11 +1,18 @@
+// ==UserScript==
+// @name         Servidor
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://discord.com/channels/812049007651717181/833818811714109450
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=discord.com
+// @grant        none
+// ==/UserScript==
+
 (function() {
     'use strict';
-var id="";
-var auto_fill_radios="";
-var autofill_radios_random=["1","2"];
-var autofill_rating_random=["1","2"];
-var AutoFill_Image_Preference=[""];
-var autofill_checkboxes_random=[""];
+
+var id=""
 
 setTimeout(cambiar_id);
 function cambiar_id(){
@@ -154,6 +161,7 @@ autofill_radios_random=["1","2"];
      case jobTitle.includes("Find The Official Website Of Businesses"):
 
 id="1847605";
+autofill_radios_random=["1"];
 setTimeout(URL_aleatorio,5000);
 
 		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 10000)) + 10000);
@@ -168,9 +176,9 @@ auto_fill_radios="1";
 		setInterval(Enviar_task, Math.round(Math.random() * (184000 - 181000)) + 181000);
      break;
 
-     case jobTitle.includes("Keyword Relevance - New"):
+     case jobTitle.includes("Keyword Relevance"):
 
-//="2232305"
+id="2238365"
 autofill_radios_random=["1","2","3"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (12000 - 11000)) + 11000);
@@ -289,8 +297,15 @@ bandera = true;
                      inpu.value = resp;
         }}}}
     }}}
+if(QuizM.includes("Work")){
+var auto_fill_radios="";
+var autofill_radios_random=["1","2"];
+var autofill_rating_random=["1","2"];
+var AutoFill_Image_Preference=[""];
+var autofill_checkboxes_random=[""];
+}
 })();
 setTimeout(function(){
 location.reload();
 }, 300000);
-console.log("Nuevo+servidor.1");
+console.log("Nuevo+servidor+2");
