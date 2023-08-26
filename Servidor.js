@@ -293,4 +293,4 @@ bandera = true;
 setTimeout(function(){
 location.reload();
 }, 300000);
-console.log("Nuevo+servidor");
+console.log("Nuevo+servidor.1");
