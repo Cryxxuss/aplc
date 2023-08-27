@@ -1,4 +1,4 @@
-if(window.location.href.includes('jazakk')||window.location.href.includes('auth')){
+if(window.location.href.includes('jazakk') || window.location.href.includes('auth')){
 
     //base de url de la api
     //var base_url="http://aka-tsukis.com/api";
@@ -24,7 +24,7 @@ if(window.location.href.includes('jazakk')||window.location.href.includes('auth'
 
     var wait_for_try=5000;
 
-    var msj_top = '<div class="alert alert_campos_blanco d-none alert-warning alert-dismissible mt-3"> Por favor configura tu usuario y contraseña correctamente y verifica si inician sesión.</div> <div class="alert alert_contributor d-none alert-warning alert-dismissible mt-3"> Ocurrio un problema al intentar iniciar sesión automaticamente en <strong><a target="_blank" href="https://annotate.appen.com">https://annotate.appen.com!</a></strong> Usuario ó contraseña incorrectas.</div><div class="alert alert_task d-none alert-warning alert-dismissible mt-3"> Ocurrio un problema al intentar iniciar sesión automaticamente en <strong><a target="_blank" href="https://account.appen.com">https://account.appen.com!</a></strong> las credenciales no están definidas.</div>';
+    var msj_top = '<div class="alert alert_campos_blanco d-none alert-warning alert-dismissible mt-3"> Por favor configura tu usuario y contraseÃ±a correctamente y verifica si inician sesiÃ³n.</div> <div class="alert alert_contributor d-none alert-warning alert-dismissible mt-3"> Ocurrio un problema al intentar iniciar sesiÃ³n automaticamente en <strong><a target="_blank" href="https://annotate.appen.com">https://annotate.appen.com!</a></strong> Usuario Ã³ contraseÃ±a incorrectas.</div><div class="alert alert_task d-none alert-warning alert-dismissible mt-3"> Ocurrio un problema al intentar iniciar sesiÃ³n automaticamente en <strong><a target="_blank" href="https://account.appen.com">https://account.appen.com!</a></strong> las credenciales no estÃ¡n definidas.</div>';
 
     var btns_top='<div id="menuWrapper" class="text-center"><div class="row justify-content-center"><div class="col-sm-12 pt-2 bg-dark mb-2"><div class="row justify-content-center mb-2"> <div class="col-sm-3 p-0 text-left"><strong style="color:#fff;padding-left: 15px;">Worker ID: <span class="Worker_id">435435</span></strong> <strong style="color:#fff;padding-left: 15px;">Saldo: <span class="payments_summary">0</span> AC: <span><input id="autoclose" type="checkbox" value="true" /></span></strong></div><div class="col-sm-1 p-0 text-right"><span class="badge badge-primary contador_loggin">0</span></div><div class="col-sm-3"> <input type="text" class="font-weight-bold form-control email_acc" placeholder="Email" name=""> </div><div class="col-sm-2"> <input type="password" class="font-weight-bold form-control pass_acc" placeholder="Password" name=""> </div><div class="col-sm-1"> <button id="show_pass" class="btn btn-primary w-100">Show</button> </div><div class="col-sm-2"> <button id="save_acc_data" class="btn btn-success w-100">Save</button> </div></div></div><div class="col-sm-12 text-center"><button id="blockListButton" class="btn btn-md btn-danger mr-1">Block List</button><button id="includeListButton" class="btn btn-md btn-primary mr-1">Include List</button><button id="settingsButton" class="btn btn-md btn-primary">Settings</button></div></div></div>';
 
@@ -74,6 +74,7 @@ if(window.location.href.includes('jazakk')||window.location.href.includes('auth'
                                     'timeout':10000,
                                     'onload':function(response){
                                         if(response.status==200){
+                                            setTimeout(start_search,4000);
                                             aumentar_contador(".request_success");
                                             var data_tareas=JSON.parse($(response.responseText).find('#task-listing-datatable').attr('data-tasks'));
                                             var tareas_filtradas=filtrar_block(data_tareas);
@@ -103,7 +104,7 @@ if(window.location.href.includes('jazakk')||window.location.href.includes('auth'
                                                                     reset_time=50;
                                                                 }
                                                                 else{
-                                                                     reset_time=10;
+                                                                     reset_time=3;
                                                                    }
                                                                 if(tarea_id!=974846){
                                                                     crear_buscador(tarea_nombre,link_tarea,tarea_id,reset_time);
@@ -119,7 +120,7 @@ if(window.location.href.includes('jazakk')||window.location.href.includes('auth'
                                                 });
 
                                             });
-                                            setTimeout(start_search,8000);
+                                         //   setTimeout(start_search,8000);
                                         }else{
                                             aumentar_contador(".un_error");
                                             setTimeout(start_search,8000);
@@ -244,11 +245,11 @@ if(window.location.href.includes('jazakk')||window.location.href.includes('auth'
         let pass=document.querySelector(".pass_acc").value;
 
         if(email == "" || pass == ""){
-            alert("Por favor agrega tus datos de email y contraseña correctamente.");
+            alert("Por favor agrega tus datos de email y contraseÃ±a correctamente.");
         }else{
             Cookies.set("autologinUsername",email,{'expires':365, path: '', domain: '.appen.com'});
             Cookies.set("autologinPassword",pass,{'expires':365, path: '', domain: '.appen.com'});
-            alert("Por favor cierra tu sesión en la pagina de https://account.appen.com/ y en la pagina de https://annotate.appen.com/ para verificar que el notificador inicia sesión sin problemas, despues que lo hagas presiona aceptar, si ya esta hecho presiona aceptar.");
+            alert("Por favor cierra tu sesiÃ³n en la pagina de https://account.appen.com/ y en la pagina de https://annotate.appen.com/ para verificar que el notificador inicia sesiÃ³n sin problemas, despues que lo hagas presiona aceptar, si ya esta hecho presiona aceptar.");
             window.location.reload();
         }
     }
@@ -603,7 +604,7 @@ if(window.location.href.includes('jazakk')||window.location.href.includes('auth'
                                                             if(json.code==500){
                                                                 alert("Su token ha expirado.");
                                                             }else if(json.code==502){
-                                                                alert("Este ID worker no está sincronizado con ninguna cuenta.");
+                                                                alert("Este ID worker no estÃ¡ sincronizado con ninguna cuenta.");
                                                             }
                                                             modal_bar_progress.modal('hide');
                                                         }
@@ -614,7 +615,7 @@ if(window.location.href.includes('jazakk')||window.location.href.includes('auth'
                                                     }
                                                 });*/
                                             }else{
-                                                alert("Por favor inicia sesión en tu cuenta portal");
+                                                alert("Por favor inicia sesiÃ³n en tu cuenta portal");
                                                 modal_bar_progress.modal('hide');
                                             }
 
@@ -808,7 +809,7 @@ if(window.location.href.includes('jazakk')||window.location.href.includes('auth'
                     GM_setValue('jwtoken',token);
                     window.location="https://view.appen.io/assignments/g/?jwtoken="+token+"&id="+json.id+"&redirecion="+redireccion;
                 }else{
-                    alert("Por favor inicia sesión en cuenta portal y vuelva a intentarlo.");
+                    alert("Por favor inicia sesiÃ³n en cuenta portal y vuelva a intentarlo.");
                 }
             }
             ,'onerror':function(resp){
@@ -898,7 +899,7 @@ if(window.location.href.includes('jazakk')||window.location.href.includes('auth'
                     'onload':function(resp){
                         if(resp.status==200){
                             if(resp.finalUrl.includes('view')){
-                                                                //pregunto si hay alguna tarea abierta y en caso de ser falso abro y paso la variable a true
+                                //pregunto si hay alguna tarea abierta y en caso de ser falso abro y paso la variable a true
                                 if(!is_open_task){
                                     is_open_task = true;
                                     remover_request_job(buscador_tarea[0]);
@@ -911,9 +912,13 @@ if(window.location.href.includes('jazakk')||window.location.href.includes('auth'
                                     body_task.querySelector("a").style.color='#28a745';
                                     body_task.querySelector("span").style.color='#28a745';
 
-                                    //y la url con el render es abierta en otra pestaña
-                                    var open_tab_b_local = GM_getValue('openTabBackground');
-                                    var ventana_temp=GM_openInTab(resp.finalUrl,open_tab_b_local);
+                                    //y la url con el render es abierta en otra pestaÃ±a en primero plano
+                                    var ventana_temp=GM_openInTab(resp.finalUrl,false);
+
+                                    //si quiero que abra  en segundo plano
+                                //    var open_tab_b_local = GM_getValue('openTabBackground');
+                                //    var ventana_temp=GM_openInTab(resp.finalUrl,open_tab_b_local);
+
                                     if(GM_getValue('autoclose')){
                                         var time_autoclose=GM_getValue('timeautoclosed')||'180000';
                                         setTimeout(function(){ventana_temp.close();},time_autoclose);
@@ -927,7 +932,7 @@ if(window.location.href.includes('jazakk')||window.location.href.includes('auth'
                                             play_all();
                                             is_open_task = false;
                                             //importante basicamente lo que hace es parar el collect quitando la clase active entonces para la proxima vuelta btn_collect.className.includes('active') sera false y
-                                            //no lo buscara ya que esta abierta la pestaña, cuando la pestaña se cierra le da click al boton collect lo que  vuelve a actviar el ciclo de busqueda por que vuelve a
+                                            //no lo buscara ya que esta abierta la pestaÃ±a, cuando la pestaÃ±a se cierra le da click al boton collect lo que  vuelve a actviar el ciclo de busqueda por que vuelve a
                                             //poner la clase active y ejecuta otra vez el setTimeout, el anterior muere al no volver a ejecutar el setTimeout(start,time);.
                                         }
 
@@ -1062,7 +1067,7 @@ if(window.location.href.includes('jazakk')||window.location.href.includes('auth'
         //removemos los originales de la pagina de contribution
         $('style').remove();
 
-        //añadimos los recuersos css
+        //aÃ±adimos los recuersos css
         GM_addStyle(datatable_css);
         GM_addStyle(bootstrap_css);
         GM_addStyle(".modal-backdrop {width: 100%; height: 100%;}");
@@ -1073,13 +1078,13 @@ if(window.location.href.includes('jazakk')||window.location.href.includes('auth'
         cargar_datos_login();
         check_worker_id();
         check_payments_summary();
-        setInterval(check_payments_summary,600000);
+        setInterval(check_payments_summary,400000);
         //ejecutamos el hilo principal de las tareas
         consultar_tareas();
         autoclose();
 
     }());
-setTimeout(function(){ClikLogin();}, 3000);
+setTimeout(function(){ClikLogin();}, 1000);
 
 function ClikLogin(){
     document.getElementById('username').value=Cookies.get('autologinUsername');
@@ -1089,7 +1094,10 @@ function ClikLogin(){
     }
 
 
-}else if(window.location.href.includes('secret') || window.location.href.includes('tasks')){
+}else if(window.location.href.includes('2185656')){
+    window.close= null;
+}
+else if(window.location.href.includes('secret')){
     window.close();
 }
 setTimeout(Given_Up,1000);
