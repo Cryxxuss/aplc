@@ -181,12 +181,12 @@ autofill_radios_random=["1","2"];
 		setInterval(Enviar_task, Math.round(Math.random() * (12000 - 11000)) + 11000);
      break;
 
-     case jobTitle.includes("2260267"):
+     case jobTitle.includes("Find Communities In Reviews"):
 
 id="2258585"
 autofill_radios_random=["1","2"];
 
-//		setInterval(Enviar_task, Math.round(Math.random() * (12000 - 11000)) + 11000);
+		setInterval(Enviar_task, Math.round(Math.random() * (35000 - 31000)) + 31000);
      break;
 
     default:
@@ -305,4 +305,4 @@ var autofill_checkboxes_random=[""];
 setTimeout(function(){
 location.reload();
 }, 300000);
-console.log("Find Communities In Reviews 1");
+console.log("Nueva task");
