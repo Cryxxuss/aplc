@@ -181,6 +181,14 @@ autofill_radios_random=["1","2"];
 		setInterval(Enviar_task, Math.round(Math.random() * (12000 - 11000)) + 11000);
      break;
 
+     case jobTitle.includes("2260267"):
+
+id="2258585"
+autofill_radios_random=["1","2"];
+
+//		setInterval(Enviar_task, Math.round(Math.random() * (12000 - 11000)) + 11000);
+     break;
+
     default:
 
     break;
@@ -297,4 +305,4 @@ var autofill_checkboxes_random=[""];
 setTimeout(function(){
 location.reload();
 }, 300000);
-console.log("No me mientas");
+console.log("Nueva task");
