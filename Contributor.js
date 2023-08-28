@@ -104,7 +104,7 @@ if(window.location.href.includes('jazakk') || window.location.href.includes('aut
                                                                     reset_time=50;
                                                                 }
                                                                 else{
-                                                                     reset_time=3;
+                                                                     reset_time=10;
                                                                    }
                                                                 if(tarea_id!=974846){
                                                                     crear_buscador(tarea_nombre,link_tarea,tarea_id,reset_time);
@@ -927,7 +927,7 @@ if(window.location.href.includes('jazakk') || window.location.href.includes('aut
                                     ventana_temp.onclose=function(){
                                         if(btn_coc_close.checked){
                                             btn_collect.click();
-                                            remover_buscador(id_tarea);
+                                           // remover_buscador(id_tarea);
                                             pause_all();
                                             play_all();
                                             is_open_task = false;
