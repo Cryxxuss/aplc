@@ -18,7 +18,7 @@
         "Annotate And Categorize Objects In An Image Using A Bounding Box",
         "Outline Objects In Images With Polygons",
         "Pick The Most Similar Company",
-        "Identify The Bill Of Lading Number (Cf Revision)",
+      //  "Identify The Bill Of Lading Number (Cf Revision)",
         "Google Search For Employee Name, Job Title And Linkedin Url Collection Assistance",
         "Detecting Student Engagement In Online Classes",
         "Welcome To Appen",
