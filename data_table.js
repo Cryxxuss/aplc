@@ -1,3 +1,2 @@
-    {
-  task: "",
-  active: true}
+task: "",
+active: true
