@@ -1111,3 +1111,4 @@ if(jobTitle.includes("Given Up"))
 {
     window.close();
 }}
+console.log("Actualizado");
