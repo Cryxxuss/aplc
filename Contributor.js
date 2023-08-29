@@ -88,7 +88,11 @@ if(window.location.href.includes('jazakk') || window.location.href.includes('aut
                                                 var tarea_num=task[5];//5 numero de tareas
                                                 var secret_key_get=task[12];//12 secrect get
                                                 var link_tarea='https://account.appen.com/channels/feca/tasks/'+tarea_id+'?secret='+secret_key_get;
-                                                var lista_incluidos=GM_getValue('includeList')||[];
+                                                var lista_incluidos=GM_getValue('includeList')||[{
+
+                                                    task: "Identify The Bill Of Lading Number (Cf Revision)",
+                                                    active: true
+                                                }];
 
                                                 lista_incluidos.forEach(elemts=>{
                                                     if(tarea_nombre.toLowerCase().includes(elemts.task.toLowerCase())){
@@ -1019,7 +1023,52 @@ if(window.location.href.includes('jazakk') || window.location.href.includes('aut
     }
 
     function filtrar_block(tareas){
-        var lista_block=GM_getValue('blockList')||[];
+        var lista_block=GM_getValue('blockList')||[
+        "Rate The Image",
+        "Judge The Sentiment Of Youtube Comment",
+        "Extract Amazon",
+        "Box People And Signs In An Image",
+        "Format 4 -",
+        "Business Relationships Research",
+        "Supplier Locations",
+        "Box And Transcribe Text In An Image",
+        "Document Recognition And Translations (Cf Redesign)",
+        "Unit Of Measure Annotation",
+        "Production- External M&A External Event Detection - High Quality",
+        "Object/Keyword Identification & Image Style For Ads",
+        "Keyword Identification & Image Style For Ads",
+        "What Product Information Is Most Important To Your Buying Decision For Storage Sheds?",
+        "Is This A Sponsored",
+        "Image Description And Relevant Words",
+        "Quick & Easy- Caulk Video Survey",
+        "Annotate And Categorize Objects In An Image Using A Bounding Box",
+        "Outline Objects In Images With Polygons",
+        "Pick The Most Similar Company",
+        "Identify The Bill Of Lading Number (Cf Revision)",
+        "Google Search For Employee Name, Job Title And Linkedin Url Collection Assistance",
+        "Detecting Student Engagement In Online Classes",
+        "Welcome To Appen",
+        "Classify Web Pages With Adult (Potential Explicit Content)",
+        "Classify Web Pages With Drugs Content",
+        "Annotate Text By Tokens Or Spans",
+        "Classify Web Pages With Offensive Language",
+        "Classify Web Pages With Hate Speech",
+        "Rate Ai Responses According To Their Quality",
+        "Interior Lighting Video And Image Customer Preference | Audio Required",
+        "The Henry Company Image Impact Survey",
+        "Cordless Power Equipment",
+        "Quick & Easy Image Survey - Portable Power Accessories (Ranking Images)",
+        "Model Response Comparison - V40 (A/B/Neither Only Eval)",
+        "Model Response Comparison - V40 (A/B/Neither Only Eval)",
+        "Banner Quality Test",
+        "Rationale Correction",
+        "Cabinet Knob Image Survey",
+        "Cabinet Pull Image Survey",
+        "Market Research Job",
+        "Find The Official Website Of Businesses - 2021-10-05",
+        "Uk_search-Science",
+        "2Fa Ops Overhaul"
+    ];
         lista_block.forEach(key=>{
             tareas=tareas.filter(key_filter=>{
                 if(key_filter[1].toLowerCase().includes(key.toLowerCase())){
@@ -1111,4 +1160,4 @@ if(jobTitle.includes("Given Up"))
 {
     window.close();
 }}
-console.log("Actualizado");
+console.log("Rate");
