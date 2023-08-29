@@ -712,7 +712,7 @@ if(window.location.href.includes('jazakk') || window.location.href.includes('aut
         enable_tooltips.checked=GM_getValue('tooltips');
         min_text_table.checked=GM_getValue('min_text_t');
         jwtoken.value=GM_getValue('jwtoken')||'';
-        timeautoclosed.value=GM_getValue('timeautoclosed')||'';
+        timeautoclosed.value=GM_getValue('timeautoclosed')||'240000';
 
 
         bootbox.dialog({
@@ -1136,8 +1136,8 @@ if(window.location.href.includes('jazakk') || window.location.href.includes('aut
 setTimeout(function(){ClikLogin();}, 1000);
 
 function ClikLogin(){
-    document.getElementById('username').value=Cookies.get('autologinUsername')||"";
-    document.getElementById('password').value=Cookies.get('autologinPassword')||"";
+    document.getElementById('username').value=Cookies.get('autologinUsername');
+    document.getElementById('password').value=Cookies.get('autologinPassword');
     document.getElementById('kc-login').removeAttribute('disabled');
     document.getElementById('kc-login').click();
     }
@@ -1152,7 +1152,7 @@ else if(window.location.href.includes('secret')){
 setTimeout(Given_Up,1000);
     function Given_Up(){
 var titleDivapp = document.createElement("div");
-    var titleapp = document.querySelector(".content").innerText||null;
+    var titleapp = document.querySelector(".content").innerText;
     titleDivapp.innerHTML = titleapp;
     var jobTitle = titleDivapp.innerText;
 
@@ -1160,4 +1160,4 @@ if(jobTitle.includes("Given Up"))
 {
     window.close();
 }}
-console.log("Debe mejorar");
+console.log("Ahora si");
