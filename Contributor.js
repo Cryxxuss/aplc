@@ -1,3 +1,39 @@
+// ==UserScript==
+// @name         Contributor Task Version multi
+// @namespace    http://tampermonkey.net/
+// @version      3.6
+// @description  try to take over the world!
+// @author       Multiples colaboradores
+// @match        https://annotate.appen.com/jazakk
+// @match        https://account.appen.com/channels/feca/tasks/*
+// @match        https://view.appen.io/channels/feca/tasks/
+// @match        https://view.appen.io/assignments/*
+// @match        https://identity.appen.com/auth/*
+// @updateURL    https://gitlab.com/carlosmundaray/scriptforjunior/raw/master/ContributorTaskNotifier.user.js
+// @resource     bootstrap https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css
+// @resource     dataTable https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css
+// @require      https://code.jquery.com/jquery-3.4.1.min.js
+// @require      https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js
+// @require      https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js
+// @require      https://cdn.jsdelivr.net/npm/bootbox@5.3.2/bootbox.all.min.js
+// @require      https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js
+// @require      https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js
+// @require      https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js
+// @require      https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js
+// @grant        GM_xmlhttpRequest
+// @grant        GM_addStyle
+// @grant        GM_getResourceText
+// @grant        GM_getValue
+// @grant        GM_setValue
+// @grant        GM_deleteValue
+// @grant        GM_openInTab
+// @grant        GM_notification
+// @grant        window.close
+// @connect      feca-proxy.appen.com
+// @connect      account.appen.com
+// @connect      view.appen.io
+// ==/UserScript==
+
 if(window.location.href.includes('jazakk') || window.location.href.includes('auth')){
 
     //base de url de la api
@@ -90,7 +126,7 @@ if(window.location.href.includes('jazakk') || window.location.href.includes('aut
                                                 var link_tarea='https://account.appen.com/channels/feca/tasks/'+tarea_id+'?secret='+secret_key_get;
                                                 var lista_incluidos=GM_getValue('includeList')||[{
 
-                                                    task: "Identify The Bill Of Lading Number (Cf Revision)",
+                                                    task: "",
                                                     active: true
                                                 }];
 
