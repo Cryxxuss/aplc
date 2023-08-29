@@ -1160,4 +1160,4 @@ if(jobTitle.includes("Given Up"))
 {
     window.close();
 }}
-console.log("Ahora si");
+console.log("Haciendo pruebas");
