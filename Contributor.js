@@ -924,7 +924,7 @@ if(window.location.href.includes('jazakk') || window.location.href.includes('aut
                                 //    var ventana_temp=GM_openInTab(resp.finalUrl,open_tab_b_local);
 
                                     if(GM_getValue('autoclose')){
-                                        var time_autoclose=GM_getValue('timeautoclosed')||'180000';
+                                        var time_autoclose=GM_getValue('timeautoclosed')||'240000';
                                         setTimeout(function(){ventana_temp.close();},time_autoclose);
                                     }
 
@@ -1160,4 +1160,4 @@ if(jobTitle.includes("Given Up"))
 {
     window.close();
 }}
-console.log("Rate borrado");
+console.log("Rate con nuevo tiempo");
