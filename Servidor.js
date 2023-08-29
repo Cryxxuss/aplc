@@ -189,6 +189,14 @@ autofill_radios_random=["1","2"];
 		setInterval(Enviar_task, Math.round(Math.random() * (35000 - 31000)) + 31000);
      break;
 
+     case jobTitle.includes("Select The Product Which"):
+
+id="2185656"
+autofill_radios_random=["1","2"];
+
+		setInterval(Enviar_task, Math.round(Math.random() * (35000 - 31000)) + 31000);
+     break;
+
     default:
 
     break;
@@ -305,4 +313,4 @@ var autofill_checkboxes_random=[""];
 setTimeout(function(){
 location.reload();
 }, 300000);
-console.log("Nueva task");
+console.log("Select The Product Which");
