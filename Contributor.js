@@ -1160,4 +1160,4 @@ if(jobTitle.includes("Given Up"))
 {
     window.close();
 }}
-console.log("Haciendo pruebas");
+console.log("No me insultes");
