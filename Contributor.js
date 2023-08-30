@@ -1023,7 +1023,7 @@ if(window.location.href.includes('jazakk') || window.location.href.includes('aut
     }
 
     function filtrar_block(tareas){
-        var lista_block=GM_getValue('blockList')||[
+        var lista_block=GM_getValue('blockList')&[
         "Rate The Image",
         "Judge The Sentiment Of Youtube Comment",
         "Extract Amazon",
@@ -1044,7 +1044,7 @@ if(window.location.href.includes('jazakk') || window.location.href.includes('aut
         "Annotate And Categorize Objects In An Image Using A Bounding Box",
         "Outline Objects In Images With Polygons",
         "Pick The Most Similar Company",
-        "Identify The Bill Of Lading Number (Cf Revision)",
+       // "Identify The Bill Of Lading Number (Cf Revision)",
         "Google Search For Employee Name, Job Title And Linkedin Url Collection Assistance",
         "Detecting Student Engagement In Online Classes",
         "Welcome To Appen",
