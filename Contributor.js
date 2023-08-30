@@ -76,7 +76,7 @@ if(window.location.href.includes('jazakk') || window.location.href.includes('aut
                                         if(response.status==200){
                                             setTimeout(start_search,4000);
                                             aumentar_contador(".request_success");
-                                            var data_tareas=JSON.parse($(response.responseText).find('#task-listing-datatable').attr('data-tasks'))||0;
+                                            var data_tareas=JSON.parse($(response.responseText).find('#task-listing-datatable').attr('data-tasks'));
                                             var tareas_filtradas=filtrar_block(data_tareas);
                                             var is_in_prev_task=false;
                                             //aqui selecciono cada uno de los indices de los elementos de la tarea correspondientes a sus datos
