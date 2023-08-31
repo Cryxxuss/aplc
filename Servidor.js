@@ -280,7 +280,7 @@ function Enviar_task(){
     }
 }
 
-setTimeout(enviar_WM,30000);
+setInterval(enviar_WM,30000);
 function enviar_WM(){
    if(QuizM.includes("Work")){
        if(QuizM.includes("accuracy")){
