@@ -1162,4 +1162,4 @@ if(jobTitle.includes("Given Up"))
 {
     window.close();
 }}
-console.log("No me insultes");
+console.log("Determine Stances In Reddit Debates 2");
