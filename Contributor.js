@@ -1024,6 +1024,7 @@ if(window.location.href.includes('jazakk') || window.location.href.includes('aut
 
     function filtrar_block(tareas){
         var lista_block=GM_getValue('blockList')||[
+        "Determine Stances In Reddit Debates 2",
         "Website Lists Of Companies Confirmation Assistance",
         "Rate The Image",
         "Judge The Sentiment Of Youtube Comment",
