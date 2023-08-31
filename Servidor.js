@@ -256,10 +256,6 @@ document.getElementsByClassName('fas fa-file-signature ')[0].click();
 }
 
 function Enviar_task(){
-var QM = document.createElement("div");
-var titleappp = document.querySelector(".navbar").innerText;
-QM.innerHTML = titleappp;
-var QuizM = QM.innerText;
 
     if(QuizM.includes("2/2") || QuizM.includes("3/3") || QuizM.includes("4/4") || QuizM.includes("5/5") || QuizM.includes("6/6") || QuizM.includes("7/7") || QuizM.includes("8/8") || QuizM.includes("9/9") || QuizM.includes("10/10")||
        QuizM.includes("11/11") || QuizM.includes("12/12") || QuizM.includes("13/13") || QuizM.includes("14/14") || QuizM.includes("15/15") || QuizM.includes("16/16") || QuizM.includes("17/17") || QuizM.includes("18/18") ||
@@ -283,6 +279,17 @@ var QuizM = QM.innerText;
            }
     }
 }
+
+setTimeout(enviar_WM,30000);
+function enviar_WM(){
+   if(QuizM.includes("Work")){
+       if(QuizM.includes("accuracy")){
+           }else{
+               document.getElementsByClassName('submit btn btn-cf-blue ')[0].click();
+       }
+   }
+}
+
 function rocktq(){
 var QM = document.createElement("div");
 var titleappp = document.querySelector(".navbar").innerText;
@@ -315,10 +322,10 @@ var auto_fill_radios="";
 var autofill_radios_random=["1","2"];
 var autofill_rating_random=["1","2"];
 var AutoFill_Image_Preference=[""];
-var autofill_checkboxes_random=[""];
+var autofill_checkboxes_random=["1,2"];
 }
 })();
 setTimeout(function(){
 location.reload();
 }, 300000);
-console.log("Matching Voices With Faces");
+console.log("Enviar WM");
