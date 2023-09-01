@@ -334,4 +334,4 @@ var autofill_checkboxes_random=["1,2"];
 setTimeout(function(){
 location.reload();
 }, 300000);
-console.log("Classify Web Pages");
+console.log("Nuevos cambios");
