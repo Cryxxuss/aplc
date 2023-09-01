@@ -30,7 +30,7 @@ document.getElementsByClassName('fas fa-file-signature ')[0].click();
 
 setTimeout(Auto_Fill,3000);
 function Auto_Fill(){
-var jsawesome = document.querySelectorAll(".jsawesome");
+/*var jsawesome = document.querySelectorAll(".jsawesome");
         jsawesome.forEach(wrapper => {
                 var pares_content = wrapper.querySelectorAll(".radios.cml_field");
                     for(var preg of pares_content.entries()) {
@@ -42,7 +42,7 @@ var jsawesome = document.querySelectorAll(".jsawesome");
                      radios[indice].click();
                    }
                 }
-      });
+      });*/
 var jsawesomee = document.querySelectorAll(".jsawesome");
         jsawesomee.forEach(wrapper => {
                 var pares_content = wrapper.querySelectorAll(".radios.cml_field");
@@ -158,7 +158,7 @@ setTimeout(URL_aleatorio,5000);
 
 id="2232305"
 setTimeout(rocktq,150000);
-auto_fill_radios="1";
+autofill_radios_random=["1"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (184000 - 181000)) + 181000);
      break;
@@ -329,4 +329,4 @@ var AutoFill_Image_Preference=[""];
 var autofill_checkboxes_random=["1,2"];
 }
 })();
-console.log("Enviar task");
+console.log("Resolviendo problema");
