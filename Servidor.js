@@ -205,6 +205,14 @@ autofill_radios_random=["1","2"];
 		setInterval(Enviar_task, Math.round(Math.random() * (35000 - 31000)) + 31000);
      break;
 
+     case jobTitle.includes("Classify Web Pages"):
+
+id="2264335"
+autofill_radios_random=["1","2","3"];
+
+		setInterval(Enviar_task, Math.round(Math.random() * (65000 - 61000)) + 61000);
+     break;
+
     default:
 
     break;
@@ -328,4 +336,4 @@ var autofill_checkboxes_random=["1,2"];
 setTimeout(function(){
 location.reload();
 }, 300000);
-console.log("Enviar WM");
+console.log("Classify Web Pages");
