@@ -18,12 +18,9 @@ var titleapp = document.querySelector(".job-title").innerText;
 titleDivapp.innerHTML = titleapp;
 var jobTitle = titleDivapp.innerText;
 
-var QM = document.createElement("div");
-var titleappp = document.querySelector(".navbar").innerText;
-QM.innerHTML = titleappp;
-var QuizM = QM.innerText;
 
-    setInterval(getGuia_interval,65000);
+
+    setInterval(getGuia_interval,40000);
 function getGuia_interval(){
 
 document.getElementsByClassName('fas fa-file-signature ')[0].click();
@@ -254,6 +251,10 @@ document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
 
 //setInterval(clickPro,60000);
 function clickPro(){
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
     if(QuizM.includes("accuracy") || jobTitle.includes("Find The Official Website Of Businesses")){
         document.getElementsByClassName('fas fa-file-signature')[0].click();
     }
@@ -267,6 +268,10 @@ document.getElementsByClassName('fas fa-file-signature')[0].click();
 }
 
 function Enviar_task(){
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
     if(QuizM.includes("2/2") || QuizM.includes("3/3") || QuizM.includes("4/4") || QuizM.includes("5/5") || QuizM.includes("6/6") || QuizM.includes("7/7") || QuizM.includes("8/8") || QuizM.includes("9/9") || QuizM.includes("10/10")||
        QuizM.includes("11/11") || QuizM.includes("12/12") || QuizM.includes("13/13") || QuizM.includes("14/14") || QuizM.includes("15/15") || QuizM.includes("16/16") || QuizM.includes("17/17") || QuizM.includes("18/18") ||
        QuizM.includes("19/19") || QuizM.includes("20/20") || QuizM.includes("21/21") || QuizM.includes("22/22") || QuizM.includes("23/23") || QuizM.includes("24/24") || QuizM.includes("25/25")){
@@ -290,6 +295,10 @@ function Enviar_task(){
 
 setInterval(enviar_WM,30000);
 function enviar_WM(){
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
    if(QuizM.includes("Work")){
        if(QuizM.includes("accuracy")){
            }else{
@@ -326,4 +335,4 @@ bandera = true;
         }}}}
     }}}
 })();
-console.log("(getGuia_interval,65000);");
+console.log("Mi amigo millonario");
