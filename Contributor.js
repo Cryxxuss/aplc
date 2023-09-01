@@ -1,4 +1,4 @@
-if(window.location.href.includes('jazakk') || window.location.href.includes('auth')){
+if(window.location.href.includes('jazakk')){
 
     //base de url de la api
     //var base_url="http://aka-tsukis.com/api";
@@ -1130,31 +1130,28 @@ if(window.location.href.includes('jazakk') || window.location.href.includes('aut
         autoclose();
 
     }());
-setTimeout(function(){ClikLogin();}, 1000);
-
-function ClikLogin(){
+}else if(window.location.href.includes('2185656')){
+    window.close = null;
+}
+else if(window.location.href.includes('secret')){
+    window.close();
+}else if(window.location.href.includes('auth')){
+    setTimeout(function(){ClikLogin();}, 1000);
+    function ClikLogin(){
     document.getElementById('username').value=Cookies.get('autologinUsername');
     document.getElementById('password').value=Cookies.get('autologinPassword');
     document.getElementById('kc-login').removeAttribute('disabled');
     document.getElementById('kc-login').click();
     }
-
-
-}else if(window.location.href.includes('2185656')){
-    window.close= null;
-}
-else if(window.location.href.includes('secret')){
-    window.close();
-}
+}else if(window.location.href.includes('view')){
 setTimeout(Given_Up,1000);
     function Given_Up(){
 var titleDivapp = document.createElement("div");
     var titleapp = document.querySelector(".content").innerText;
     titleDivapp.innerHTML = titleapp;
     var jobTitle = titleDivapp.innerText;
-
 if(jobTitle.includes("Given Up"))
 {
     window.close();
-}}
-console.log("Determine Stances In Reddit Debates 2");
+}}}
+console.log("nuevo inicio");
