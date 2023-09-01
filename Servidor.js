@@ -1,6 +1,12 @@
 (function() {
     'use strict';
 var id=""
+var auto_fill_radios="";
+var autofill_radios_random=["1","2"];
+var autofill_rating_random=["1","2"];
+var AutoFill_Image_Preference=[""];
+var autofill_checkboxes_random=["1,2"];
+
 setTimeout(cambiar_id);
 function cambiar_id(){
 const span = document.getElementById('assignment-job-id');
@@ -208,14 +214,14 @@ autofill_radios_random=["1","2"];
 id="2264335"
 autofill_radios_random=["1","2","3"];
 
-		setInterval(Enviar_task,61000);
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
 
     default:
 
     break;
 }
-function Enviar(){document.getElementsByClassName('submit btn btn-cf-blue ')[0].click();}
+function Enviar(){document.getElementsByClassName('submit btn btn-cf-blue')[0].click();}
 
 function Enviar_Sin_marcar(){
 var WM = document.createElement("div");
@@ -223,7 +229,7 @@ var titleapppe = document.querySelector(".navbar").innerText;
 WM.innerHTML = titleapppe;
 var QuizMM = WM.innerText;
         if(QuizMM.includes("Work")){
-        document.getElementsByClassName('submit btn btn-cf-blue ')[0].click();
+        document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
 }}
    function URL_aleatorio(){
    var hijos = document.querySelector("#job_units").childNodes;
@@ -243,34 +249,32 @@ var input = hijo.querySelector("input.domain");
    }
 }
 function Enviar_encuesta(){
-document.getElementsByClassName('submit btn btn-cf-blue ')[0].click();
+document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
 }
 
 //setInterval(clickPro,60000);
 function clickPro(){
-
     if(QuizM.includes("accuracy") || jobTitle.includes("Find The Official Website Of Businesses")){
-        document.getElementsByClassName('fas fa-file-signature ')[0].click();
+        document.getElementsByClassName('fas fa-file-signature')[0].click();
     }
     else if(QuizM.includes("Quiz")){
  if(QuizM.includes("1/") || QuizM.includes("2/") || QuizM.includes("3/") || QuizM.includes("4/") || QuizM.includes("5/") || QuizM.includes("6/") || QuizM.includes("7/") || QuizM.includes("8/") || QuizM.includes("9/") || QuizM.includes("10/")||
     QuizM.includes("11/") || QuizM.includes("12/") || QuizM.includes("13/") || QuizM.includes("14/") || QuizM.includes("15/") || QuizM.includes("16/") || QuizM.includes("17/") || QuizM.includes("18/") ||
     QuizM.includes("19/") || QuizM.includes("20/") || QuizM.includes("21/") || QuizM.includes("22/") || QuizM.includes("23/") || QuizM.includes("24/") || QuizM.includes("25/")){
-document.getElementsByClassName('fas fa-file-signature ')[0].click();
+document.getElementsByClassName('fas fa-file-signature')[0].click();
          }
     }
 }
 
 function Enviar_task(){
-
     if(QuizM.includes("2/2") || QuizM.includes("3/3") || QuizM.includes("4/4") || QuizM.includes("5/5") || QuizM.includes("6/6") || QuizM.includes("7/7") || QuizM.includes("8/8") || QuizM.includes("9/9") || QuizM.includes("10/10")||
        QuizM.includes("11/11") || QuizM.includes("12/12") || QuizM.includes("13/13") || QuizM.includes("14/14") || QuizM.includes("15/15") || QuizM.includes("16/16") || QuizM.includes("17/17") || QuizM.includes("18/18") ||
        QuizM.includes("19/19") || QuizM.includes("20/20") || QuizM.includes("21/21") || QuizM.includes("22/22") || QuizM.includes("23/23") || QuizM.includes("24/24") || QuizM.includes("25/25")){
-       document.getElementsByClassName('submit btn btn-cf-blue ')[0].click();
+       document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
 
     }else if(jobTitle.includes("Text Classification - Agreement") || jobTitle.includes("Look At Advertisements")){
            if(QuizM.includes("4/5") || QuizM.includes("5/6")){
-               document.getElementsByClassName('submit btn btn-cf-blue ')[0].click();
+               document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
            }
     }else{
       if(QuizM.includes("Work")){
@@ -279,7 +283,7 @@ function Enviar_task(){
 		if (hijo.tagName =='DIV' && !hijo.classList.contains('form-actions')){
 			var stilo = hijo.getAttribute("Style");
 			if (stilo.includes("green")){
-				document.getElementsByClassName('submit btn btn-cf-blue ')[0].click();
+				document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
             }}
       }}
 }}
@@ -289,7 +293,7 @@ function enviar_WM(){
    if(QuizM.includes("Work")){
        if(QuizM.includes("accuracy")){
            }else{
-               document.getElementsByClassName('submit btn btn-cf-blue ')[0].click();
+               document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
        }
    }
 }
@@ -321,13 +325,5 @@ bandera = true;
                      inpu.value = resp;
         }}}}
     }}}
-if(QuizM.includes("Work")){
-var auto_fill_radios="";
-var autofill_radios_random=["1","2"];
-var autofill_rating_random=["1","2"];
-var AutoFill_Image_Preference=[""];
-var autofill_checkboxes_random=["1,2"];
-}
 })();
-console.log("Muy pronto");
-console.log("a salvo");
+console.log("Problema Resuelto");
