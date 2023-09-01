@@ -184,7 +184,7 @@ autofill_radios_random=["1","2"];
 id="2258585"
 autofill_radios_random=["1","2"];
 
-		setInterval(Enviar_task, Math.round(Math.random() * (35000 - 31000)) + 31000);
+		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
 
      case jobTitle.includes("Select The Product Which"):
@@ -192,7 +192,7 @@ autofill_radios_random=["1","2"];
 id="2185656"
 autofill_radios_random=["1","2"];
 
-		setInterval(Enviar_task, Math.round(Math.random() * (35000 - 31000)) + 31000);
+		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
 
      case jobTitle.includes("Matching Voices With"):
@@ -200,7 +200,7 @@ autofill_radios_random=["1","2"];
 id="2249957"
 autofill_radios_random=["1","2"];
 
-		setInterval(Enviar_task, Math.round(Math.random() * (35000 - 31000)) + 31000);
+		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
 
      case jobTitle.includes("Classify Web Pages"):
@@ -208,7 +208,7 @@ autofill_radios_random=["1","2"];
 id="2264335"
 autofill_radios_random=["1","2","3"];
 
-		setInterval(Enviar_task, Math.round(Math.random() * (65000 - 61000)) + 61000);
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
 
     default:
