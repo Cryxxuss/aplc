@@ -1,6 +1,6 @@
 (function() {
     'use strict';
-
+var id=""
 setTimeout(cambiar_id);
 function cambiar_id(){
 const span = document.getElementById('assignment-job-id');
@@ -17,7 +17,7 @@ var titleappp = document.querySelector(".navbar").innerText;
 QM.innerHTML = titleappp;
 var QuizM = QM.innerText;
 
-    setInterval(getGuia_interval,50000);
+    setInterval(getGuia_interval,40000);
 function getGuia_interval(){
 
 document.getElementsByClassName('fas fa-file-signature ')[0].click();
@@ -324,7 +324,6 @@ bandera = true;
         }}}}
     }}}
 if(QuizM.includes("Work")){
-var id=""
 var auto_fill_radios="";
 var autofill_radios_random=["1","2"];
 var autofill_rating_random=["1","2"];
