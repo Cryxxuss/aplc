@@ -208,7 +208,7 @@ autofill_radios_random=["1","2"];
 id="2264335"
 autofill_radios_random=["1","2","3"];
 
-		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+		setInterval(Enviar_task,61000);
      break;
 
     default:
@@ -329,4 +329,4 @@ var AutoFill_Image_Preference=[""];
 var autofill_checkboxes_random=["1,2"];
 }
 })();
-console.log("Resolviendo problema");
+console.log("Muy pronto");
