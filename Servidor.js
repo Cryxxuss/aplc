@@ -326,6 +326,7 @@ bandera = true;
         }}}}
     }}}
 if(QuizM.includes("Work")){
+var id=""
 var auto_fill_radios="";
 var autofill_radios_random=["1","2"];
 var autofill_rating_random=["1","2"];
