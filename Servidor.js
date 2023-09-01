@@ -23,7 +23,7 @@ var titleappp = document.querySelector(".navbar").innerText;
 QM.innerHTML = titleappp;
 var QuizM = QM.innerText;
 
-    setInterval(getGuia_interval,40000);
+    setInterval(getGuia_interval,65000);
 function getGuia_interval(){
 
 document.getElementsByClassName('fas fa-file-signature ')[0].click();
@@ -326,4 +326,4 @@ bandera = true;
         }}}}
     }}}
 })();
-console.log("Problema Resuelto");
+console.log("(getGuia_interval,65000);");
