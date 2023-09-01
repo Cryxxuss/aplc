@@ -1,8 +1,6 @@
 (function() {
     'use strict';
 
-var id=""
-
 setTimeout(cambiar_id);
 function cambiar_id(){
 const span = document.getElementById('assignment-job-id');
@@ -338,4 +336,3 @@ setTimeout(function(){
 location.reload();
 }, 300000);
 console.log("Classify Web Pages");
-console.log("Classify Web Pages.123");
