@@ -1,3 +1,4 @@
+
 (function() {
     'use strict';
 var id=""
@@ -17,8 +18,6 @@ var titleDivapp = document.createElement("div");
 var titleapp = document.querySelector(".job-title").innerText;
 titleDivapp.innerHTML = titleapp;
 var jobTitle = titleDivapp.innerText;
-
-
 
     setInterval(getGuia_interval,40000);
 function getGuia_interval(){
@@ -145,7 +144,7 @@ autofill_radios_random=["1","2"];
 
 autofill_radios_random=["1","2"];
 
-		setInterval(Enviar_Sin_marcar, Math.round(Math.random() * (13000 - 11000)) + 11000);
+		setInterval(Enviar_task, Math.round(Math.random() * (13000 - 11000)) + 11000);
      break;
 
      case jobTitle.includes("Find The Official Website Of Businesses"):
@@ -277,7 +276,7 @@ var QuizM = QM.innerText;
        QuizM.includes("19/19") || QuizM.includes("20/20") || QuizM.includes("21/21") || QuizM.includes("22/22") || QuizM.includes("23/23") || QuizM.includes("24/24") || QuizM.includes("25/25")){
        document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
 
-    }else if(jobTitle.includes("Text Classification - Agreement") || jobTitle.includes("Look At Advertisements")){
+    }else if(jobTitle.includes("Text Classification - Agreement") || jobTitle.includes("Look At Advertisements") || jobTitle.includes("Classify Web Pages")){
            if(QuizM.includes("4/5") || QuizM.includes("5/6")){
                document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
            }
@@ -335,4 +334,4 @@ bandera = true;
         }}}}
     }}}
 })();
-console.log("Mi amigo millonario");
+console.log("Nuvo Script");
