@@ -1,4 +1,3 @@
-
 (function() {
     'use strict';
 var id=""
@@ -102,7 +101,7 @@ switch (true) {
 
      case jobTitle.includes("Company Deduplication"):
 
-id="2214819"
+id="1957144"
 autofill_radios_random=["1","2"];
 
 setInterval(Enviar_task, Math.round(Math.random() * (13000 - 11000)) + 11000);
@@ -142,9 +141,10 @@ autofill_radios_random=["1","2"];
 
      case jobTitle.includes("Adult Content According"):
 
+id="2185656"
 autofill_radios_random=["1","2"];
 
-		setInterval(Enviar_Sin_marcar, Math.round(Math.random() * (13000 - 11000)) + 11000);
+		setInterval(Enviar_task, Math.round(Math.random() * (13000 - 11000)) + 11000);
      break;
 
      case jobTitle.includes("Find The Official Website Of Businesses"):
@@ -158,7 +158,7 @@ setTimeout(URL_aleatorio,5000);
 
      case jobTitle.includes("Outline Boxes With 4-Point Polygons"):
 
-id="2232305"
+id="2186718"
 setTimeout(rocktq,150000);
 autofill_radios_random=["1"];
 
@@ -191,7 +191,7 @@ autofill_radios_random=["1","2"];
 
      case jobTitle.includes("Select The Product Which"):
 
-id="2185656"
+id="2261762"
 autofill_radios_random=["1","2"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
@@ -207,7 +207,7 @@ autofill_radios_random=["1","2"];
 
      case jobTitle.includes("Classify Web Pages"):
 
-id="2264335"
+id="2003568"
 autofill_radios_random=["1","2","3"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
