@@ -222,6 +222,12 @@ autofill_checkboxes_random=["1","2","3","4","5"];
 		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
 
+     case jobTitle.includes("Matching Synthetic Voices To Faces For A Virtual Agent"):
+
+document.getElementsByClassName("btn btn-primary")[0].click();
+
+     break;
+
     default:
 
     break;
