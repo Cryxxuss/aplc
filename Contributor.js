@@ -1024,6 +1024,7 @@ if(window.location.href.includes('jazakk')){
 
     function filtrar_block(tareas){
         var lista_block=GM_getValue('blockList')||[
+        "Find Topics In Review",
         "Evaluating Synthetic Voices",
         "Determine Stances In Reddit Debates 2",
         "Website Lists Of Companies Confirmation Assistance",
