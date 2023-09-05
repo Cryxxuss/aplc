@@ -1024,6 +1024,7 @@ if(window.location.href.includes('jazakk')){
 
     function filtrar_block(tareas){
         var lista_block=GM_getValue('blockList')||[
+        "Evaluating Synthetic Voices",
         "Determine Stances In Reddit Debates 2",
         "Website Lists Of Companies Confirmation Assistance",
         "Rate The Image",
@@ -1154,4 +1155,4 @@ if(jobTitle.includes("Given Up"))
 {
     window.close();
 }}}
-console.log("nuevo inicio");
+console.log("Evaluating Synthetic Voices");
