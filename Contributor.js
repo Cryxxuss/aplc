@@ -931,7 +931,7 @@ if(window.location.href.includes('jazakk')){
                                     ventana_temp.onclose=function(){
                                         if(btn_coc_close.checked){
                                             btn_collect.click();
-                                           // remover_buscador(id_tarea);
+                                            remover_buscador(id_tarea);
                                             pause_all();
                                             play_all();
                                             is_open_task = false;
