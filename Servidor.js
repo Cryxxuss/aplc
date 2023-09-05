@@ -213,6 +213,15 @@ autofill_radios_random=["1","2","3"];
 		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
 
+     case jobTitle.includes("Evaluating Synthetic Voices"):
+
+id="2267903"
+autofill_rating_random=["1","2","3","4"];
+autofill_checkboxes_random=["1","2","3","4","5"];
+
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+     break;
+
     default:
 
     break;
@@ -334,4 +343,4 @@ bandera = true;
         }}}}
     }}}
 })();
-console.log("Nuvo Script");
+console.log("2267903");
