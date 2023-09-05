@@ -1107,7 +1107,6 @@ if(window.location.href.includes('jazakk')){
     (function(){
         'use strict';
 
-
         //obtenemos los recuersos del css
         var bootstrap_css=GM_getResourceText('bootstrap');
         var datatable_css=GM_getResourceText('dataTable');
@@ -1131,6 +1130,13 @@ if(window.location.href.includes('jazakk')){
         autoclose();
 
     }());
+setTimeout(function(){
+setTimeout(function(){
+setTimeout(function(){
+    location.reload();
+}, 300000);
+}, 300000);
+}, 300000);
 }else if(window.location.href.includes('2185656')){
     window.close = null;
 }
