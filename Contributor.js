@@ -1024,6 +1024,7 @@ if(window.location.href.includes('jazakk')){
 
     function filtrar_block(tareas){
         var lista_block=GM_getValue('blockList')||[
+        "Matching Synthetic Voices To Faces For A Virtual Agent (W1p2 A1c2)",
         "Find Topics In Review",
         "Evaluating Synthetic Voices",
         "Determine Stances In Reddit Debates 2",
