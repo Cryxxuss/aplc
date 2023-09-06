@@ -1,4 +1,4 @@
-function refresh() {jQuery('#content').html("APPEN");setTimeout(jQuery('#content').load(document.URL + ' #content')); }
+/*function refresh() {jQuery('#content').html("APPEN");setTimeout(jQuery('#content').load(document.URL + ' #content')); }
 
 var titleDivap = document.createElement("div");
 var titleap = document.querySelector(".content").innerText;
@@ -50,4 +50,4 @@ if(jobTitlee.includes("There is no work")){
         })
     }
 }
-console.log("Actualizando a 400");
+console.log("Actualizando a 400");*/
