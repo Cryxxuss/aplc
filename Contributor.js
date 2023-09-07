@@ -917,7 +917,7 @@ if(window.location.href.includes('jazakk')){
                                     body_task.querySelector("span").style.color='#28a745';
 
                                     //y la url con el render es abierta en otra pestaÃ±a en primero plano
-                                    var ventana_temp=GM_openInTab(resp.finalUrl,false);
+                                    var ventana_temp=GM_openInTab(resp.finalUrl,true);
 
                                     //si quiero que abra  en segundo plano
                                 //    var open_tab_b_local = GM_getValue('openTabBackground');
@@ -1024,6 +1024,7 @@ if(window.location.href.includes('jazakk')){
 
     function filtrar_block(tareas){
         var lista_block=GM_getValue('blockList')||[
+        "Matching Synthetic Voices",
         "Matching Synthetic Voices To Faces For A Virtual Agent (W1p2 A1c2)",
         "Find Topics In Review",
         "Evaluating Synthetic Voices",
