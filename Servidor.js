@@ -192,6 +192,7 @@ autofill_radios_random=["1","2"];
      case jobTitle.includes("Select The Product Which"):
 
 id="2261762"
+setInterval(eliminarnotq,8000)
 autofill_radios_random=["1","2"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
@@ -321,6 +322,33 @@ var QuizM = QM.innerText;
    }
 }
 
+function eliminarnotq(){
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+   if(QuizM.includes("Work")){
+       if(QuizM.includes("1/") || QuizM.includes("2/") || QuizM.includes("3/") || QuizM.includes("4/") || QuizM.includes("5/")){
+    var hijos = document.querySelector("#job_units").childNodes;
+   for (var hijo of hijos){
+    if (hijo.tagName =='DIV' && !hijo.classList.contains('form-actions')){
+        var stilo = hijo.getAttribute("Style");
+        if (stilo === null){
+            hijo.style.display = 'none';
+            if (hijo.previousSibling.classList.contains('checkboxTotalProjectF8')){
+            hijo.previousSibling.remove();
+            }
+        }else{
+            if (stilo.includes("green")){
+            }else{
+                 if (hijo.previousSibling.classList.contains('checkboxTotalProjectF8')){
+                     hijo.previousSibling.remove();
+            }
+                hijo.style.display = 'none';
+            }}
+       }}
+   }}}
+
 function rocktq(){
 var QM = document.createElement("div");
 var titleappp = document.querySelector(".navbar").innerText;
@@ -349,4 +377,4 @@ bandera = true;
         }}}}
     }}}
 })();
-console.log("2267903");
+console.log("Eliminar no tqs");
