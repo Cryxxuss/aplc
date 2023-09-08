@@ -902,7 +902,10 @@ if(window.location.href.includes('jazakk')){
                     'timeout':15000,
                     'onload':function(resp){
                         if(resp.status==200){
-                            if(resp.finalUrl.includes('view')){
+                                    if(resp.responseText.includes('Adult Content According')){
+                                    remover_buscador(id_tarea);
+                                    }
+                            else if(resp.finalUrl.includes('view')){
                                 //pregunto si hay alguna tarea abierta y en caso de ser falso abro y paso la variable a true
                                 if(!is_open_task){
                                     is_open_task = true;
