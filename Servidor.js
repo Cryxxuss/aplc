@@ -230,6 +230,14 @@ id="2243270"
 		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
 
+     case jobTitle.includes("Music Description Assessment"):
+
+id="2271691"
+autofill_rating_random=["1","2","3","4","5","6"];
+
+		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
+     break;
+
     default:
 
     break;
@@ -381,4 +389,4 @@ bandera = true;
  setTimeout(function(){
  location.reload();
 }, 240000);
-console.log("Nueva task");
+console.log("Music Description Assessment");
