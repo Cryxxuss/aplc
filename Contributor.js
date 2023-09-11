@@ -977,7 +977,7 @@ if(window.location.href.includes('jazakk')){
                                 }
                                 con_busq.innerText=parseInt(con_busq.innerText)+1||1;
                                 count_res.innerText=parseInt(count_res.innerText)+1||1;
-                                setTimeout(start,10000);
+                                setTimeout(start,5000);
                             }
                         }else if(resp.status==404){
                             /**importante cuando se desloguea en
