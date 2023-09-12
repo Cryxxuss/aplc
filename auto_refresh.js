@@ -13,6 +13,7 @@ if(jobTitlee.includes("There is no work")){
 location.reload();
 }}
 })();
+
 /*function refresh() {jQuery('#content').html("APPEN");setTimeout(jQuery('#content').load(document.URL + ' #content')); }
 
 var titleDivap = document.createElement("div");
