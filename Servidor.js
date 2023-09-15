@@ -18,7 +18,7 @@ var titleapp = document.querySelector(".job-title").innerText;
 titleDivapp.innerHTML = titleapp;
 var jobTitle = titleDivapp.innerText;
 
-    setInterval(getGuia_interval,40000);
+    setInterval(getGuia_interval,30000);
 function getGuia_interval(){
 
 document.getElementsByClassName('fas fa-file-signature ')[0].click();
