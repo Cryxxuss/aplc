@@ -248,7 +248,7 @@ autofill_radios_random=["1","2","3"];
 
      case jobTitle.includes("Judge Whether Sentences"):
 
-		setInterval(given_up,2000)
+		setInterval(given_up,2000);
      break;
 
     default:
