@@ -238,6 +238,14 @@ autofill_rating_random=["1","2","3","4","5","6"];
 		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
 
+     case jobTitle.includes("Name Your Job"):
+
+id="2271691"
+autofill_radios_random=["1","2","3"];
+
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+     break;
+
     default:
 
     break;
