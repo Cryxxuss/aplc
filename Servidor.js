@@ -248,13 +248,15 @@ autofill_radios_random=["1","2","3"];
 
      case jobTitle.includes("Judge Whether Sentences"):
 
-		setInterval(document.getElementsByClassName('btn btn-primary')[0].click(),2000)
+		setInterval(given_up,2000)
      break;
 
     default:
 
     break;
 }
+	function given_up(){document.getElementsByClassName('btn btn-primary')[0].click();}
+	
 function Enviar(){document.getElementsByClassName('submit btn btn-cf-blue')[0].click();}
 
 function Enviar_Sin_marcar(){
