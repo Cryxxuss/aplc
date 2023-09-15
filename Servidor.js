@@ -251,6 +251,14 @@ autofill_radios_random=["1","2","3"];
 		setInterval(given_up,2000);
      break;
 
+     case jobTitle.includes("Classify Text Into Categories"):
+
+id="2278086"
+autofill_radios_random=["1","2"];
+
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+     break;
+
     default:
 
     break;
@@ -404,4 +412,4 @@ bandera = true;
  setTimeout(function(){
  location.reload();
 }, 240000);
-console.log("Music Description Assessment");
+console.log("2278086");
