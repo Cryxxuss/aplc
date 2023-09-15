@@ -246,6 +246,11 @@ autofill_radios_random=["1","2","3"];
 		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
 
+     case jobTitle.includes("Judge Whether Sentences"):
+
+		setInterval(document.getElementsByClassName('btn btn-primary')[0].click(),2000)
+     break;
+
     default:
 
     break;
