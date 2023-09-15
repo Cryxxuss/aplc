@@ -1027,6 +1027,7 @@ if(window.location.href.includes('jazakk')){
 
     function filtrar_block(tareas){
         var lista_block=GM_getValue('blockList')||[
+            "Judge Whether Sentences",
             "Classify Web Pages With Hate Speech",
             "Classify Web Pages With Drugs Content",
         "Matching Synthetic Voices",
