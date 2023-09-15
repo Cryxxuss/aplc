@@ -23,7 +23,7 @@ function getGuia_interval(){
 
 document.getElementsByClassName('fas fa-file-signature ')[0].click();
 }
-    setTimeout(getGuia,6000);
+    setTimeout(getGuia,5000);
 function getGuia(){
 
 document.getElementsByClassName('fas fa-file-signature ')[0].click();
