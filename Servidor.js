@@ -29,7 +29,7 @@ function getGuia(){
 document.getElementsByClassName('fas fa-file-signature ')[0].click();
 }
 
-setTimeout(Auto_Fill,2000);
+setTimeout(Auto_Fill);
 function Auto_Fill(){
 /*var jsawesome = document.querySelectorAll(".jsawesome");
         jsawesome.forEach(wrapper => {
