@@ -251,7 +251,7 @@ autofill_radios_random=["1","2","3"];
 		setInterval(given_up,2000);
      break;
 
-     case jobTitle.includes("Classify Text Into Categories"):
+     case jobTitle.includes("Classify Text Into Categories") || jobTitle.includes("Classify Reviews As"):
 
 id="2278086"
 autofill_radios_random=["1","2"];
@@ -259,7 +259,7 @@ autofill_radios_random=["1","2"];
 		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
 
-     case jobTitle.includes("Census Geographic Identifier Research") || jobTitle.includes("Classify Reviews As"):
+     case jobTitle.includes("Census Geographic Identifier Research"):
 
 id="2276120"
 setInterval(eliminarnotq,8000)
