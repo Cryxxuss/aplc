@@ -421,4 +421,4 @@ bandera = true;
  setTimeout(function(){
  location.reload();
 }, 240000);
-console.log("Census Geographic Identifier Research");
+console.log("Classify Reviews As Relevant To Medical Topics (Ar)");
