@@ -251,12 +251,21 @@ autofill_radios_random=["1","2","3"];
 		setInterval(given_up,2000);
      break;
 
-     case jobTitle.includes("Classify Text Into Categories") || jobTitle.includes("Classify Reviews As"):
+     case jobTitle.includes("Classify Text Into Categories"):
 
 id="2278086"
 autofill_radios_random=["1","2"];
 
-		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) +361000);
+     break;
+
+     case jobTitle.includes("Census Geographic Identifier Research"):
+
+id="2276120"
+setInterval(eliminarnotq,8000)
+autofill_radios_random=["1","2"];
+
+		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
 
     default:
@@ -412,4 +421,4 @@ bandera = true;
  setTimeout(function(){
  location.reload();
 }, 240000);
-console.log("2278086");
+console.log("Census Geographic Identifier Research");
