@@ -251,7 +251,7 @@ autofill_radios_random=["1","2","3"];
 		setInterval(given_up,2000);
      break;
 
-     case jobTitle.includes("Classify Text Into Categories"):
+     case jobTitle.includes("Classify Text Into Categories") || jobTitle.includes("Classify Reviews As"):
 
 id="2278086"
 autofill_radios_random=["1","2"];
