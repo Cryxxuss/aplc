@@ -334,8 +334,9 @@ var QuizM = QM.innerText;
        QuizM.includes("19/19") || QuizM.includes("20/20") || QuizM.includes("21/21") || QuizM.includes("22/22") || QuizM.includes("23/23") || QuizM.includes("24/24") || QuizM.includes("25/25")){
        document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
     }
-    if(jobTitle.includes("Text Classification - Agreement") || jobTitle.includes("Look At Advertisements") || jobTitle.includes("Classify Web Pages")){
-           if(QuizM.includes("4/5") || QuizM.includes("5/6")){
+    if(jobTitle.includes("Text Classification - Agreement") || jobTitle.includes("Look At Advertisements") || jobTitle.includes("Classify Web Pages")
+       || jobTitle.includes("Classify Reviews As")){
+           if(QuizM.includes("4/5") || QuizM.includes("5/6")) || QuizM.includes("8/10")){
                document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
 
            }else if(QuizM.includes("Work")){
