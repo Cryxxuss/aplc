@@ -108,7 +108,7 @@ if(window.location.href.includes('jazakk')){
                                                                     reset_time=50;
                                                                 }
                                                                 else{
-                                                                     reset_time=20;
+                                                                     reset_time=100;
                                                                    }
                                                                 if(tarea_id!=974846){
                                                                     crear_buscador(tarea_nombre,link_tarea,tarea_id,reset_time);
