@@ -256,7 +256,7 @@ autofill_radios_random=["1","2","3"];
 id="2278086"
 autofill_radios_random=["1","2"];
 
-		setInterval(Enviar_task, Math.round(Math.random() * (22000 - 21000)) + 21000);
+		setInterval(Enviar_task, Math.round(Math.random() * (12000 - 11000)) + 11000);
      break;
 
      case jobTitle.includes("Census Geographic Identifier Research"):
