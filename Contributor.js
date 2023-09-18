@@ -1026,10 +1026,9 @@ if(window.location.href.includes('jazakk')){
     }
 
     function filtrar_block(tareas){
-        var lista_block=GM_getValue('blockList')||[
-            "Judge Whether Sentences",
-            "Classify Web Pages With Hate Speech",
-            "Classify Web Pages With Drugs Content",
+    var lista_block=GM_getValue('blockList')||[
+        "Classify Web Pages With Illegal Download",
+        "Judge Whether Sentences",
         "Matching Synthetic Voices",
         "Matching Synthetic Voices To Faces For A Virtual Agent (W1p2 A1c2)",
         "Find Topics In Review",
