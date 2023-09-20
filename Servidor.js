@@ -272,7 +272,7 @@ autofill_radios_random=["1","2"];
 
 id="2276842"
 
-		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
+		setInterval(Enviar_task, Math.round(Math.random() * (12000 - 11000)) + 11000);
      break;
 
     default:
