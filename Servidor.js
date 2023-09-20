@@ -283,6 +283,14 @@ autofill_radios_random=["1","2","3"];
 		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
 
+     case jobTitle.includes("Musicnet Pilo"):
+
+id="2283143"
+autofill_radios_random=["1","2","3"];
+
+		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
+     break;
+
     default:
 
     break;
