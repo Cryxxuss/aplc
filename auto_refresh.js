@@ -1,7 +1,3 @@
-(function() {
-    'use strict';
-
-setTimeout(function(){fillAnwsersa();}, 700);
 /*function refresh() {jQuery('#content').html("APPEN");setTimeout(jQuery('#content').load(document.URL + ' #content')); }
 
 var titleDivap = document.createElement("div");
