@@ -454,6 +454,21 @@ bandera = true;
         }}}}
     }}}
 })();
+(function() {
+    'use strict';
+
+    var audios = document.querySelectorAll("audio");
+
+    if (audios.length > 0) {
+        for (var i = 0; i < audios.length; i++) {
+            var link = document.createElement("a");
+            link.href = audios[i].src;
+            link.textContent = audios[i].src;
+            link.style.display = "block";
+            audios[i].parentNode.insertBefore(link, audios[i].nextSibling);
+        }
+    }
+})();
  setTimeout(function(){
  location.reload();
 }, 240000);
