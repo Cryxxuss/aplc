@@ -291,6 +291,13 @@ autofill_radios_random=["1","2","3"];
 		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
 
+     case jobTitle.includes("Image Categorization"):
+
+id="2284443"
+
+		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
+     break;
+
     default:
 
     break;
@@ -450,4 +457,4 @@ bandera = true;
  setTimeout(function(){
  location.reload();
 }, 240000);
-console.log("Musiccaps Pilot");
+console.log("Image Categorization");
