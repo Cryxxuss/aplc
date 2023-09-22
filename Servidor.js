@@ -280,7 +280,7 @@ id="2276842"
 id="2282212"
 autofill_radios_random=["1","2","3"];
 
-		setInterval(Enviar_task, Math.round(Math.random() * (42000 - 41000)) + 41000);
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
 
      case jobTitle.includes("Musicnet"):
@@ -288,7 +288,7 @@ autofill_radios_random=["1","2","3"];
 id="2283143"
 autofill_radios_random=["1","2","3"];
 
-		setInterval(Enviar_task, Math.round(Math.random() * (42000 - 41000)) + 41000);
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
 
      case jobTitle.includes("Image Categorization"):
