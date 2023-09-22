@@ -283,12 +283,12 @@ autofill_radios_random=["1","2","3"];
 		setInterval(Enviar_task, Math.round(Math.random() * (42000 - 41000)) + 41000);
      break;
 
-     case jobTitle.includes("Musicnet Pilo"):
+     case jobTitle.includes("Musicnet"):
 
 id="2283143"
 autofill_radios_random=["1","2","3"];
 
-		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
+		setInterval(Enviar_task, Math.round(Math.random() * (42000 - 41000)) + 41000);
      break;
 
      case jobTitle.includes("Image Categorization"):
