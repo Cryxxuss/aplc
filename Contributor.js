@@ -74,7 +74,7 @@ if(window.location.href.includes('jazakk')){
                                     'timeout':10000,
                                     'onload':function(response){
                                         if(response.status==200){
-                                            setTimeout(start_search,4000);
+                                            setTimeout(start_search,8000);
                                             aumentar_contador(".request_success");
                                             var data_tareas=JSON.parse($(response.responseText).find('#task-listing-datatable').attr('data-tasks'));
                                             var tareas_filtradas=filtrar_block(data_tareas);
