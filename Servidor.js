@@ -457,4 +457,4 @@ bandera = true;
  setTimeout(function(){
  location.reload();
 }, 240000);
-console.log("Image Categorization");
+console.log("IMusiccaps");
