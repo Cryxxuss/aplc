@@ -33,8 +33,7 @@ if(jobTitlee.includes("There is no work")){
                     if (r.finalUrl.includes("view")){ // task grabbed
                         window.location.href = r.finalUrl;
                     }
-                 //   else if (r.status==404 || r.status==404) {
-                    else if (r.status==405) {
+                    else if (r.status==405 || r.status==404) {
                         location.reload();
                     }
                     else if (r.responseText.includes("Expired")) {
