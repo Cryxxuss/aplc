@@ -1,4 +1,4 @@
-/*function refresh() {jQuery('#content').html("APPEN");setTimeout(jQuery('#content').load(document.URL + ' #content')); }
+function refresh() {jQuery('#content').html("APPEN");setTimeout(jQuery('#content').load(document.URL + ' #content')); }
 
 var titleDivap = document.createElement("div");
 var titleap = document.querySelector(".content").innerText;
@@ -33,7 +33,8 @@ if(jobTitlee.includes("There is no work")){
                     if (r.finalUrl.includes("view")){ // task grabbed
                         window.location.href = r.finalUrl;
                     }
-                    else if (r.status==404 || r.status==404) {
+                 //   else if (r.status==404 || r.status==404) {
+                    else if (r.status==405) {
                         location.reload();
                     }
                     else if (r.responseText.includes("Expired")) {
@@ -53,4 +54,4 @@ if(jobTitlee.includes("There is no work")){
  setTimeout(function(){
  location.reload();
 }, 300000);
-console.log("Actualizando a 400");*/
+console.log("Actualizando a 400");
