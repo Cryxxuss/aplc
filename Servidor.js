@@ -275,7 +275,7 @@ id="2276842"
 		setInterval(Enviar_task, Math.round(Math.random() * (12000 - 11000)) + 11000);
      break;
 
-     case jobTitle.includes("Musiccaps") || jobTitle.includes("Fma Captioning Study") || jobTitle.includes("Fma Reasoning"):
+     case jobTitle.includes("Musiccaps") || jobTitle.includes("Fma Captioning Study") || jobTitle.includes("Fma Reasoning") || jobTitle.includes("Magnatagatune Reasoning"):
 
 id="2285129"
 autofill_radios_random=["1","2","3"];
