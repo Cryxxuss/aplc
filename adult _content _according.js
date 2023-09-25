@@ -413,5 +413,6 @@ let datos= [
 {url:"http://image.issuu.com/230731101517-4032fd8d0e2b8c8d5156dc3c5dab0ce1/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/230605091311-941837ad31d69f4783cd558475a87481/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/230626152027-d3ee56c9054f3ea3e47d0f431f11037f/jpg/page_1_thumb_large.jpg",respuesta: false},
+{url:"http://image.issuu.com/230705080522-8ebdafee41ad683ac695da9b3c264bc4/jpg/page_1_thumb_large.jpg",respuesta: false},
 ]
 })();
