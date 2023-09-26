@@ -105,7 +105,7 @@ if(window.location.href.includes('jazakk')){
                                                                      reset_time=50;
                                                                    }
                                                                 else if(tarea_nombre.includes("Adult Content According")){
-                                                                    reset_time=50;
+                                                                    reset_time=10;
                                                                 }
                                                                 else{
                                                                      reset_time=100000;
