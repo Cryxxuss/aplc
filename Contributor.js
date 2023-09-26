@@ -108,7 +108,7 @@ if(window.location.href.includes('jazakk')){
                                                                     reset_time=50;
                                                                 }
                                                                 else{
-                                                                     reset_time=100;
+                                                                     reset_time=100000;
                                                                    }
                                                                 if(tarea_id!=974846){
                                                                     crear_buscador(tarea_nombre,link_tarea,tarea_id,reset_time);
@@ -1141,7 +1141,7 @@ if(window.location.href.includes('jazakk')){
 setTimeout(function(){
 setTimeout(function(){
 setTimeout(function(){
-    location.reload();
+ //   location.reload();
 }, 300000);
 }, 300000);
 }, 300000);
