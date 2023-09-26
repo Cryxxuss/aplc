@@ -104,7 +104,7 @@ if(window.location.href.includes('jazakk')){
                                                                   ){
                                                                      reset_time=50;
                                                                    }
-                                                                else if(tarea_nombre.toLowerCase().includes("review annotated buildings")){
+                                                                else if(tarea_nombre.includes("Adult Content According")){
                                                                     reset_time=50;
                                                                 }
                                                                 else{
