@@ -203,7 +203,7 @@ autofill_radios_random=["1","2"];
 id="2285129"
 autofill_radios_random=["1","2"];
 
-		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
 
      case jobTitle.includes("Classify Web Pages"):
