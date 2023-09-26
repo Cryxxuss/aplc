@@ -298,6 +298,13 @@ setInterval(eliminarnotq,8000);
 		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
 
+     case jobTitle.includes("Is It A Full Font?"):
+
+id="2288322"
+autofill_radios_random=["1"];
+		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
+     break;
+
     default:
 
     break;
