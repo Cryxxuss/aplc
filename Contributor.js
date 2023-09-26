@@ -100,9 +100,9 @@ if(window.location.href.includes('jazakk')){
                                                             if(elemts.active){
                                                                 if(tarea_nombre.toLowerCase().includes("rate content of animated gifs")||
                                                                    tarea_nombre.toLowerCase().includes("f8 launch")||
-                                                                   tarea_nombre.toLowerCase().includes("new explicit")
+                                                                   tarea_nombre.toLowerCase().includes("Adult Content")
                                                                   ){
-                                                                     reset_time=2000;
+                                                                     reset_time=50;
                                                                    }
                                                                 else if(tarea_nombre.toLowerCase().includes("review annotated buildings")){
                                                                     reset_time=50;
