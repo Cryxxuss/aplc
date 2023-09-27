@@ -302,7 +302,7 @@ setInterval(eliminarnotq,8000);
 
 id="2288322"
 autofill_radios_random=["1"];
-		setInterval(Enviar_encuesta, Math.round(Math.random() * (32000 - 31000)) + 31000);
+		setInterval(Enviar_encuesta, Math.round(Math.random() * (12000 - 11000)) + 11000);
      break;
 
      case jobTitle.includes("Validate Questions And Answers"):
@@ -393,8 +393,8 @@ setTimeout(Enviar_work);
     }else{
         if(jobTitle.includes("Text Classification - Agreement") || jobTitle.includes("Look At Advertisements") || jobTitle.includes("Classify Web Pages")
            || jobTitle.includes("Classify Reviews As") || jobTitle.includes("Musiccaps") || jobTitle.includes("Musicnet") || jobTitle.includes("Fma") || jobTitle.includes("Reasoning")
-	   || jobTitle.includes("Matching") || jobTitle.includes("Validate Questions And Answers") || jobTitle.includes("4 of 5") || jobTitle.includes("5 of 6")
- 	   || jobTitle.includes("7 of 10") || jobTitle.includes("8 of 10") || jobTitle.includes("9 of 10")){
+	   || jobTitle.includes("Matching") || jobTitle.includes("Validate Questions And Answers") || QuizM.includes("4 of 5") || QuizM.includes("5 of 6")
+ 	   || QuizM.includes("7 of 10") || QuizM.includes("8 of 10") || QuizM.includes("9 of 10")){
            if(QuizM.includes("4/5") || QuizM.includes("5/6") || QuizM.includes("8/10") || QuizM.includes("9/10")){
                document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
            }
