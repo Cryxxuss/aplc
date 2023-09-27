@@ -1,5 +1,6 @@
 (function() {
     'use strict';
+//Te Amo APLC 1006
 var id=""
 var auto_fill_radios="";
 var autofill_radios_random=["1","2"];
