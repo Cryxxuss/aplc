@@ -268,7 +268,7 @@ autofill_radios_random=["1","2"];
 		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
 
-     case jobTitle.includes("Is This 2 Letters Match?"):
+     case jobTitle.includes("Is This 2 Letters Match?") || jobTitle.includes("Letter Match"):
 
 id="2276842"
 
