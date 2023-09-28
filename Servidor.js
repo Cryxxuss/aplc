@@ -296,7 +296,7 @@ autofill_radios_random=["1","2","3"];
 
 id="2284443"
 setInterval(eliminarnotq,8000);
-		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+		setInterval(Enviar_encuesta, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
 
      case jobTitle.includes("Is It A Full Font?"):
