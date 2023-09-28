@@ -313,6 +313,13 @@ autofill_radios_random=["1","2","3"];
 		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
 
+     case jobTitle.includes("A_b_llama-2-13B"):
+
+id="2288522"
+autofill_radios_random=["1","2","3"];
+		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
+     break;
+
     default:
 
     break;
@@ -396,7 +403,7 @@ setTimeout(Enviar_work);
            || jobTitle.includes("Classify Reviews As") || jobTitle.includes("Musiccaps") || jobTitle.includes("Musicnet") || jobTitle.includes("Fma") || jobTitle.includes("Reasoning")
 	   || jobTitle.includes("Matching") || jobTitle.includes("Validate Questions And Answers") || QuizM.includes("4 of 5") || QuizM.includes("5 of 6")
  	   || QuizM.includes("7 of 10") || QuizM.includes("8 of 10") || QuizM.includes("9 of 10")){
-           if(QuizM.includes("4/5") || QuizM.includes("5/6") || QuizM.includes("8/10") || QuizM.includes("9/10")){
+           if(QuizM.includes("4/5") || QuizM.includes("5/6") || QuizM.includes("9/10") || QuizM.includes("9/10")){
                document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
            }
       }
