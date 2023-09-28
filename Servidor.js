@@ -320,6 +320,13 @@ autofill_checkboxes_random=["1","2","3"];
 		setInterval(Enviar_task, Math.round(Math.random() * (302000 - 301000)) + 301000);
      break;
 
+     case jobTitle.includes("Image Comparison"):
+
+id="2277449"
+autofill_radios_random=["1","2"];
+		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
+     break;
+
     default:
 
     break;
