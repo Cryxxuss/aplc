@@ -324,7 +324,7 @@ autofill_checkboxes_random=["1","2","3"];
 
 id="2277449"
 autofill_radios_random=["1","2"];
-		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
 
     default:
