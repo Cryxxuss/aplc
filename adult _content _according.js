@@ -62,6 +62,7 @@ if(jobTitle.includes("Adult Content According")){
 	}
 
 let datos= [
+{url:"http://image.issuu.com/141203111924-98ab177596524480953aadff42165fbc/jpg/page_1_thumb_large.jpg",respuesta: true},
 {url:"http://image.issuu.com/141104095731-9e7db95df5fe4b7698aea9cd07f6bb7e/jpg/page_1_thumb_large.jpg",respuesta: true},
 {url:"http://image.issuu.com/141104095803-2c676846613b4438b6472855c669242e/jpg/page_1_thumb_large.jpg",respuesta: true},
 {url:"http://image.issuu.com/141104095812-1c27177aa7f74a0a8857526bcf95c291/jpg/page_1_thumb_large.jpg",respuesta: true},
@@ -414,5 +415,6 @@ let datos= [
 {url:"http://image.issuu.com/230605091311-941837ad31d69f4783cd558475a87481/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/230626152027-d3ee56c9054f3ea3e47d0f431f11037f/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/230705080522-8ebdafee41ad683ac695da9b3c264bc4/jpg/page_1_thumb_large.jpg",respuesta: false},
+{url:"http://image.issuu.com/230821174646-9d78698fda2b781f461373f6c9124d88/jpg/page_1_thumb_large.jpg",respuesta: false},
 ]
 })();
