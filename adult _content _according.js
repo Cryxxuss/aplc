@@ -470,3 +470,4 @@ let vacias = [
 {url:"http://image.issuu.com/4eef5122d1f040dd8ddb11ea22dcd9b0/jpg/page_1_thumb_large.jpg"},
 ]
 })();
+console.log("agregue las vacias y las 3 que respondimos");
