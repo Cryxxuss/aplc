@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-setTimeout(function(){fillAnwsers();}, 6000);
+setTimeout(function(){fillAnwsers();}, 5000);
 
 function fillAnwsers(){
 
