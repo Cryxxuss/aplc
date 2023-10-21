@@ -436,6 +436,7 @@ let datos= [
 {url:"http://image.issuu.com/230821174646-9d78698fda2b781f461373f6c9124d88/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/230605144835-d4bbb7d7355dec943c9680df216680bd/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/230822123044-609aeca9b01b7a88ae1f26e8558d4f4d/jpg/page_1_thumb_large.jpg",respuesta: false},
+{url:"http://image.issuu.com/231021002511-66f31812abd1dddfbc97d917f98b751d/jpg/page_1_thumb_large.jpg",respuesta: false},
 ]
 let vacias = [
 {url:"http://image.issuu.com/230815214608-bf44fb3e47e247930c2a86118f312af6/jpg/page_1_thumb_large.jpg"},
