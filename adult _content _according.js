@@ -471,6 +471,7 @@ let vacias = [
 {url:"http://image.issuu.com/230707104527-e36b48340901c064fbd3dc610eb6120c/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/230615074640-4ae41508d798473cf13a04d95e7acbe9/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/3a231897e39245c586e61eb14bab4df5/jpg/page_1_thumb_large.jpg"},
+{url:"http://image.issuu.com/230624143208-6d41222aa85353c894f620f095719054/jpg/page_1_thumb_large.jpg"},
 ]
 })();
 console.log("agregue las vacias y las 3 que respondimos");
