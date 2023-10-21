@@ -473,7 +473,6 @@ let vacias = [
 {url:"http://image.issuu.com/230814234303-8288817ec174230b00729a7f2dab2451/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/230605091311-941837ad31d69f4783cd558475a87481/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/231020132908-839d61a6220bec53600c415ffef6b81e/jpg/page_1_thumb_large.jpg"},
-{url:"http://image.issuu.com/230707104527-e36b48340901c064fbd3dc610eb6120c/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/230615074640-4ae41508d798473cf13a04d95e7acbe9/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/230624143208-6d41222aa85353c894f620f095719054/jpg/page_1_thumb_large.jpg"},
 ]
