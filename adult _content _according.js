@@ -475,4 +475,4 @@ let vacias = [
 {url:"http://image.issuu.com/230624143208-6d41222aa85353c894f620f095719054/jpg/page_1_thumb_large.jpg"},
 ]
 })();
-console.log("agregue las vacias y las 5+1 que respondimos");
+console.log("agregue las vacias y las 5+2 que respondimos");
