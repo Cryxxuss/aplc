@@ -441,6 +441,7 @@ let datos= [
 {url:"http://image.issuu.com/a0641ac93e5946bcb826c81208732f8f/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/230627133634-a8e01e650a5be2379110f5a912f185d9/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/230904070018-a75079fdb03e950fab5ddb1491160b94/jpg/page_1_thumb_large.jpg",respuesta: false},
+{url:"http://image.issuu.com/3a231897e39245c586e61eb14bab4df5/jpg/page_1_thumb_large.jpg",respuesta: false},
 ]
 let vacias = [
 {url:"http://image.issuu.com/230815214608-bf44fb3e47e247930c2a86118f312af6/jpg/page_1_thumb_large.jpg"},
@@ -470,7 +471,6 @@ let vacias = [
 {url:"http://image.issuu.com/231020132908-839d61a6220bec53600c415ffef6b81e/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/230707104527-e36b48340901c064fbd3dc610eb6120c/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/230615074640-4ae41508d798473cf13a04d95e7acbe9/jpg/page_1_thumb_large.jpg"},
-{url:"http://image.issuu.com/3a231897e39245c586e61eb14bab4df5/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/230624143208-6d41222aa85353c894f620f095719054/jpg/page_1_thumb_large.jpg"},
 ]
 })();
