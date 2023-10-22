@@ -1,6 +1,19 @@
+// ==UserScript==
+// @name         Servidor 2.0
+// @namespace    http://tampermonkey.net/
+// @version      1
+// @description  try to take over the world!
+// @author       Jazakk
+// @match        https://view.appen.io/assignments/*
+// @connect      account.appen.com
+// @connect      view.appen.io
+// @run-at       document-end
+// ==/UserScript==
+
 (function() {
     'use strict';
 //Te Amo APLC 1006
+
 var id=""
 var auto_fill_radios="";
 var autofill_radios_random=["1","2"];
@@ -19,7 +32,7 @@ var titleapp = document.querySelector(".job-title").innerText;
 titleDivapp.innerHTML = titleapp;
 var jobTitle = titleDivapp.innerText;
 
-    setInterval(getGuia_interval,25000);
+    setInterval(getGuia_interval,30000);
 function getGuia_interval(){
 
 document.getElementsByClassName('fas fa-file-signature ')[0].click();
@@ -145,7 +158,7 @@ autofill_radios_random=["1","2"];
 id="2185656"
 autofill_radios_random=["1","2"];
 
-		setInterval(Enviar_Sin_marcar, Math.round(Math.random() * (13000 - 11000)) + 11000);
+	//	setInterval(Enviar_Sin_marcar, Math.round(Math.random() * (13000 - 11000)) + 11000);
      break;
 
      case jobTitle.includes("Find The Official Website Of Businesses"):
@@ -193,10 +206,10 @@ autofill_radios_random=["1","2"];
      case jobTitle.includes("Select The Product Which"):
 
 id="2261762"
-setInterval(eliminarnotq,8000)
+setInterval(eliminarnotq,5000)
 autofill_radios_random=["1","2"];
 
-		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+		setTimeout(function(){setInterval(Enviar_task, Math.round(Math.random() * (8000 - 4000)) + 4000)},58000);
      break;
 
      case jobTitle.includes("Matching"):
@@ -320,11 +333,74 @@ autofill_checkboxes_random=["1","2","3"];
 		setInterval(Enviar_task, Math.round(Math.random() * (302000 - 301000)) + 301000);
      break;
 
-     case jobTitle.includes("Image Comparison"):
+     case jobTitle.includes("No sirve"):
 
 id="2277449"
 autofill_radios_random=["1","2"];
 		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Home Depot Recommendations"):
+
+id="2301587"
+autofill_radios_random=["1","2","1","2"];
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Intent-Based"):
+
+id="2301431"
+autofill_radios_random=["1","2","1","2"];
+		setInterval(Enviar_task, Math.round(Math.random() * (12000 - 11000)) + 11000);
+     break;
+
+     case jobTitle.includes("Relabelling"):
+
+id="2301963"
+autofill_radios_random=["1","2","1"];
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Confirm Bounding Boxes"):
+
+id="2272000"
+autofill_radios_random=["1","2"];
+		setInterval(Enviar_Sin_marcar, Math.round(Math.random() * (33000 - 32000)) + 32000);
+     break;
+
+     case jobTitle.includes("Outline And Label Items In Bin With Polygons"):
+
+id="2293455"
+setTimeout(rocktq,50000);
+		setInterval(Enviar_task, Math.round(Math.random() * (190000 - 185000)) + 185000);
+     break;
+
+     case jobTitle.includes("Mark The Passages"):
+
+id="2304036"
+setTimeout(eliminarnotq,5000);
+		setInterval(Enviar_task, Math.round(Math.random() * (68000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Which Is The Best Explanation"):
+
+id="2307326"
+autofill_radios_random=["1","2","1"];
+		setInterval(Enviar_task, Math.round(Math.random() * (68000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Compare Intent Relevance"):
+
+id="2308694"
+autofill_radios_random=["1","2"];
+		setInterval(Enviar_task, Math.round(Math.random() * (16000 - 11000)) + 11000);
+     break;
+
+     case jobTitle.includes("Verify Description Of Website"):
+
+id="2309777"
+autofill_radios_random=["1","2"];
+		setInterval(Enviar_task, Math.round(Math.random() * (66000 - 61000)) + 61000);
      break;
 
     default:
@@ -408,7 +484,7 @@ setTimeout(Enviar_work);
     }else{
         if(jobTitle.includes("Text Classification - Agreement") || jobTitle.includes("Look At Advertisements") || jobTitle.includes("Classify Web Pages")
            || jobTitle.includes("Classify Reviews As") || jobTitle.includes("Musiccaps") || jobTitle.includes("Musicnet") || jobTitle.includes("Fma") || jobTitle.includes("Reasoning")
-	   || jobTitle.includes("Matching") || jobTitle.includes("Validate Questions And Answers") || QuizM.includes("4 of 5") || QuizM.includes("5 of 6")
+	   || jobTitle.includes("Matching") || jobTitle.includes("Validate Questions And Answers") || QuizM.includes("5 of 6")
  	   || QuizM.includes("7 of 10") || QuizM.includes("8 of 10") || QuizM.includes("9 of 10")){
            if(QuizM.includes("4/5") || QuizM.includes("5/6") || QuizM.includes("9/10") || QuizM.includes("9/10")){
                document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
@@ -500,7 +576,4 @@ bandera = true;
         }
     }
 })();
- setTimeout(function(){
- location.reload();
-}, 240000);
 console.log("autofill_checkboxes_random");
