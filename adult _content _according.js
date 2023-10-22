@@ -77,6 +77,8 @@ if(jobTitle.includes("Adult Content According")){
 	}
 
 let datos= [
+{url:"http://image.issuu.com/db8b2d3f56614a8cb9459d83168b4c0a/jpg/page_1_thumb_large.jpg",respuesta: true},
+{url:"http://image.issuu.com/230616184446-823d34788a3f2e84aa55e1d5f2924913/jpg/page_1_thumb_large.jpg",respuesta: true},
 {url:"http://image.issuu.com/4eef5122d1f040dd8ddb11ea22dcd9b0/jpg/page_1_thumb_large.jpg",respuesta: true},
 {url:"http://image.issuu.com/230707104527-e36b48340901c064fbd3dc610eb6120c/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/230728133415-5dedc542ed74de0e55b1911a5462b66d/jpg/page_1_thumb_large.jpg",respuesta: false},
@@ -451,9 +453,11 @@ let datos= [
 {url:"http://image.issuu.com/230615074640-4ae41508d798473cf13a04d95e7acbe9/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/230809194924-5ac073ebb15369f74d43c61fff32396c/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/aad3ec116dd2cb3b73e7de106ec6efc4/jpg/page_1_thumb_large.jpg",respuesta: false},
+{url:"http://image.issuu.com/230815214608-bf44fb3e47e247930c2a86118f312af6/jpg/page_1_thumb_large.jpg",respuesta: false},
+{url:"http://image.issuu.com/230602054741-2bea611a57afe75876c43ce07148a86b/jpg/page_1_thumb_large.jpg",respuesta: false},
+{url:"http://image.issuu.com/230622155733-bd2d9f7347611de0baa80b4e30ab9eb1/jpg/page_1_thumb_large.jpg",respuesta: false},
 ]
 let vacias = [
-{url:"http://image.issuu.com/230815214608-bf44fb3e47e247930c2a86118f312af6/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/230610104513-2d682a8acff060ebcbc89ca6856faf03/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/892853105e304d43b1c511f9e84c1a38/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/88acb5a886f54b4d8a0a8520c218fbb2/jpg/page_1_thumb_large.jpg"},
@@ -462,15 +466,12 @@ let vacias = [
 {url:"http://image.issuu.com/230614183929-08e72f257e96e094df08d395bd21fd46/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/356afe54ac1544438eb5941861d0586b/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/230830165056-e816b3ae10f9f1ea91cfa4e2a3d4ca55/jpg/page_1_thumb_large.jpg"},
-{url:"http://image.issuu.com/230616184446-823d34788a3f2e84aa55e1d5f2924913/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/230726130353-58de3d89f3a42b5dc39f2ae8cb55a4b2/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/230607051834-ce674a20c7d345dd2f28ee31fbcc04e1/jpg/page_1_thumb_large.jpg"},
-{url:"http://image.issuu.com/db8b2d3f56614a8cb9459d83168b4c0a/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/230602054741-2bea611a57afe75876c43ce07148a86b/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/0a0ae6b85a024aafac11c59d97eb39e3/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/ffcd9fddb60f4f45bd4ef45466025f77/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/20b13f344fbe490c83b816efe276d0c5/jpg/page_1_thumb_large.jpg"},
-{url:"http://image.issuu.com/230622155733-bd2d9f7347611de0baa80b4e30ab9eb1/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/150422135539-f20009e1c59e4605a57a15a8a813bbf3/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/230814234303-8288817ec174230b00729a7f2dab2451/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/230605091311-941837ad31d69f4783cd558475a87481/jpg/page_1_thumb_large.jpg"},
@@ -478,4 +479,4 @@ let vacias = [
 {url:"http://image.issuu.com/230624143208-6d41222aa85353c894f620f095719054/jpg/page_1_thumb_large.jpg"},
 ]
 })();
-console.log("agregue las vacias y las 5+2 que respondimos");
+console.log("nuevas tqs");
