@@ -86,6 +86,7 @@ var QuizMM = WM.innerText;
 }}
 
 let datos= [
+{url:"http://image.issuu.com/230610104513-2d682a8acff060ebcbc89ca6856faf03/jpg/page_1_thumb_large.jpg",respuesta: true},
 {url:"http://image.issuu.com/230615074640-4ae41508d798473cf13a04d95e7acbe9/jpg/page_1_thumb_large.jpg",respuesta: true},
 {url:"http://image.issuu.com/db8b2d3f56614a8cb9459d83168b4c0a/jpg/page_1_thumb_large.jpg",respuesta: true},
 {url:"http://image.issuu.com/230616184446-823d34788a3f2e84aa55e1d5f2924913/jpg/page_1_thumb_large.jpg",respuesta: true},
@@ -467,17 +468,16 @@ let datos= [
 {url:"http://image.issuu.com/230622155733-bd2d9f7347611de0baa80b4e30ab9eb1/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/ffcd9fddb60f4f45bd4ef45466025f77/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/230726130353-58de3d89f3a42b5dc39f2ae8cb55a4b2/jpg/page_1_thumb_large.jpg",respuesta: false},
+{url:"http://image.issuu.com/230702151224-c6e3d06350c227d727a42ae4c5e6f36b/jpg/page_1_thumb_large.jpg",respuesta: false},
+{url:"http://image.issuu.com/230607051834-ce674a20c7d345dd2f28ee31fbcc04e1/jpg/page_1_thumb_large.jpg",respuesta: false},
 ]
 let vacias = [
 {url:"http://image.issuu.com/230619103912-8f753627d79ed17bdb6f06366e0aa2a4/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/221f33e4edddad8cb07a8e9b1709118a/jpg/page_1_thumb_large.jpg"},
-{url:"http://image.issuu.com/230610104513-2d682a8acff060ebcbc89ca6856faf03/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/892853105e304d43b1c511f9e84c1a38/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/88acb5a886f54b4d8a0a8520c218fbb2/jpg/page_1_thumb_large.jpg"},
-{url:"http://image.issuu.com/230702151224-c6e3d06350c227d727a42ae4c5e6f36b/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/230614183929-08e72f257e96e094df08d395bd21fd46/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/230830165056-e816b3ae10f9f1ea91cfa4e2a3d4ca55/jpg/page_1_thumb_large.jpg"},
-{url:"http://image.issuu.com/230607051834-ce674a20c7d345dd2f28ee31fbcc04e1/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/0a0ae6b85a024aafac11c59d97eb39e3/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/20b13f344fbe490c83b816efe276d0c5/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/150422135539-f20009e1c59e4605a57a15a8a813bbf3/jpg/page_1_thumb_large.jpg"},
