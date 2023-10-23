@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-setTimeout(function(){fillAnwsers();}, 5000);
+setTimeout(function(){fillAnwsers();}, 10000);
 //activar abrir en otra pestaña
 let element = document.querySelector('.btn-cf-blue');
 element.setAttribute("formtarget", "_blank");
@@ -16,7 +16,7 @@ function fillAnwsers(){
 
 if(jobTitle.includes("Adult Content According")){
 
-    var jsawesome = document.querySelectorAll(".jsawesome");
+    var jsawesome = document.querySelectorAll(".cml");
     jsawesome.forEach(wrapper => {
         var titleDiv = wrapper.querySelector("div");
         var p = wrapper.querySelectorAll("p");
@@ -48,7 +48,8 @@ if(jobTitle.includes("Adult Content According")){
 				primero[1].click();
 				break;
 			}
-		}
+            setTimeout(enviar,1000);
+        }
         else if(data2.length > 0){
 
 			titleDiv.style.backgroundColor = "blue";
@@ -59,10 +60,10 @@ if(jobTitle.includes("Adult Content According")){
 
 			var iddd2=id2+"[question1]";
 			var primero2 = document.querySelectorAll("[name='"+iddd2+"']");
+
+            setTimeout(enviar,1000);
         }
      });
-
-//	 enviar();
 	}
 }
 
