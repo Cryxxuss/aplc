@@ -77,8 +77,13 @@ if(jobTitle.includes("Adult Content According")){
     }
 
 	function enviar(){
-	   document.getElementsByClassName('submit btn btn-cf-blue ')[0].click();
-	}
+var WM = document.createElement("div");
+var titleapppe = document.querySelector(".navbar").innerText;
+WM.innerHTML = titleapppe;
+var QuizMM = WM.innerText;
+        if(QuizMM.includes("Work")){
+        document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
+}}
 
 let datos= [
 {url:"http://image.issuu.com/230615074640-4ae41508d798473cf13a04d95e7acbe9/jpg/page_1_thumb_large.jpg",respuesta: true},
