@@ -86,6 +86,7 @@ var QuizMM = WM.innerText;
 }}
 
 let datos= [
+{url:"http://image.issuu.com/230606043812-de40fb0a14516aa971f27fc2b37b90ac/jpg/page_1_thumb_large.jpg",respuesta: true},
 {url:"http://image.issuu.com/221f33e4edddad8cb07a8e9b1709118a/jpg/page_1_thumb_large.jpg",respuesta: true},
 {url:"http://image.issuu.com/230610104513-2d682a8acff060ebcbc89ca6856faf03/jpg/page_1_thumb_large.jpg",respuesta: true},
 {url:"http://image.issuu.com/230615074640-4ae41508d798473cf13a04d95e7acbe9/jpg/page_1_thumb_large.jpg",respuesta: true},
@@ -461,7 +462,6 @@ let datos= [
 {url:"http://image.issuu.com/230906100158-f2de22c31fc847a9110f2a357d2fea22/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/356afe54ac1544438eb5941861d0586b/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/230620143831-f8fd50802f0d5aadf096e29aed1a4c47/jpg/page_1_thumb_large.jpg",respuesta: false},
-{url:"http://image.issuu.com/230606043812-de40fb0a14516aa971f27fc2b37b90ac/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/230809194924-5ac073ebb15369f74d43c61fff32396c/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/aad3ec116dd2cb3b73e7de106ec6efc4/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/230815214608-bf44fb3e47e247930c2a86118f312af6/jpg/page_1_thumb_large.jpg",respuesta: false},
