@@ -86,7 +86,7 @@ var QuizMM = WM.innerText;
 }}
 
 let datos= [
-{url:"http://image.issuu.com/230606043812-de40fb0a14516aa971f27fc2b37b90ac/jpg/page_1_thumb_large.jpg",respuesta: true},
+{url:"http://image.issuu.com/230606043812-de40fb0a14516aa971f27fc2b37b90ac/jpg/page_1_thumb_large.jpg",respuesta: false},
 {url:"http://image.issuu.com/221f33e4edddad8cb07a8e9b1709118a/jpg/page_1_thumb_large.jpg",respuesta: true},
 {url:"http://image.issuu.com/230610104513-2d682a8acff060ebcbc89ca6856faf03/jpg/page_1_thumb_large.jpg",respuesta: true},
 {url:"http://image.issuu.com/230615074640-4ae41508d798473cf13a04d95e7acbe9/jpg/page_1_thumb_large.jpg",respuesta: true},
