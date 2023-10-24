@@ -86,6 +86,7 @@ var QuizMM = WM.innerText;
 }}
 
 let datos= [
+{url:"http://image.issuu.com/221f33e4edddad8cb07a8e9b1709118a/jpg/page_1_thumb_large.jpg",respuesta: true},
 {url:"http://image.issuu.com/230610104513-2d682a8acff060ebcbc89ca6856faf03/jpg/page_1_thumb_large.jpg",respuesta: true},
 {url:"http://image.issuu.com/230615074640-4ae41508d798473cf13a04d95e7acbe9/jpg/page_1_thumb_large.jpg",respuesta: true},
 {url:"http://image.issuu.com/db8b2d3f56614a8cb9459d83168b4c0a/jpg/page_1_thumb_large.jpg",respuesta: true},
@@ -474,7 +475,6 @@ let datos= [
 ]
 let vacias = [
 {url:"http://image.issuu.com/230619103912-8f753627d79ed17bdb6f06366e0aa2a4/jpg/page_1_thumb_large.jpg"},
-{url:"http://image.issuu.com/221f33e4edddad8cb07a8e9b1709118a/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/892853105e304d43b1c511f9e84c1a38/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/88acb5a886f54b4d8a0a8520c218fbb2/jpg/page_1_thumb_large.jpg"},
 {url:"http://image.issuu.com/230614183929-08e72f257e96e094df08d395bd21fd46/jpg/page_1_thumb_large.jpg"},
