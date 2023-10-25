@@ -1,4 +1,4 @@
-setTimeout(function(){fillAnwsersa();}, 700);
+setTimeout(function(){fillAnwsersa();}, 600);
 
 function fillAnwsersa(){
 var titleDivap = document.createElement("div");
