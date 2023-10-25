@@ -1,14 +1,3 @@
-setTimeout(function(){fillAnwsersa();}, 500);
-
-function fillAnwsersa(){
-var titleDivap = document.createElement("div");
-var titleap = document.querySelector(".content").innerText;
-titleDivap.innerHTML = titleap;
-var jobTitlee = titleDivap.innerText;
-
-if(jobTitlee.includes("There is no work")){
-location.reload();
-}}
 /*function refresh() {jQuery('#content').html("APPEN");setTimeout(jQuery('#content').load(document.URL + ' #content')); }
 
 var titleDivap = document.createElement("div");
