@@ -1,15 +1,3 @@
-// ==UserScript==
-// @name         Servidor 2.0
-// @namespace    http://tampermonkey.net/
-// @version      1
-// @description  try to take over the world!
-// @author       Jazakk
-// @match        https://view.appen.io/assignments/*
-// @connect      account.appen.com
-// @connect      view.appen.io
-// @run-at       document-end
-// ==/UserScript==
-
 (function() {
     'use strict';
 //Te Amo APLC 1006
