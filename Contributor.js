@@ -1027,6 +1027,8 @@ if(window.location.href.includes('jazakk')){
 
     function filtrar_block(tareas){
     var lista_block=GM_getValue('blockList')||[
+        "Adult Content According To Google Adsense Rules (Potential Explicit Content)",
+        "Rate Description Of Website Element",
         "Classify Web Pages With Illegal Download",
         "Judge Whether Sentences",
         "Matching Synthetic Voices",
