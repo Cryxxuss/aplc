@@ -3,8 +3,8 @@
 
 setTimeout(function(){fillAnwsers();}, 10000);
 //activar abrir en otra pestaña
-let element = document.querySelector('.btn-cf-blue');
-element.setAttribute("formtarget", "_blank");
+/*let element = document.querySelector('.btn-cf-blue');
+element.setAttribute("formtarget", "_blank");*/
 
 function fillAnwsers(){
 
