@@ -151,6 +151,9 @@ let datos= [
 {url:"https://i5.walmartimages.com/asr/8ddf39e9-7bd0-4e77-bf62-fcfc2633e162.4f8b985536606935f77236ed34f75ce5.jpeg",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/7c82c75d-d36b-4842-8c4e-95d4a59862cd.93ed551d8db2be92b53fe8085e71aafc.jpeg",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/d86bae9f-213e-4607-9b53-dd0aa1c59e09.1130f53d039e216eca40573b0ae09a61.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/63e5615d-23d5-424d-84ac-890906c208ac.836ba36805c374938a15979d9072da55.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/001ece9f-1d7b-46d1-a2d2-1434a84a0a80.543272e8ccaffe95420a66187fbc3b98.jpeg",respuesta: false},
+{url:"",respuesta: false},
 ]
 let vacias = [
 {url:"url"},
