@@ -1,3 +1,15 @@
+setTimeout(Complete,2000);
+    function Complete(){
+var titleDivapp = document.createElement("div");
+var titleapp = document.querySelector(".content").innerText;
+titleDivapp.innerHTML = titleapp;
+var jobTitle = titleDivapp.innerText;
+
+if(jobTitle.includes("completed all your work")){
+
+window.location="https://annotate.appen.com/jazakk";
+}
+    }
 /*function refresh() {jQuery('#content').html("APPEN");setTimeout(jQuery('#content').load(document.URL + ' #content')); }
 
 var titleDivap = document.createElement("div");
