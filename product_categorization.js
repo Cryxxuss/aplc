@@ -1,15 +1,3 @@
-// ==UserScript==
-// @name         Product Categorization
-// @namespace    http://tampermonkey.net/
-// @version      1.1
-// @description  try to take over the world!
-// @author       Juan pepe
-// @match        https://view.appen.io/assignments/*
-// @connect      account.appen.com
-// @connect      view.appen.io
-// @run-at       document-end
-// ==/UserScript==
-
 (function() {
     'use strict';
 
