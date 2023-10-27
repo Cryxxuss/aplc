@@ -146,7 +146,7 @@ autofill_radios_random=["1","2"];
 id="2185656"
 autofill_radios_random=["1","2"];
 
-	//	setInterval(Enviar_Sin_marcar, Math.round(Math.random() * (13000 - 11000)) + 11000);
+		setInterval(Enviar_Sin_marcar, Math.round(Math.random() * (13000 - 11000)) + 11000);
      break;
 
      case jobTitle.includes("Find The Official Website Of Businesses"):
@@ -374,7 +374,7 @@ setTimeout(eliminarnotq,5000);
 
 id="2307326"
 autofill_radios_random=["1","2","1"];
-		setInterval(Enviar_task, Math.round(Math.random() * (68000 - 61000)) + 61000);
+		setInterval(Enviar_task, Math.round(Math.random() * (128000 - 121000)) + 121000);
      break;
 
      case jobTitle.includes("Compare Intent Relevance"):
@@ -389,6 +389,20 @@ autofill_radios_random=["1","2"];
 id="2309777"
 autofill_radios_random=["1","2"];
 		setInterval(Enviar_task, Math.round(Math.random() * (66000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Outline Commerce Items In Image With Polygons"):
+
+id="2122845"
+setInterval(rocktq,40000);
+		setInterval(Enviar_task, Math.round(Math.random() * (126000 - 121000)) + 121000);
+     break;
+
+     case jobTitle.includes("Product Categorization"):
+
+id="2084060"
+autofill_radios_random=["1"];
+		setInterval(Enviar, Math.round(Math.random() * (65000 - 61000)) + 61000);
      break;
 
     default:
