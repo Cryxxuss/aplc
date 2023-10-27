@@ -48,7 +48,7 @@ if(jobTitle.includes("Product Categorization")){
 				primero[1].click();
 				break;
 			}
-            setTimeout(enviar,1000);
+            //setTimeout(enviar,1000);
         }
         else if(data2.length > 0){
 
@@ -140,9 +140,20 @@ let datos= [
 {url:"https://i5.walmartimages.com/asr/b1c1aa6d-64a0-49db-b96a-d3b50895d9d7.8d211938c032054e54806040b5aaa20b.jpeg",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/f1d9464f-a6f9-48c1-b20f-1537ec8e16c5.f8ded61a96e2798491dcba85bec5e992.jpeg",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/3cbb1095-f443-41cd-a5d1-5d6ea8b0d9b7.8f7d50580f91999d095240aa0fb9ec23.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/05468cad-1e56-4a03-b57e-0d8f84b2195a.bdb76bb42d81ae7ab97c99f6ab954633.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/ab55f4d7-eb86-43c6-b8a1-1bda87d6747f.b0d2edf0c1a1a86799408a054b264ae4.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/9171fad6-f635-4a13-b6a0-d92b851575a4.46c4c3db36edbc94649a7e087c52d12e.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/5be69345-9e75-486a-a53d-5d5b003091dc.b39a415e396a8b8c4dc4337612bbe428.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/82a5f629-68ac-42b7-9f7b-81e0bf21d5c0.45158ee9902e7b7041c48fda4a8d749a.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/defaff14-a23a-45de-ba7b-edcc7db47720.1037e894e57bbeccfa1a4644af084764.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/96b49fe5-b35e-4139-a3b4-de32f777e08f.df1d70e9639212b79de73cdf87d3f16d.png",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/6bc9d7bb-efd5-487e-9495-99516de2b6ea.9290452d313cf10a8e6022c6af3ac8f1.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/8ddf39e9-7bd0-4e77-bf62-fcfc2633e162.4f8b985536606935f77236ed34f75ce5.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/7c82c75d-d36b-4842-8c4e-95d4a59862cd.93ed551d8db2be92b53fe8085e71aafc.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/d86bae9f-213e-4607-9b53-dd0aa1c59e09.1130f53d039e216eca40573b0ae09a61.jpeg",respuesta: false},
 ]
 let vacias = [
 {url:"url"},
 ]
 })();
-console.log("Esta mejor mrk");
+console.log("Listo poor ahora");
