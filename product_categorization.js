@@ -105,10 +105,10 @@ let datos= [
 {url:"https://i5.walmartimages.com/asr/a83acd2d-2171-442c-aa1c-f98ad6c41f87.a7c3bab02a666547742d945b0bd002b1.jpeg",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/8be5c387-8b19-47e8-b7c9-b9ea80f69d84.9669f0e6194b3600d4f70111845c62b8.jpeg",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/71328e76-fb43-4515-9f29-8bcc5123e4b6.32e5fe0b66d55bea2a90d303a085f344.jpeg",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/2beb5a4d-3a14-4ceb-8c16-a4c844fd1d39.22cb079409ec6f51c2a71bafd3fa2ecb.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/e5c5c6e4-d844-4993-b184-edbdf7631244.704419e982320d150ffbf497ebf47087.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/c1874a50-d19e-4826-84a7-1864e52a5321.adb3dca016885bd6bfaae6752bda52a6.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/18eaa332-cea4-4276-a4f2-518c5d789396.728cd5e5697ae6d9a31f3f4a5500967e.jpeg",respuesta: false},
 {url:"",respuesta: false},
 {url:"",respuesta: false},
 ]
@@ -116,4 +116,4 @@ let vacias = [
 {url:"url"},
 ]
 })();
-console.log("nuevas tqs");
+console.log("va bien");
