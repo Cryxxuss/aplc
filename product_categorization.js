@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-setTimeout(function(){fillAnwsers();}, 64000);
+setTimeout(function(){fillAnwsers();}, 5000);
 //activar abrir en otra pestaña
 /*let element = document.querySelector('.btn-cf-blue');
 element.setAttribute("formtarget", "_blank");*/
@@ -61,7 +61,7 @@ if(jobTitle.includes("Product Categorization")){
 			var iddd2=id2+"[question1]";
 			var primero2 = document.querySelectorAll("[name='"+iddd2+"']");
 
-            setTimeout(enviar,1000);
+        //    setTimeout(enviar,1000);
         }
      });
 	}
