@@ -48,7 +48,7 @@ if(jobTitle.includes("Adult Content According")){
 				primero[1].click();
 				break;
 			}
-            setTimeout(enviar,1000);
+          //  setTimeout(enviar,1000);
         }
         else if(data2.length > 0){
 
@@ -61,7 +61,7 @@ if(jobTitle.includes("Adult Content According")){
 			var iddd2=id2+"[question1]";
 			var primero2 = document.querySelectorAll("[name='"+iddd2+"']");
 
-            setTimeout(enviar,1000);
+         //   setTimeout(enviar,1000);
         }
      });
 	}
