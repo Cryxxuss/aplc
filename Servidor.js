@@ -33,7 +33,7 @@ document.getElementsByClassName('fas fa-file-signature ')[0].click();
 
 setTimeout(Auto_Fill);
 function Auto_Fill(){
-var jsawesome = document.querySelectorAll(".jsawesome");
+/*var jsawesome = document.querySelectorAll(".jsawesome");
         jsawesome.forEach(wrapper => {
                 var pares_content = wrapper.querySelectorAll(".radios.cml_field");
                     for(var preg of pares_content.entries()) {
@@ -45,7 +45,7 @@ var jsawesome = document.querySelectorAll(".jsawesome");
                      radios[indice].click();
                    }
                 }
-      });
+      });*/
 var jsawesomee = document.querySelectorAll(".jsawesome");
         jsawesomee.forEach(wrapper => {
                 var pares_content = wrapper.querySelectorAll(".radios.cml_field");
@@ -144,8 +144,6 @@ autofill_radios_random=["1","2"];
      case jobTitle.includes("Adult Content According"):
 
 id="2185656"
-auto_fill_radios="2";
-
 		setInterval(Enviar_Sin_marcar, Math.round(Math.random() * (13000 - 11000)) + 11000);
      break;
 
