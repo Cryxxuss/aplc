@@ -1,7 +1,22 @@
 (function() {
     'use strict';
 //Te Amo APLC 1006
-
+function radios_2(){
+if(jobTitle.includes("Adult Content According")){
+	var jsawesome = document.querySelectorAll(".jsawesome");
+        jsawesome.forEach(wrapper => {
+                var pares_content = wrapper.querySelectorAll(".radios.cml_field");
+                    for(var preg of pares_content.entries()) {
+                    let radios = preg[1].querySelectorAll(".radios.cml_field input");
+                    let st = "2";
+                    let indice=st.charAt(preg[1])-1;
+                     if(indice!==-1){
+                     radios[indice].checked=1;
+                     radios[indice].click();
+                   }
+                }
+      });
+}}
 var id=""
 var auto_fill_radios="";
 var autofill_radios_random=["1","2"];
@@ -144,6 +159,7 @@ autofill_radios_random=["1","2"];
      case jobTitle.includes("Adult Content According"):
 
 id="2185656"
+setTimeout(radios_2,1000);
 		setInterval(Enviar_Sin_marcar, Math.round(Math.random() * (13000 - 11000)) + 11000);
      break;
 
