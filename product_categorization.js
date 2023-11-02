@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-setTimeout(function(){fillAnwsers();}, 5000);
+setTimeout(function(){fillAnwsers();}, 3000);
 //activar abrir en otra pestaña
 /*let element = document.querySelector('.btn-cf-blue');
 element.setAttribute("formtarget", "_blank");*/
