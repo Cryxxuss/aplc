@@ -1152,7 +1152,7 @@ setTimeout(function(){
     window.close = null;
 }
 else if(window.location.href.includes('secret')){
-    window.close();
+   // window.close();
 }else if(window.location.href.includes('auth')){
    // setTimeout(function(){ClikLogin();}, 1000);
     function ClikLogin(){
