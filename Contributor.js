@@ -1154,7 +1154,7 @@ setTimeout(function(){
 else if(window.location.href.includes('secret')){
     window.close();
 }else if(window.location.href.includes('auth')){
-    setTimeout(function(){ClikLogin();}, 1000);
+   // setTimeout(function(){ClikLogin();}, 1000);
     function ClikLogin(){
     document.getElementById('username').value=Cookies.get('autologinUsername');
     document.getElementById('password').value=Cookies.get('autologinPassword');
