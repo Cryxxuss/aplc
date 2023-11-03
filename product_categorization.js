@@ -154,25 +154,21 @@ let datos= [
 {url:"https://i5.walmartimages.com/asr/74a578fd-00e5-48fa-849c-c8324422da63.84d5fd0de2166feb931887a1e98028e3.jpeg",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/74281958-5733-4af8-ac39-446641fcd2ea.efcfd26bbb7e5da6782795abdaf09020.jpeg",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/0b222b1f-ba46-47c1-b8ff-e80ac0b17eb9.618024b90e89d993e27fe0bd57db8890.jpeg",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/f4ee66ae-00d0-4328-98d9-a596fbc42455_1.d6816badd313618af86ad1da98f164aa.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/68ce28a3-c919-405a-9dfc-66d9b7736b64.0ecec262c9774a62273dfa94db93d3b8.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/c1eea9f3-9ffa-407b-9cbf-b1b18b13997e.8a1b1f045d6760ca3eb85475d7fd2517.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/f61d8913-efb5-4920-ab9b-37dd6e42728e.1601c50f7da77b08df89fe06ebcc0d0f.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/dac7179f-f25b-41f4-9838-a91f24d30e59.e4f5c6b2d1050e69e4403a77cec9ea3a.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/1e91202c-0580-422e-baf5-4085aca93187.582645fda8922fc2473ab4fb3904cf49.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/89e11927-b481-40a4-9fa4-c27ca6048053_1.707c340530812f3cf432616140310ab4.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/91d924e2-6073-488e-b968-bbc1c8eb4e34.ea263f5dae55df3c496d903f4d86feda.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/745ea4bd-dfda-42e7-a4ae-7c0638c466e2.64b3f8b9a586726b8251bc6a8ae9f3d6.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/751dc727-7b74-472e-be5b-e21dbc178838.970c3a37bf36b3a5d56d727d1a855c47.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/d8b72b97-5c5d-4c5e-9184-74e8ec770782.1d20c86473deb4dbec5ea4bd12de8786.png",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/19f67593-0d9f-4155-93a8-be5eec5db6e3_1.ed66f0b9e7fdbfbc0709dc26ebc53e8d.jpeg",respuesta: false},
 ]
 let vacias = [
 {url:"https://irobotbox-hd1.oss-cn-hangzhou.aliyuncs.com/5001/ProductImages/1532677/2021/11/19/0859b8805d304f1e9efe22d52c379955/269f0530-bdc9-4073-9ba9-559aacb02fdd.jpg"},
 ]
 })();
-console.log("5ta ID actualizado");
+console.log("6to ID actualizado");
