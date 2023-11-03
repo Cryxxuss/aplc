@@ -150,6 +150,9 @@ let datos= [
 {url:"https://i5.walmartimages.com/asr/723756f2-5ffb-4dcd-8979-f2360d8d5ee0.4631b1fe6e5a7ddde67d2c6e2d983558.jpeg",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/099facf7-aa0e-4526-8687-07c4583a1bb1.cafc4ef1b3ef1d42ae55c124b2f60aa6.jpeg",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/ef85e721-8efb-496d-b951-db8595757fdd.edaad804c55b04e250c5e8cb58d8c890.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/e771193f-1e81-417e-856e-61fe5c26f610.9fd35e98b489ab97e35ad62698ad14cc.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/04993702-a4f3-4eda-ad96-a0e7831e2b62.e6b9f252b4002298e8b34f27d20fe502.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/839c3135-b114-43d8-8959-e0cee3950bfe.e9c5fb4d79ba3b8cb487c7547af3135b.jpeg",respuesta: false},
 ]
 let vacias = [
 {url:"https://irobotbox-hd1.oss-cn-hangzhou.aliyuncs.com/5001/ProductImages/1532677/2021/11/19/0859b8805d304f1e9efe22d52c379955/269f0530-bdc9-4073-9ba9-559aacb02fdd.jpg"},
