@@ -124,6 +124,7 @@ if(window.location.href.includes('jazakk')){
                                                 });
 
                                             });
+                                            login_dashboard();
                                          //   setTimeout(start_search,8000);
                                         }else{
                                             aumentar_contador(".un_error");
@@ -182,6 +183,20 @@ if(window.location.href.includes('jazakk')){
             },1000);
         }
     }
+    function login_dashboard(){
+     GM_xmlhttpRequest({
+                    'method':'GET',
+                    'url':'https://account.appen.com/dashboard',
+                    'timeout':15000,
+                    'onload':function(resp){
+                        if(resp.status==404){
+                            let portal_login = GM_openInTab("https://account.appen.com/dashboard",false);
+                            setTimeout(function(){
+                                portal_login.close();
+                                },10000);
+                        }}
+                             }
+                      )}
     function play_all(){
         let parent=document.querySelectorAll("#jobCard");
         if(parent.length>0){
