@@ -86,6 +86,8 @@ var QuizMM = WM.innerText;
 }}
 
 let datos= [
+{url:"https://i5.walmartimages.com/asr/8cfb1c83-0203-4043-a8c8-aa608358ab52.5746b250e257e2afcd3c1207e75400a7.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/e0a20a44-dd90-42a0-ab44-8450130a0b5e.489b49008986528cb6167f6123a17cca.png",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/215355fe-4600-47f2-a133-5e74a6c6f575.b77bec86aa9625824523c2a9c02824a1.jpeg",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/267d5592-6aed-4a64-972d-14b95f177db8.2a2bca1b7b9ca4606898422c29c46862.jpeg",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/c89462f7-1e40-40f0-8e17-c06c451eb0c4.6801464d01b0149643abc9493534b935.jpeg",respuesta: false},
@@ -155,4 +157,4 @@ let vacias = [
 {url:"https://irobotbox-hd1.oss-cn-hangzhou.aliyuncs.com/5001/ProductImages/1532677/2021/11/19/0859b8805d304f1e9efe22d52c379955/269f0530-bdc9-4073-9ba9-559aacb02fdd.jpg"},
 ]
 })();
-console.log("1ra ID actualizado");
+console.log("1ra Nuevas");
