@@ -90,7 +90,7 @@ if(window.location.href.includes('jazakk')){
                                                 var link_tarea='https://account.appen.com/channels/feca/tasks/'+tarea_id+'?secret='+secret_key_get;
                                                 var lista_incluidos=GM_getValue('includeList')||[{
 
-                                                    task: "",
+                                                    task: "Nada",
                                                     active: true
                                                 }];
 
