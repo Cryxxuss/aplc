@@ -86,6 +86,8 @@ var QuizMM = WM.innerText;
 }}
 
 let datos= [
+{url:"https://i5.walmartimages.com/asr/9b6339b8-113c-4f46-866a-5e1e9a33db23.f999d603d93a0e7dd8a65e0fe3e4172f.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/e3c8fcbc-0462-4050-aef2-dfc85d9238ca.388f06e163bb4c898853cc54914ca26e.jpeg",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/a8d22576-4723-4150-bf03-663fda13b3a3.2b56fd0175957295595435fe62bb8488.jpeg",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/149f7e9c-cc4f-411e-9803-38e460955c7a.b3ddb0c02d5bed491bd6ef65c675eae5.png",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/bcfb59ec-3fa3-41e9-abba-6630851fd356.1c82f4f0e0ce16d83944a55ae4149ae1.jpeg",respuesta: false},
@@ -161,4 +163,4 @@ let vacias = [
 {url:"https://irobotbox-hd1.oss-cn-hangzhou.aliyuncs.com/5001/ProductImages/1532677/2021/11/19/0859b8805d304f1e9efe22d52c379955/269f0530-bdc9-4073-9ba9-559aacb02fdd.jpg"},
 ]
 })();
-console.log("1ra Nuevas");
+console.log("van 70+");
