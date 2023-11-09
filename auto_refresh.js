@@ -1,4 +1,4 @@
-setTimeout(Complete,3000);
+setTimeout(Complete,5000);
     function Complete(){
 var titleDivapp = document.createElement("div");
 var titleapp = document.querySelector(".content").innerText;
