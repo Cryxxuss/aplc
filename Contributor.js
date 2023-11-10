@@ -991,11 +991,13 @@ if(window.location.href.includes('jazakk')){
                                 body_task.querySelector("span").style.color='white';
                                 btn_collect.classList.remove('active');
 
-                            }else if(resp.responseText.includes('Expired')){
-                                //console.log('Expired');
-                                //imagino que esto es lo que causa que se borren despues de un rato de estar buscando
-
-                                remover_buscador(id_tarea);
+                            }else if(resp.responseText.includes('Your accuracy')){
+                                body_task.style.backgroundColor='#6d6def';
+                                body_task.querySelector("a").style.color='white';
+                                body_task.querySelector("span").style.color='white';
+                                btn_collect.classList.remove('active');
+                            //no nos vamos a parar por un error en el server solo le vamos a dar mas tiempo a que se recupere la conexion
+                            setTimeout(start,15000);
                             }
                             else{
                                 if(body_task.style.backgroundColor!=='white'){
