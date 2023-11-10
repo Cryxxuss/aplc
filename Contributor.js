@@ -86,8 +86,8 @@ if(window.location.href.includes('jazakk')){
                                            if(GM_getValue('tarea_nombre')){
                                            if(!is_open_task1){
                                                is_open_task1 = true;
-                                           setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre'),GM_getValue('link_tarea'),GM_getValue('tarea_id'),reset_time)},time_random(1000,1000));
-                                               setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre1'),GM_getValue('link_tarea1'),GM_getValue('tarea_id1'),reset_time)},time_random(1000,1000));
+                                          // setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre'),GM_getValue('link_tarea'),GM_getValue('tarea_id'),reset_time)},time_random(1000,1000));
+                                            //   setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre1'),GM_getValue('link_tarea1'),GM_getValue('tarea_id1'),reset_time)},time_random(1000,1000));
                                                }}
                                             var data_tareas=JSON.parse($(response.responseText).find('#task-listing-datatable').attr('data-tasks'));
                                             var tareas_filtradas=filtrar_block(data_tareas);
