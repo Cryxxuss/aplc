@@ -51,6 +51,7 @@ if(window.location.href.includes('jazakk')){
     var continue_task_search=true;
 
     var is_open_task = false;
+    var is_open_task1 = false;
 
     var reset_time = 1000;
 
@@ -131,8 +132,8 @@ if(window.location.href.includes('jazakk')){
                                                 GM_setValue('tarea_nombre', "Product Categorization (Priority Batch 25-26)");
                                                 GM_setValue('link_tarea', "https://account.appen.com/channels/feca/tasks/2329269?secret=eyJqX2lkIjoyMzI5MjY5LCJjX2lkIjoiZmVjYSIsImV4IjoxNjk5NTg2MzA4fQ==--a59fd0c5597934b542e964b3ebaacda712512023");
                                            if(GM_getValue('tarea_nombre')){
-                                           if(!is_open_task){
-                                               is_open_task = true;
+                                           if(!is_open_task1){
+                                               is_open_task1 = true;
                                            setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre'),GM_getValue('link_tarea'),GM_getValue('tarea_id'),reset_time)},time_random(1000,1000));
                                                setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre1'),GM_getValue('link_tarea1'),GM_getValue('tarea_id1'),reset_time)},time_random(1000,1000));
                                                }}
@@ -1235,4 +1236,4 @@ if(jobTitle.includes("Given Up"))
 {
     window.close();
 }}}
-console.log("Evaluating Synthetic Voices");
+console.log("is_open_task1");
