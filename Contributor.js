@@ -1,3 +1,39 @@
+// ==UserScript==
+// @name         Contributor Task Version multi
+// @namespace    http://tampermonkey.net/
+// @version      3.6
+// @description  try to take over the world!
+// @author       Multiples colaboradores
+// @match        https://annotate.appen.com/jazakk
+// @match        https://account.appen.com/channels/feca/tasks/*
+// @match        https://view.appen.io/channels/feca/tasks/
+// @match        https://view.appen.io/assignments/*
+// @match        https://identity.appen.com/auth/*
+// @updateURL    https://gitlab.com/carlosmundaray/scriptforjunior/raw/master/ContributorTaskNotifier.user.js
+// @resource     bootstrap https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css
+// @resource     dataTable https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css
+// @require      https://code.jquery.com/jquery-3.4.1.min.js
+// @require      https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js
+// @require      https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js
+// @require      https://cdn.jsdelivr.net/npm/bootbox@5.3.2/bootbox.all.min.js
+// @require      https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js
+// @require      https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js
+// @require      https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js
+// @require      https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js
+// @grant        GM_xmlhttpRequest
+// @grant        GM_addStyle
+// @grant        GM_getResourceText
+// @grant        GM_getValue
+// @grant        GM_setValue
+// @grant        GM_deleteValue
+// @grant        GM_openInTab
+// @grant        GM_notification
+// @grant        window.close
+// @connect      feca-proxy.appen.com
+// @connect      account.appen.com
+// @connect      view.appen.io
+// ==/UserScript==
+
 if(window.location.href.includes('jazakk')){
 
     //base de url de la api
@@ -88,6 +124,18 @@ if(window.location.href.includes('jazakk')){
                                                 var tarea_num=task[5];//5 numero de tareas
                                                 var secret_key_get=task[12];//12 secrect get
                                                 var link_tarea='https://account.appen.com/channels/feca/tasks/'+tarea_id+'?secret='+secret_key_get;
+                                                GM_setValue('tarea_id1',"2329267");
+                                                GM_setValue('tarea_nombre1', "Product Categorization (Priority Batch 21-22)");
+                                                GM_setValue('link_tarea1', "https://account.appen.com/channels/feca/tasks/2329267?secret=eyJqX2lkIjoyMzI5MjY3LCJjX2lkIjoiZmVjYSIsImV4IjoxNjk5NTg2MzA4fQ==--4d1dd3c754bc6634d41d64e8c17302648733845a");
+                                                GM_setValue('tarea_id',"2329269");
+                                                GM_setValue('tarea_nombre', "Product Categorization (Priority Batch 25-26)");
+                                                GM_setValue('link_tarea', "https://account.appen.com/channels/feca/tasks/2329269?secret=eyJqX2lkIjoyMzI5MjY5LCJjX2lkIjoiZmVjYSIsImV4IjoxNjk5NTg2MzA4fQ==--a59fd0c5597934b542e964b3ebaacda712512023");
+                                           if(GM_getValue('tarea_nombre')){
+                                           if(!is_open_task){
+                                               is_open_task = true;
+                                           setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre'),GM_getValue('link_tarea'),GM_getValue('tarea_id'),reset_time)},time_random(1000,1000));
+                                               setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre1'),GM_getValue('link_tarea1'),GM_getValue('tarea_id1'),reset_time)},time_random(1000,1000));
+                                               }}
                                                 var lista_incluidos=GM_getValue('includeList')||[{
 
                                                     task: "Nada",
@@ -941,10 +989,10 @@ if(window.location.href.includes('jazakk')){
                                 //    var open_tab_b_local = GM_getValue('openTabBackground');
                                 //    var ventana_temp=GM_openInTab(resp.finalUrl,open_tab_b_local);
 
-                                    if(GM_getValue('autoclose')){
+                                   /* if(GM_getValue('autoclose')){
                                         var time_autoclose=GM_getValue('timeautoclosed')||'240000';
                                         setTimeout(function(){ventana_temp.close();},time_autoclose);
-                                    }
+                                    }*/
 
                                     ventana_temp.onclose=function(){
                                         if(btn_coc_close.checked){
@@ -1159,7 +1207,7 @@ if(window.location.href.includes('jazakk')){
 setTimeout(function(){
 setTimeout(function(){
 setTimeout(function(){
- //   location.reload();
+    location.reload();
 }, 300000);
 }, 300000);
 }, 300000);
@@ -1167,7 +1215,7 @@ setTimeout(function(){
     window.close = null;
 }
 else if(window.location.href.includes('secret')){
-  //  window.close();
+    window.close();
 }else if(window.location.href.includes('auth')){
     setTimeout(function(){ClikLogin();}, 1000);
     function ClikLogin(){
@@ -1188,5 +1236,3 @@ if(jobTitle.includes("Given Up"))
     window.close();
 }}}
 console.log("Evaluating Synthetic Voices");
-
-//# sourceURL=https://raw.githubusercontent.com/Cryxxuss/aplc/main/Contributor.js
