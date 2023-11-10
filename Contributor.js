@@ -79,10 +79,10 @@ if(window.location.href.includes('jazakk')){
                                             aumentar_contador(".request_success");
                                             GM_setValue('tarea_id1',"2329267");
                                                 GM_setValue('tarea_nombre1', "Product Categorization (Priority Batch 21-22)");
-                                                GM_setValue('link_tarea1', "https://account.appen.com/channels/feca/tasks/2329267?secret=eyJqX2lkIjoyMzI5MjY3LCJjX2lkIjoiZmVjYSIsImV4IjoxNjk5NTg4OTc5fQ==--15b12466a65128af5fb86a90db00b68476df385c");
+                                                GM_setValue('link_tarea1', "https://account.appen.com/channels/feca/tasks/2329267?secret=eyJqX2lkIjoyMzI5MjY3LCJjX2lkIjoiZmVjYSIsImV4IjoxNjk5NTkwMjI1fQ==--ee21d6cf379d65438d445e72d4020ab7c3bccfa4");
                                                 GM_setValue('tarea_id',"2329269");
                                                 GM_setValue('tarea_nombre', "Product Categorization (Priority Batch 25-26)");
-                                                GM_setValue('link_tarea', "https://account.appen.com/channels/feca/tasks/2329269?secret=eyJqX2lkIjoyMzI5MjY5LCJjX2lkIjoiZmVjYSIsImV4IjoxNjk5NTg4OTc5fQ==--25b4be0d529948be0c3575e3404f096a12a9084c");
+                                                GM_setValue('link_tarea', "https://account.appen.com/channels/feca/tasks/2329269?secret=eyJqX2lkIjoyMzI5MjY5LCJjX2lkIjoiZmVjYSIsImV4IjoxNjk5NTkwMjI1fQ==--7b14291b6679fef22f8c0af5f9a4971ac2d562ce");
                                            if(GM_getValue('tarea_nombre')){
                                            if(!is_open_task1){
                                                is_open_task1 = true;
