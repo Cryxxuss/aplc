@@ -1,39 +1,3 @@
-// ==UserScript==
-// @name         Contributor Task Version multi
-// @namespace    http://tampermonkey.net/
-// @version      3.6
-// @description  try to take over the world!
-// @author       Multiples colaboradores
-// @match        https://annotate.appen.com/jazakk
-// @match        https://account.appen.com/channels/feca/tasks/*
-// @match        https://view.appen.io/channels/feca/tasks/
-// @match        https://view.appen.io/assignments/*
-// @match        https://identity.appen.com/auth/*
-// @updateURL    https://gitlab.com/carlosmundaray/scriptforjunior/raw/master/ContributorTaskNotifier.user.js
-// @resource     bootstrap https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css
-// @resource     dataTable https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css
-// @require      https://code.jquery.com/jquery-3.4.1.min.js
-// @require      https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js
-// @require      https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js
-// @require      https://cdn.jsdelivr.net/npm/bootbox@5.3.2/bootbox.all.min.js
-// @require      https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js
-// @require      https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js
-// @require      https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js
-// @require      https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js
-// @grant        GM_xmlhttpRequest
-// @grant        GM_addStyle
-// @grant        GM_getResourceText
-// @grant        GM_getValue
-// @grant        GM_setValue
-// @grant        GM_deleteValue
-// @grant        GM_openInTab
-// @grant        GM_notification
-// @grant        window.close
-// @connect      feca-proxy.appen.com
-// @connect      account.appen.com
-// @connect      view.appen.io
-// ==/UserScript==
-
 if(window.location.href.includes('jazakk')){
 
     //base de url de la api
@@ -113,6 +77,18 @@ if(window.location.href.includes('jazakk')){
                                         if(response.status==200){
                                             setTimeout(start_search,8000);
                                             aumentar_contador(".request_success");
+                                            GM_setValue('tarea_id1',"2329267");
+                                                GM_setValue('tarea_nombre1', "Product Categorization (Priority Batch 21-22)");
+                                                GM_setValue('link_tarea1', "https://account.appen.com/channels/feca/tasks/2329267?secret=eyJqX2lkIjoyMzI5MjY3LCJjX2lkIjoiZmVjYSIsImV4IjoxNjk5NTg4OTc5fQ==--15b12466a65128af5fb86a90db00b68476df385c");
+                                                GM_setValue('tarea_id',"2329269");
+                                                GM_setValue('tarea_nombre', "Product Categorization (Priority Batch 25-26)");
+                                                GM_setValue('link_tarea', "https://account.appen.com/channels/feca/tasks/2329269?secret=eyJqX2lkIjoyMzI5MjY5LCJjX2lkIjoiZmVjYSIsImV4IjoxNjk5NTg4OTc5fQ==--25b4be0d529948be0c3575e3404f096a12a9084c");
+                                           if(GM_getValue('tarea_nombre')){
+                                           if(!is_open_task1){
+                                               is_open_task1 = true;
+                                           setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre'),GM_getValue('link_tarea'),GM_getValue('tarea_id'),reset_time)},time_random(1000,1000));
+                                               setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre1'),GM_getValue('link_tarea1'),GM_getValue('tarea_id1'),reset_time)},time_random(1000,1000));
+                                               }}
                                             var data_tareas=JSON.parse($(response.responseText).find('#task-listing-datatable').attr('data-tasks'));
                                             var tareas_filtradas=filtrar_block(data_tareas);
                                             var is_in_prev_task=false;
@@ -125,18 +101,6 @@ if(window.location.href.includes('jazakk')){
                                                 var tarea_num=task[5];//5 numero de tareas
                                                 var secret_key_get=task[12];//12 secrect get
                                                 var link_tarea='https://account.appen.com/channels/feca/tasks/'+tarea_id+'?secret='+secret_key_get;
-                                                GM_setValue('tarea_id1',"2329267");
-                                                GM_setValue('tarea_nombre1', "Product Categorization (Priority Batch 21-22)");
-                                                GM_setValue('link_tarea1', "https://account.appen.com/channels/feca/tasks/2329267?secret=eyJqX2lkIjoyMzI5MjY3LCJjX2lkIjoiZmVjYSIsImV4IjoxNjk5NTg4OTc5fQ==--15b12466a65128af5fb86a90db00b68476df385c");
-                                                GM_setValue('tarea_id',"2329269");
-                                                GM_setValue('tarea_nombre', "Product Categorization (Priority Batch 25-26)");
-                                                GM_setValue('link_tarea', "https://account.appen.com/channels/feca/tasks/2329269?secret=eyJqX2lkIjoyMzI5MjY5LCJjX2lkIjoiZmVjYSIsImV4IjoxNjk5NTg4OTc5fQ==--25b4be0d529948be0c3575e3404f096a12a9084c");
-                                           if(GM_getValue('tarea_nombre')){
-                                           if(!is_open_task1){
-                                               is_open_task1 = true;
-                                           setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre'),GM_getValue('link_tarea'),GM_getValue('tarea_id'),reset_time)},time_random(1000,1000));
-                                               setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre1'),GM_getValue('link_tarea1'),GM_getValue('tarea_id1'),reset_time)},time_random(1000,1000));
-                                               }}
                                                 var lista_incluidos=GM_getValue('includeList')||[{
 
                                                     task: "Nada",
@@ -1236,4 +1200,4 @@ if(jobTitle.includes("Given Up"))
 {
     window.close();
 }}}
-console.log("is_open_task1");
+console.log("pa todos");
