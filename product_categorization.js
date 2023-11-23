@@ -310,9 +310,9 @@ let datos= [
 {url:"https://i5.walmartimages.com/asr/866c761a-db01-413a-8351-7664ce46f033.61b9c78b74b0b49f371b73f19af04bb9.jpeg",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/bd8047a7-2611-4a43-ab3c-1a5bf0d7b670.e49417303dbd40663eec296a3cc932d5.jpeg",respuesta: false},
 {url:"https://i5.walmartimages.com/asr/176d9040-6515-4b7b-9051-3711ae648a37.ea82a5201ef43f84840843782127e7de.jpeg",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
-{url:"",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/67c9b74e-45ed-4ad2-84ab-72239c12eb8b.a466c3c5e43d1d96d90e65b40663dfbc.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/14d0a841-a6de-4bba-b6eb-e3fa76c25a99.ce9c02111cef73b67db44ee1051c198a.jpeg",respuesta: false},
+{url:"https://i5.walmartimages.com/asr/9dbc6f65-f4c6-4054-a2af-f931caef138b.2d450bd6baf31e9106caa03993611725.jpeg",respuesta: false},
 {url:"",respuesta: false},
 {url:"",respuesta: false},
 {url:"",respuesta: false},
@@ -352,4 +352,4 @@ let vacias = [
 {url:"https://irobotbox-hd1.oss-cn-hangzhou.aliyuncs.com/5001/ProductImages/1532677/2021/11/19/0859b8805d304f1e9efe22d52c379955/269f0530-bdc9-4073-9ba9-559aacb02fdd.jpg"},
 ]
 })();
-console.log(" patria 226 plata ");
+console.log(" patria 229 plata ");
