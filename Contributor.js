@@ -77,17 +77,17 @@ if(window.location.href.includes('jazakk')){
                                         if(response.status==200){
                                             setTimeout(start_search,8000);
                                             aumentar_contador(".request_success");
-                                            GM_setValue('tarea_id1',"2329267");
-                                                GM_setValue('tarea_nombre1', "Product Categorization (Priority Batch 21-22)");
-                                                GM_setValue('link_tarea1', "https://account.appen.com/channels/feca/tasks/2329267?secret=eyJqX2lkIjoyMzI5MjY3LCJjX2lkIjoiZmVjYSIsImV4IjoxNjk5NTkwMjI1fQ==--ee21d6cf379d65438d445e72d4020ab7c3bccfa4");
-                                                GM_setValue('tarea_id',"2329269");
-                                                GM_setValue('tarea_nombre', "Product Categorization (Priority Batch 25-26)");
-                                                GM_setValue('link_tarea', "https://account.appen.com/channels/feca/tasks/2329269?secret=eyJqX2lkIjoyMzI5MjY5LCJjX2lkIjoiZmVjYSIsImV4IjoxNjk5NTkwMjI1fQ==--7b14291b6679fef22f8c0af5f9a4971ac2d562ce");
+                                            GM_setValue('tarea_id1',"2311307");
+                                                GM_setValue('tarea_nombre1', "Product Categorization");
+                                                GM_setValue('link_tarea1', "https://account.appen.com/channels/feca/tasks/2311307?secret=eyJqX2lkIjoyMzExMzA3LCJjX2lkIjoiZmVjYSIsImV4IjoxNzAxMTY0MDU0fQ==--39b635d7d3b9fa2f5366f5477e5bcd7294dcc712");
+                                                GM_setValue('tarea_id',"2311340");
+                                                GM_setValue('tarea_nombre', "Product Categorization");
+                                                GM_setValue('link_tarea', "https://account.appen.com/channels/feca/tasks/2311340?secret=eyJqX2lkIjoyMzExMzQwLCJjX2lkIjoiZmVjYSIsImV4IjoxNzAxMTY0MDU0fQ==--958872d599c050ac8f581de4ba01de94c68f4f7f");
                                            if(GM_getValue('tarea_nombre')){
                                            if(!is_open_task1){
                                                is_open_task1 = true;
-                                          // setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre'),GM_getValue('link_tarea'),GM_getValue('tarea_id'),reset_time)},time_random(1000,1000));
-                                            //   setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre1'),GM_getValue('link_tarea1'),GM_getValue('tarea_id1'),reset_time)},time_random(1000,1000));
+                                           setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre'),GM_getValue('link_tarea'),GM_getValue('tarea_id'),reset_time)},time_random(1000,1000));
+                                               setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre1'),GM_getValue('link_tarea1'),GM_getValue('tarea_id1'),reset_time)},time_random(1000,1000));
                                                }}
                                             var data_tareas=JSON.parse($(response.responseText).find('#task-listing-datatable').attr('data-tasks'));
                                             var tareas_filtradas=filtrar_block(data_tareas);
@@ -1182,7 +1182,7 @@ setTimeout(function(){
     window.close = null;
 }
 else if(window.location.href.includes('secret')){
-  //  window.close();
+    window.close();
 }else if(window.location.href.includes('auth')){
     setTimeout(function(){ClikLogin();}, 1000);
     function ClikLogin(){
