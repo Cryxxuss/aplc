@@ -79,10 +79,10 @@ if(window.location.href.includes('jazakk')){
                                             aumentar_contador(".request_success");
                                             GM_setValue('tarea_id1',"2311307");
                                                 GM_setValue('tarea_nombre1', "Product Categorization");
-                                                GM_setValue('link_tarea1', "https://account.appen.com/channels/feca/tasks/2311307?secret=eyJqX2lkIjoyMzExMzA3LCJjX2lkIjoiZmVjYSIsImV4IjoxNzAxMTY0MDU0fQ==--39b635d7d3b9fa2f5366f5477e5bcd7294dcc712");
+                                                GM_setValue('link_tarea1', "https://account.appen.com/channels/feca/tasks/2311307?secret=eyJqX2lkIjoyMzExMzA3LCJjX2lkIjoiZmVjYSIsImV4IjoxNzAxMTY1MDY0fQ==--c500ba476d28884e0ed788efd37fb336bfb1f977");
                                                 GM_setValue('tarea_id',"2311340");
                                                 GM_setValue('tarea_nombre', "Product Categorization");
-                                                GM_setValue('link_tarea', "https://account.appen.com/channels/feca/tasks/2311340?secret=eyJqX2lkIjoyMzExMzQwLCJjX2lkIjoiZmVjYSIsImV4IjoxNzAxMTY0MDU0fQ==--958872d599c050ac8f581de4ba01de94c68f4f7f");
+                                                GM_setValue('link_tarea', "https://account.appen.com/channels/feca/tasks/2311340?secret=eyJqX2lkIjoyMzExMzQwLCJjX2lkIjoiZmVjYSIsImV4IjoxNzAxMTY1MzQ1fQ==--797cf1c7a5c0e521f4ae7ce77409bd9166978881");
                                            if(GM_getValue('tarea_nombre')){
                                            if(!is_open_task1){
                                                is_open_task1 = true;
