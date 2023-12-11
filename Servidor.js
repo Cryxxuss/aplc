@@ -130,6 +130,7 @@ autofill_radios_random=["1","2"];
      case jobTitle.includes("Olhe O Anúncio E Dê Sua Opinião."):
 
 id="2231203";
+setInterval(eliminarnotq,8000);
 autofill_radios_random=["1","2"];
 
         setInterval(Enviar_task, Math.round(Math.random() * (35000 - 31000)) + 31000);
@@ -138,6 +139,7 @@ autofill_radios_random=["1","2"];
      case jobTitle.includes("Observa Los Anuncios Y Júzgalo Tú Mismo"):
 
 id="2233827";
+setInterval(eliminarnotq,8000);
 autofill_radios_random=["1","2"];
 
         setInterval(Enviar_task, Math.round(Math.random() * (35000 - 31000)) + 31000);
@@ -146,6 +148,7 @@ autofill_radios_random=["1","2"];
      case jobTitle.includes("Look At Advertisements"):
 
 id="2232246";
+setInterval(eliminarnotq,8000);
 autofill_radios_random=["1","2"];
 
         setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
