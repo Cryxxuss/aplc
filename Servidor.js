@@ -35,14 +35,17 @@ var titleapp = document.querySelector(".job-title").innerText;
 titleDivapp.innerHTML = titleapp;
 var jobTitle = titleDivapp.innerText;
 
-    setInterval(getGuia_interval,30000);
+    setInterval(getGuia_interval,28000);
 function getGuia_interval(){
-
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+       if(!QuizM.includes("1/")){
 document.getElementsByClassName('fas fa-file-signature ')[0].click();
-}
+}}
     setTimeout(getGuia,5000);
 function getGuia(){
-
 document.getElementsByClassName('fas fa-file-signature ')[0].click();
 }
 
