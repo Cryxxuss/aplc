@@ -14,7 +14,7 @@ function fillAnwsers(){
     var jobTitle = titleDivapp.innerText;
 
 
-if(jobTitle.includes("Product Categorization")){
+if(jobTitle.includes("Product Categorization") || jobTitle.includes("20K Sample")){
 
     var jsawesome = document.querySelectorAll(".cml");
     jsawesome.forEach(wrapper => {
