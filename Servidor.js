@@ -273,7 +273,7 @@ autofill_radios_random=["1","2","3"];
 		setInterval(given_up,2000);
      break;
 
-     case jobTitle.includes("Classify Text Into Categories") || jobTitle.includes("Classify Reviews As"):
+     case jobTitle.includes("Classify Text Into Categories") || jobTitle.includes("Classify Webpage Text Into Genre"):
 
 id="2278086"
 autofill_radios_random=["1","2"];
