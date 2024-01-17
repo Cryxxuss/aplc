@@ -421,7 +421,7 @@ setInterval(rocktq,40000);
      case jobTitle.includes("Product Categorization") || jobTitle.includes("20K Sample") || jobTitle.includes("Priority No Batch"):
 
 id="2323516"
-autofill_radios_random=["1"];
+autofill_radios_random=["1","2"];
 		setInterval(Enviar, Math.round(Math.random() * (65000 - 62000)) + 62000);
      break;
 
