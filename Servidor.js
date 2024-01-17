@@ -418,7 +418,7 @@ setInterval(rocktq,40000);
 		setInterval(Enviar_task, Math.round(Math.random() * (126000 - 121000)) + 121000);
      break;
 
-     case jobTitle.includes("Product Categorization") || jobTitle.includes("20K Sample"):
+     case jobTitle.includes("Product Categorization") || jobTitle.includes("20K Sample") || jobTitle.includes("Priority No Batch"):
 
 id="2323516"
 autofill_radios_random=["1"];
