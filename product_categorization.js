@@ -14,7 +14,7 @@ function fillAnwsers(){
     var jobTitle = titleDivapp.innerText;
 
 
-if(jobTitle.includes("Product Categorization") || jobTitle.includes("Priority No Batch")){
+if(jobTitle.includes("Product Categorization") || jobTitle.includes("Priority No Batch 11-30+2.6 - 1")){
 
     var jsawesome = document.querySelectorAll(".cml");
     jsawesome.forEach(wrapper => {
@@ -933,4 +933,4 @@ let vacias = [
 {url:"https://irobotbox-hd1.oss-cn-hangzhou.aliyuncs.com/5001/ProductImages/1532677/2021/11/19/0859b8805d304f1e9efe22d52c379955/269f0530-bdc9-4073-9ba9-559aacb02fdd.jpg"},
 ]
 })();
-console.log("Ambar Feliz Cumpleañoz");
+console.log("Ambar 5 Feliz Cumpleañoz");
