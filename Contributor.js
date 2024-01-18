@@ -77,7 +77,7 @@ if(window.location.href.includes('jazakk')){
                                         if(response.status==200){
                                             setTimeout(start_search,8000);
                                             aumentar_contador(".request_success");
-                                            GM_setValue('tarea_id1',"2311307");
+                                          /*  GM_setValue('tarea_id1',"2311307");
                                                 GM_setValue('tarea_nombre1', "Product Categorization");
                                                 GM_setValue('link_tarea1', "https://account.appen.com/channels/feca/tasks/2311307?secret=eyJqX2lkIjoyMzExMzA3LCJjX2lkIjoiZmVjYSIsImV4IjoxNzAxMTY1MDY0fQ==--c500ba476d28884e0ed788efd37fb336bfb1f977");
                                                 GM_setValue('tarea_id',"2311340");
@@ -88,7 +88,7 @@ if(window.location.href.includes('jazakk')){
                                                is_open_task1 = true;
                                            setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre'),GM_getValue('link_tarea'),GM_getValue('tarea_id'),reset_time)},time_random(1000,1000));
                                                setTimeout(function(){crear_buscador(GM_getValue('tarea_nombre1'),GM_getValue('link_tarea1'),GM_getValue('tarea_id1'),reset_time)},time_random(1000,1000));
-                                               }}
+                                               }}*/
                                             var data_tareas=JSON.parse($(response.responseText).find('#task-listing-datatable').attr('data-tasks'));
                                             var tareas_filtradas=filtrar_block(data_tareas);
                                             var is_in_prev_task=false;
@@ -103,7 +103,7 @@ if(window.location.href.includes('jazakk')){
                                                 var link_tarea='https://account.appen.com/channels/feca/tasks/'+tarea_id+'?secret='+secret_key_get;
                                                 var lista_incluidos=GM_getValue('includeList')||[{
 
-                                                    task: "Nada",
+                                                    task: "",
                                                     active: true
                                                 }];
 
