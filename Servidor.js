@@ -422,7 +422,7 @@ setInterval(rocktq,40000);
 
 id="2323516"
 autofill_radios_random=["1","2"];
-		setInterval(Enviar, Math.round(Math.random() * (65000 - 62000)) + 62000);
+		setInterval(Enviar, Math.round(Math.random() * (62000 - 60000)) + 60000);
      break;
 
     default:
