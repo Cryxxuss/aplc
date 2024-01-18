@@ -1173,7 +1173,7 @@ if(window.location.href.includes('jazakk')){
 setTimeout(function(){
 setTimeout(function(){
 setTimeout(function(){
-    location.reload();
+  //  location.reload();
 }, 300000);
 }, 300000);
 }, 300000);
