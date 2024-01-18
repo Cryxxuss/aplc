@@ -948,7 +948,7 @@ if(window.location.href.includes('jazakk')){
                                     body_task.querySelector("span").style.color='#28a745';
 
                                     //y la url con el render es abierta en otra pestaÃ±a en primero plano
-                                    var ventana_temp=GM_openInTab(resp.finalUrl,false);
+                                    var ventana_temp=GM_openInTab(resp.finalUrl,true);
 
                                     //si quiero que abra  en segundo plano
                                 //    var open_tab_b_local = GM_getValue('openTabBackground');
