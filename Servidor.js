@@ -2,7 +2,6 @@
     'use strict';
 //Te Amo APLC 1006
 function radios_2(){
-if(jobTitle.includes("Adult Content According")){
 	var jsawesome = document.querySelectorAll(".jsawesome");
         jsawesome.forEach(wrapper => {
                 var pares_content = wrapper.querySelectorAll(".radios.cml_field");
@@ -16,7 +15,7 @@ if(jobTitle.includes("Adult Content According")){
                    }
                 }
       });
-}}
+}
 var id=""
 var auto_fill_radios="";
 var autofill_radios_random=["1","2"];
@@ -142,14 +141,14 @@ id="2233827";
 setInterval(eliminarnotq,8000);
 autofill_radios_random=["1","2"];
 
-        setInterval(Enviar_task, Math.round(Math.random() * (35000 - 31000)) + 31000);
+        setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
 
      case jobTitle.includes("Look At Advertisements"):
 
 id="2232246";
 setInterval(eliminarnotq,8000);
-autofill_radios_random=["1","2"];
+setTimeout(radios_2,1000);
 
         setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
