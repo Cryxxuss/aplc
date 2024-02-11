@@ -87,6 +87,7 @@ var QuizMM = WM.innerText;
 
 let datos= [
 {url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/63YAAOSwfs9i1eez.jpg",respuesta: false},
+{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/9EAAAOSwE7tga-l-.jpg",respuesta: false},
 {url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/AmUAAOSwYhNhfRNd.jpg",respuesta: false},
 {url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/eUkAAOSwfUdlHBiF.jpg",respuesta: false},
 {url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/ofUAAOSwxidiXJoE.jpg",respuesta: false},
