@@ -892,6 +892,7 @@ if(window.location.href.includes('jazakk')){
 
     function filtrar_block(tareas){
     var lista_block=GM_getValue('blockList')||[
+        "Investigating Factors That Play A Role In The Interaction Between Manually Driven And Autom"
         "Judge Whether Sentences",
         "Matching Synthetic Voices",
         "Matching Synthetic Voices To Faces For A Virtual Agent (W1p2 A1c2)",
