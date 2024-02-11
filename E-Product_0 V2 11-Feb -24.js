@@ -161,6 +161,7 @@ let datos= [
 {url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/V1sAAOSwNG1ikM1f.jpg",respuesta: true},
 {url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/LsUAAOSwA6Nky-2z.jpg",respuesta: true},
 {url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/LsUAAOSwA6Nky-2z.jpg",respuesta: true},
+{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/L84AAOSwUuZkREUK.jpg",respuesta: false},
 ]
 let vacias = [
 {url:"http://image.issuu.com/230619103912-8f753627d79ed17bdb6f06366e0aa2a4/jpg/page_1_thumb_large.jpg"},
