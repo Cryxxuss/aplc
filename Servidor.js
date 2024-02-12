@@ -427,8 +427,8 @@ autofill_radios_random=["1","2"];
      case jobTitle.includes("E-Product_1 V2 11-Feb -24"):
 
 id="2372191"
-auto_fill_radios="1";
-		setInterval(Enviar_task, Math.round(Math.random() * (33000 - 31000)) + 30000);
+setTimeout(radios_2,1000);
+		setInterval(Enviar, Math.round(Math.random() * (33000 - 31000)) + 30000);
      break;
 
     default:
@@ -604,4 +604,4 @@ bandera = true;
         }
     }
 })();
-console.log("autofill_checkboxes_random hola");
+console.log("E-Product_1 V2 11-Feb -24");
