@@ -48,7 +48,7 @@ if(jobTitle.includes("E-Product_1 V2 11-Feb -24")){
 				primero[1].click();
 				break;
 			}
-          	  setTimeout(enviar, Math.round(Math.random() * (35000 - 31000)) + 31000);
+          	//  setTimeout(enviar, Math.round(Math.random() * (35000 - 31000)) + 31000);
         }
         else if(data2.length > 0){
 
