@@ -424,11 +424,18 @@ autofill_radios_random=["1","2"];
 		//setInterval(Enviar, Math.round(Math.random() * (62000 - 60000)) + 60000);
      break;
 
-     case jobTitle.includes("E-Product_1 V2 11-Feb -24"):
+     case jobTitle.includes("E-Product_"):
 
 id="2372191"
-setTimeout(radios_2,1000);
-		setInterval(Enviar, Math.round(Math.random() * (33000 - 31000)) + 30000);
+autofill_radios_random=["1","2"];
+		setInterval(Enviar, Math.round(Math.random() * (35000 - 31000)) + 31000);
+     break;
+
+     case jobTitle.includes("Fonts Image Review Crowd"):
+
+id="2418025"
+autofill_radios_random=["1","2"];
+		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
      break;
 
     default:
