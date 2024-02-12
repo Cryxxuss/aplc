@@ -424,11 +424,11 @@ autofill_radios_random=["1","2"];
 		//setInterval(Enviar, Math.round(Math.random() * (62000 - 60000)) + 60000);
      break;
 
-     case jobTitle.includes("Product_0 V2"):
+     case jobTitle.includes("E-Product_1 V2 11-Feb -24"):
 
 id="2372191"
 auto_fill_radios="1";
-		setInterval(Enviar_task, Math.round(Math.random() * (22000 - 20000)) + 20000);
+		setInterval(Enviar_task, Math.round(Math.random() * (33000 - 31000)) + 30000);
      break;
 
     default:
