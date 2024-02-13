@@ -427,7 +427,7 @@ autofill_radios_random=["1","2"];
      case jobTitle.includes("E-Product_"):
 
 id="2372191"
-autofill_radios_random=["1","2"];
+setTimeout(radios_2,1000);
 		setInterval(Enviar, Math.round(Math.random() * (35000 - 31000)) + 31000);
      break;
 
