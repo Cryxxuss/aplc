@@ -14,7 +14,7 @@ function fillAnwsers(){
     var jobTitle = titleDivapp.innerText;
 
 
-if(jobTitle.includes("E-Product_1 V2 11-Feb -24")){
+if(jobTitle.includes("E-Product_")){
 
     var jsawesome = document.querySelectorAll(".cml");
     jsawesome.forEach(wrapper => {
