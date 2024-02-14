@@ -44,8 +44,8 @@ if(jobTitle.includes("E-Product_")){
 				primero[0].click();
 				break;
 			  case false:
-				primero[1].checked=1;
-				primero[1].click();
+				primero[3].checked=1;
+				primero[3].click();
 				break;
 			}
           	//  setTimeout(enviar, Math.round(Math.random() * (35000 - 31000)) + 31000);
@@ -86,56 +86,7 @@ var QuizMM = WM.innerText;
 }}
 
 let datos= [
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/63YAAOSwfs9i1eez.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/9EAAAOSwE7tga-l-.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/AmUAAOSwYhNhfRNd.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/eUkAAOSwfUdlHBiF.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/ofUAAOSwxidiXJoE.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/5rkAAOSwNsNlHjBf.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/FGIAAOSwKZdigz3I.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/tg8AAOSwcJxgbN~0.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/~kQAAOSwH31kScNl.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/nt0AAOSwYp9g1gFM.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/PI8AAOSwyhti8XpN.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/E3AAAOSwxhNgbdKG.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/c70AAOSwoeJhebN5.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/va0AAOSwZNZhZMnz.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/afYAAOSw9JllXQIw.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/M9cAAOSwuaFiH6ow.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/DS4AAOSw0KxhBeAk.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/cMcAAOSwy9Rh8q2R.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/hfsAAOSwFFRir8P9.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/EzEAAOSwC6JjYmj4.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/k1IAAOSwsyNkIH8k.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/AtgAAOSwAxhlMUaz.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/OwgAAOSwSupkVOnV.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/dLsAAOSwu-Vk1UXy.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/kJgAAOSwHkZhKtIz.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/rzwAAOSwAzNkohBb.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/SWoAAOSwWWljSK84.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/BMIAAOSwliNiS4Uy.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/JWAAAOSwBbphDuKz.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/mU8AAOSwItJjV18S.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/JC0AAOSw~aNiZze0.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/NQYAAOSwg4Ri1Lqr.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/Y0cAAOSwaWxic-QP.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/lBcAAOSw6L1jnC7a.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/JX4AAOSwn8tjWZyv.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/rpcAAOSwreVhCySy.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/-5kAAOSw5vBimOQ7.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/query/A14AAOSwxK9lHEoT.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/yOgAAOSwxuJhT7VY.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/AtgAAOSwAxhlMUaz.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/v40AAOSwXGZiJOEO.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/bBQAAOSw2Y1hIxib.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/v7QAAOSwtnliAUeH.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/jhUAAOSwnvVhP-bi.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/uU8AAOSwCHFg7ddA.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/GGAAAOSwdjJjvYzP.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/ih0AAOSw-~JlASaM.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/~08AAOSw7l9h7J7z.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/SWoAAOSwWWljSK84.jpg",respuesta: false},
-{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/E3AAAOSwxhNgbdKG.jpg",respuesta: false},
+{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/cpAAAOSwVGxjBov0.jpg",respuesta: false},
 {url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/3YAAAOSwzb1hSCaj.jpg",respuesta: true},
 {url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/sF0AAOSwS2ZkI1j2.jpg",respuesta: true},
 {url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/SAkAAOSwW6Rkp3-5.jpg",respuesta: true},
