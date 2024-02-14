@@ -131,7 +131,7 @@ let datos= [
 {url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/k9UAAOSw0A1hLpMw.jpg",respuesta: true},
 {url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/0QUAAOSwNCRhqXA7.jpg",respuesta: true},
 {url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/CzMAAOSwbZRhmdbr.jpg",respuesta: true},
-{url:"",respuesta: true},
+{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/TrEAAOSwuuZkq12z.jpg",respuesta: true},
 {url:"",respuesta: true},
 {url:"",respuesta: true},
 {url:"",respuesta: true},
