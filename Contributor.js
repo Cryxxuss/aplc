@@ -164,7 +164,7 @@ if(window.location.href.includes('jazakk')){
 
                                 setTimeout(function(){
                                 portal_login.close(start_search());
-                                },15000);}
+                                },10000);}
                             }else{
                                 setTimeout(start_search,8000);
                             }
