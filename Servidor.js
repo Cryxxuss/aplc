@@ -34,7 +34,7 @@ var titleapp = document.querySelector(".job-title").innerText;
 titleDivapp.innerHTML = titleapp;
 var jobTitle = titleDivapp.innerText;
 
-    setInterval(getGuia_interval,28000);
+    setInterval(getGuia_interval,18000);
 function getGuia_interval(){
 var QM = document.createElement("div");
 var titleappp = document.querySelector(".navbar").innerText;
@@ -431,9 +431,16 @@ setTimeout(radios_2,1000);
 		setInterval(Enviar, Math.round(Math.random() * (35000 - 31000)) + 31000);
      break;
 
-     case jobTitle.includes("Fonts Image Review Crowd"):
+     case jobTitle.includes("Fonts Image Review"):
 
 id="2418025"
+autofill_radios_random=["1","2"];
+		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
+     break;
+
+     case jobTitle=="Image Review":
+
+id="2423581"
 autofill_radios_random=["1","2"];
 		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
      break;
@@ -611,4 +618,4 @@ bandera = true;
         }
     }
 })();
-console.log("E-Product_1 V2 11-Feb -24");
+console.log("Nuevas cosas");
