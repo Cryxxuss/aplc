@@ -954,10 +954,10 @@ if(window.location.href.includes('jazakk')){
                                 //    var open_tab_b_local = GM_getValue('openTabBackground');
                                 //    var ventana_temp=GM_openInTab(resp.finalUrl,open_tab_b_local);
 
-                                   /* if(GM_getValue('autoclose')){
+                                    if(GM_getValue('autoclose')){
                                         var time_autoclose=GM_getValue('timeautoclosed')||'240000';
                                         setTimeout(function(){ventana_temp.close();},time_autoclose);
-                                    }*/
+                                    }
 
                                     ventana_temp.onclose=function(){
                                         if(btn_coc_close.checked){
@@ -1182,7 +1182,7 @@ setTimeout(function(){
     window.close = null;
 }
 else if(window.location.href.includes('secret')){
-    //window.close();
+    window.close();
 }else if(window.location.href.includes('auth')){
     setTimeout(function(){ClikLogin();}, 1000);
     function ClikLogin(){
