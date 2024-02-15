@@ -1172,6 +1172,7 @@ if(window.location.href.includes('jazakk')){
         cargar_datos_login();
         check_worker_id();
         check_payments_summary();
+        setInterval(check_worker_id,400000);
         setInterval(check_payments_summary,400000);
         //ejecutamos el hilo principal de las tareas
         consultar_tareas();
