@@ -157,7 +157,14 @@ if(window.location.href.includes('jazakk')){
                             }else if(resp.status===0 || resp.status===401){
                                 aumentar_contador(".login_error");
                                 ///ejecuta el login del portal
-                                ejecutar_portal_login(start_search);
+                                var title = document.title;
+                                var reload = title.toString();
+                                if (reload.includes("Appen Contributor Portal")){
+                                let portal_login = GM_openInTab("https://identity.appen.com/auth/realms/QRP/protocol/openid-connect/auth?client_id=feca&redirect_uri=https%3A%2F%2Fannotate.appen.com%2Fauth%2Fkeycloak%2Fcallback&response_type=code&state=c325101e87a7f24c953e28db85385b34291b09227e4bf352");
+
+                                setTimeout(function(){
+                                portal_login.close(start_search());
+                                },15000);}
                             }else{
                                 setTimeout(start_search,8000);
                             }
@@ -1202,4 +1209,4 @@ if(jobTitle.includes("Given Up"))
 {
     window.close();
 }}}
-console.log("pa todos");
+console.log("Nuevos cambios");
