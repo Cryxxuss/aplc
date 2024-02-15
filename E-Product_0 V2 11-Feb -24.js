@@ -139,6 +139,7 @@ let datos= [
 {url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/llgAAOSwqiNldOiq.jpg",respuesta: true},
 {url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/nO8AAOSwL35jem5r.jpg",respuesta: true},
 {url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/N1kAAOSw7FNkZ7Ue.jpg",respuesta: true},
+{url:"https://storage.cloud.google.com/ai-vision/team/data/eproduct-v2/vision-eproduct-v2/index/auUAAOSwm4Vj35Y~.jpg",respuesta: false},
 {url:"",respuesta: true},
 {url:"",respuesta: true},
 {url:"",respuesta: true},
