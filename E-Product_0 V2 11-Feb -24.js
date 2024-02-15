@@ -167,4 +167,4 @@ let vacias = [
 {url:"http://image.issuu.com/230624143208-6d41222aa85353c894f620f095719054/jpg/page_1_thumb_large.jpg"},
 ]
 })();
-console.log("Guia Full nuevas ");
+console.log("Guia Full nuevas 15/02 ");
