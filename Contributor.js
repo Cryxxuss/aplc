@@ -1112,7 +1112,7 @@ if(window.location.href.includes('jazakk')){
         "Cabinet Pull Image Survey",
         "Market Research Job",
         "Find The Official Website Of Businesses - 2021-10-05",
-        "Uk_search-Science",
+        "Investigating Factors That Play A Role In The Interaction Between Manually Driven And Automated Vehicles",
         "2Fa Ops Overhaul"
     ];
         lista_block.forEach(key=>{
