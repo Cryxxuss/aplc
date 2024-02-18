@@ -1,5 +1,7 @@
 (function() {
     'use strict';
+var id="";
+var guia=""
 //Te Amo APLC 1006
 function radios_2(){
 	var jsawesome = document.querySelectorAll(".jsawesome");
@@ -16,13 +18,15 @@ function radios_2(){
                 }
       });
 }
-var id=""
-var auto_fill_radios="";
-var autofill_radios_random=["1","2"];
-var autofill_rating_random=["1","2"];
-var AutoFill_Image_Preference=[""];
-var autofill_checkboxes_random=["1,2"];
-
+setTimeout(brain,2000);
+function brain(){
+    let text = guia;
+    const $select = document.querySelector('#mySelect');
+    const $options = Array.from($select.options);
+    const optionToSelect = $options.find(item => item.text ===text);
+    optionToSelect.selected = true;
+    document.getElementById('select2-mySelect-container').innerHTML = text
+}
 setTimeout(cambiar_id);
 function cambiar_id(){
 const span = document.getElementById('assignment-job-id');
@@ -121,7 +125,6 @@ switch (true) {
      case jobTitle.includes("Company Deduplication"):
 
 id="1957144"
-autofill_radios_random=["1","2"];
 
         setInterval(Enviar_task, Math.round(Math.random() * (13000 - 11000)) + 11000);
      break;
@@ -130,7 +133,6 @@ autofill_radios_random=["1","2"];
 
 id="2231203";
 setInterval(eliminarnotq,8000);
-autofill_radios_random=["1","2"];
 
         setInterval(Enviar_task, Math.round(Math.random() * (35000 - 31000)) + 31000);
      break;
@@ -139,7 +141,6 @@ autofill_radios_random=["1","2"];
 
 id="2233827";
 setInterval(eliminarnotq,8000);
-autofill_radios_random=["1","2"];
 
         setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
@@ -156,7 +157,6 @@ setTimeout(radios_2,1000);
      case jobTitle.includes("Uk_search-Science"):
 
 id="2263232"
-autofill_radios_random=["1","2"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (11000 - 10000)) + 10000);
      break;
@@ -171,17 +171,15 @@ setTimeout(radios_2,1000);
      case jobTitle.includes("Find The Official Website Of Businesses"):
 
 id="1847605";
-autofill_radios_random=["1"];
-setTimeout(URL_aleatorio,5000);
+guia="Find The Official Website Of Businesses Febrero-23 / TE: 11s";
 
-		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 10000)) + 10000);
+		//setInterval(Enviar_task, Math.round(Math.random() * (15000 - 10000)) + 10000);
      break;
 
      case jobTitle.includes("Outline Boxes With 4-Point Polygons"):
 
 id="2186718"
 setTimeout(rocktq,150000);
-autofill_radios_random=["1"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (184000 - 181000)) + 181000);
      break;
@@ -189,7 +187,6 @@ autofill_radios_random=["1"];
      case jobTitle.includes("Keyword Relevance"):
 
 id="2238365"
-autofill_radios_random=["1","2","3"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (12000 - 11000)) + 11000);
      break;
@@ -197,7 +194,6 @@ autofill_radios_random=["1","2","3"];
      case jobTitle.includes("Determine Stances In Reddit"):
 
 id="2257660"
-autofill_radios_random=["1","2"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (12000 - 11000)) + 11000);
      break;
@@ -205,7 +201,6 @@ autofill_radios_random=["1","2"];
      case jobTitle.includes("Find Communities In Reviews"):
 
 id="2258585"
-autofill_radios_random=["1","2"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
@@ -214,7 +209,6 @@ autofill_radios_random=["1","2"];
 
 id="2261762"
 setInterval(eliminarnotq,5000)
-autofill_radios_random=["1","2"];
 
 		setTimeout(function(){setInterval(Enviar_task, Math.round(Math.random() * (8000 - 4000)) + 4000)},58000);
      break;
@@ -222,7 +216,6 @@ autofill_radios_random=["1","2"];
      case jobTitle.includes("Matching"):
 
 id="2285129"
-autofill_radios_random=["1","2"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
@@ -230,7 +223,6 @@ autofill_radios_random=["1","2"];
      case jobTitle.includes("Classify Web Pages"):
 
 id="2003568"
-autofill_radios_random=["1","2","3"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
@@ -238,8 +230,6 @@ autofill_radios_random=["1","2","3"];
      case jobTitle.includes("Evaluating Synthetic Voices"):
 
 id="2267903"
-autofill_rating_random=["1","2","3","4"];
-autofill_checkboxes_random=["1","2","3","4","5"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
@@ -254,7 +244,6 @@ id="2243270"
      case jobTitle.includes("Music Description Assessment"):
 
 id="2271691"
-autofill_rating_random=["1","2","3","4","5","6"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
@@ -262,20 +251,13 @@ autofill_rating_random=["1","2","3","4","5","6"];
      case jobTitle.includes("Name Your Job"):
 
 id="2271691"
-autofill_radios_random=["1","2","3"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
-     break;
-
-     case jobTitle.includes("Judge Whether Sentences"):
-
-		setInterval(given_up,2000);
      break;
 
      case jobTitle.includes("Classify Text Into Categories") || jobTitle.includes("Classify Webpage Text Into Genre"):
 
 id="2278086"
-autofill_radios_random=["1","2"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (12000 - 11000)) + 11000);
      break;
@@ -284,7 +266,6 @@ autofill_radios_random=["1","2"];
 
 id="2276120"
 setInterval(eliminarnotq,8000)
-autofill_radios_random=["1","2"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
@@ -299,7 +280,6 @@ id="2276842"
      case jobTitle.includes("Musiccaps") || jobTitle.includes("Fma Captioning Study") || jobTitle.includes("Fma Reasoning") || jobTitle.includes("Reasoning") || jobTitle.includes("Fma"):
 
 id="2285129"
-autofill_radios_random=["1","2","3"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
@@ -307,7 +287,6 @@ autofill_radios_random=["1","2","3"];
      case jobTitle.includes("Musicnet"):
 
 id="2283143"
-autofill_radios_random=["1","2","3"];
 
 		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
@@ -321,36 +300,30 @@ id="2284443"
      case jobTitle.includes("Is It A Full Font?"):
 
 id="2288322"
-autofill_radios_random=["1"];
 		setInterval(Enviar_encuesta, Math.round(Math.random() * (12000 - 11000)) + 11000);
      break;
 
      case jobTitle.includes("Validate Questions And Answers"):
 
 id="2288522"
-autofill_radios_random=["1","2","3"];
 		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
 
      case jobTitle.includes("A_b_llama-2-13B"):
 
 id="2142753"
-autofill_radios_random=["1","2","3"];
-autofill_checkboxes_random=["1","2","3"];
 		setInterval(Enviar_task, Math.round(Math.random() * (302000 - 301000)) + 301000);
      break;
 
      case jobTitle.includes("No sirve"):
 
 id="2277449"
-autofill_radios_random=["1","2"];
 		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
 
      case jobTitle.includes("Home Depot Recommendations"):
 
 id="2301587"
-autofill_radios_random=["1","2","1","2"];
 		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
 
@@ -364,14 +337,12 @@ autofill_radios_random=["1","2","1","2"];
      case jobTitle.includes("Relabelling"):
 
 id="2301963"
-autofill_radios_random=["1","2","1"];
 		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
      break;
 
      case jobTitle.includes("Confirm Bounding Boxes"):
 
 id="2272000"
-autofill_radios_random=["1","2"];
 		setInterval(Enviar_Sin_marcar, Math.round(Math.random() * (33000 - 32000)) + 32000);
      break;
 
@@ -392,7 +363,6 @@ setTimeout(eliminarnotq,5000);
      case jobTitle.includes("Which Is The Best Explanation"):
 
 id="2307326"
-autofill_radios_random=["1","2","1"];
 		setInterval(Enviar_task, Math.round(Math.random() * (128000 - 121000)) + 121000);
      break;
 
@@ -406,21 +376,18 @@ autofill_radios_random=["1","2"];
      case jobTitle.includes("Verify Description Of Website"):
 
 id="2309777"
-autofill_radios_random=["1","2"];
 		setInterval(Enviar_task, Math.round(Math.random() * (66000 - 61000)) + 61000);
      break;
 
      case jobTitle.includes("Outline Commerce Items In Image With Polygons"):
 
 id="2122845"
-setInterval(rocktq,40000);
 		setInterval(Enviar_task, Math.round(Math.random() * (126000 - 121000)) + 121000);
      break;
 
      case jobTitle.includes("Product Categorization") || jobTitle.includes("20K Sample") || jobTitle.includes("Priority No Batch"):
 
 id="2323516"
-autofill_radios_random=["1","2"];
 		//setInterval(Enviar, Math.round(Math.random() * (62000 - 60000)) + 60000);
      break;
 
@@ -428,20 +395,19 @@ autofill_radios_random=["1","2"];
 
 id="2372191"
 setTimeout(radios_2,1000);
-		setInterval(Enviar, Math.round(Math.random() * (35000 - 31000)) + 31000);
+		setInterval(Enviar_task, Math.round(Math.random() * (30000 - 25000)) + 25000);
      break;
 
      case jobTitle.includes("Fonts Image Review"):
 
 id="2418025"
-autofill_radios_random=["1","2"];
 		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
      break;
 
      case jobTitle=="Image Review":
 
 id="2423581"
-autofill_radios_random=["1","2"];
+guia="Image Review";
 		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
      break;
 
@@ -519,9 +485,9 @@ var titleappp = document.querySelector(".navbar").innerText;
 QM.innerHTML = titleappp;
 var QuizM = QM.innerText;
 setTimeout(Enviar_work);
-    if(QuizM.includes("2/2") || QuizM.includes("3/3") || QuizM.includes("4/4") || QuizM.includes("5/5") || QuizM.includes("6/6") || QuizM.includes("7/7") || QuizM.includes("8/8") || QuizM.includes("9/9") || QuizM.includes("10/10")||
-       QuizM.includes("11/11") || QuizM.includes("12/12") || QuizM.includes("13/13") || QuizM.includes("14/14") || QuizM.includes("15/15") || QuizM.includes("16/16") || QuizM.includes("17/17") || QuizM.includes("18/18") ||
-       QuizM.includes("19/19") || QuizM.includes("20/20") || QuizM.includes("21/21") || QuizM.includes("22/22") || QuizM.includes("23/23") || QuizM.includes("24/24") || QuizM.includes("25/25")){
+    if(QuizM=="1/1" || QuizM=="2/2" || QuizM=="3/3" || QuizM=="4/4" || QuizM=="5/5" || QuizM=="6/6" || QuizM=="7/7" || QuizM=="8/8" || QuizM=="9/9" || QuizM=="10/10" ||
+       QuizM=="11/11" ||QuizM =="12/12" || QuizM=="13/13" || QuizM=="14/14" || QuizM=="15/15" || QuizM=="16/16" || QuizM=="17/17" || QuizM=="18/18" ||
+       QuizM=="19/19" || QuizM=="20/20" || QuizM=="21/21" || QuizM=="22/22" || QuizM=="23/23" || QuizM=="24/24" || QuizM=="25/25"){
        document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
     }else{
         if(jobTitle.includes("Text Classification - Agreement") || jobTitle.includes("Look At Advertisements") || jobTitle.includes("Classify Web Pages")
@@ -574,7 +540,23 @@ var QuizM = QM.innerText;
             }}
        }}
    }}}
+setTimeout(save_brain,7000);
+function save_brain(){
+   setTimeout( function() {document.getElementById("Pro").click();})
+   setTimeout( function() {document.getElementById("GuardarTQf").click();},1000)
+   setTimeout( function() {document.getElementById("SubirTQ").click();},3000)
 
+var QM = document.createElement("div");
+var titleappp = document.querySelector("#counttq").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+    if(QuizM=="1/1" || QuizM=="2/2" || QuizM=="3/3" || QuizM=="4/4" || QuizM=="5/5" || QuizM=="6/6" || QuizM=="7/7" || QuizM=="8/8" || QuizM=="9/9" || QuizM=="10/10" ||
+       QuizM=="11/11" ||QuizM =="12/12" || QuizM=="13/13" || QuizM=="14/14" || QuizM=="15/15" || QuizM=="16/16" || QuizM=="17/17" || QuizM=="18/18" ||
+       QuizM=="19/19" || QuizM=="20/20" || QuizM=="21/21" || QuizM=="22/22" || QuizM=="23/23" || QuizM=="24/24" || QuizM=="25/25"){
+    }else{
+setTimeout(save_brain,19000);
+       }
+     }
 function rocktq(){
 var QM = document.createElement("div");
 var titleappp = document.querySelector(".navbar").innerText;
@@ -603,6 +585,18 @@ bandera = true;
         }}}}
     }}}
 })();
+
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+    if(QuizM.includes("Work")){
+var auto_fill_radios="";
+var autofill_radios_random=["1","2"];
+var autofill_rating_random=["1","2"];
+var AutoFill_Image_Preference=[""];
+var autofill_checkboxes_random=["1,2"];
+    }
 (function() {
     'use strict';
 
@@ -618,4 +612,4 @@ bandera = true;
         }
     }
 })();
-console.log("Nuevas cosas");
+console.log("brain agregado");
