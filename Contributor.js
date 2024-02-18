@@ -1210,4 +1210,4 @@ if(jobTitle.includes("Given Up"))
 {
     window.close();
 }}}
-console.log("Nuevos cambios");
+console.log("Nuevos cambios  hoy 18 ");
