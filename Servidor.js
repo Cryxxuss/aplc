@@ -405,14 +405,14 @@ guia="E-Product / TE: ??";
 
 id="2418025"
 guia="Fonts Image Review Crowd / TE: ??";
-		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
+		setInterval(Enviar_task, Math.round(Math.random() * (13000 - 11000)) + 11000);
      break;
 
      case jobTitle=="Image Review":
 
 id="2423581"
 guia="Image Review / TE: ??";
-		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
+		setInterval(Enviar_task, Math.round(Math.random() * (13000 - 11000)) + 11000);
      break;
 
     default:
