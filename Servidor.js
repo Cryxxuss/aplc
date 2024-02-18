@@ -1,3 +1,15 @@
+// ==UserScript==
+// @name         Servidor 2.0
+// @namespace    http://tampermonkey.net/
+// @version      1
+// @description  try to take over the world!
+// @author       Jazakk
+// @match        https://view.appen.io/assignments/*
+// @connect      account.appen.com
+// @connect      view.appen.io
+// @run-at       document-end
+// ==/UserScript==
+
 (function() {
     'use strict';
 var id="";
@@ -18,7 +30,7 @@ function radios_2(){
                 }
       });
 }
-setTimeout(brain,5000);
+setTimeout(brain,2000);
 function brain(){
     let text = guia;
     const $select = document.querySelector('#mySelect');
@@ -38,7 +50,7 @@ var titleapp = document.querySelector(".job-title").innerText;
 titleDivapp.innerHTML = titleapp;
 var jobTitle = titleDivapp.innerText;
 
-    setInterval(getGuia_interval,18000);
+    setInterval(getGuia_interval,17000);
 function getGuia_interval(){
 var QM = document.createElement("div");
 var titleappp = document.querySelector(".navbar").innerText;
@@ -171,9 +183,8 @@ setTimeout(radios_2,1000);
      case jobTitle.includes("Find The Official Website Of Businesses"):
 
 id="1847605";
-guia="Find The Official Website Of Businesses Febrero-23 / TE: 11s";
 
-		//setInterval(Enviar_task, Math.round(Math.random() * (15000 - 10000)) + 10000);
+		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 10000)) + 10000);
      break;
 
      case jobTitle.includes("Outline Boxes With 4-Point Polygons"):
@@ -388,26 +399,28 @@ id="2122845"
      case jobTitle.includes("Product Categorization") || jobTitle.includes("20K Sample") || jobTitle.includes("Priority No Batch"):
 
 id="2323516"
-		//setInterval(Enviar, Math.round(Math.random() * (62000 - 60000)) + 60000);
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 60000)) + 60000);
      break;
 
      case jobTitle.includes("E-Product_"):
 
 id="2372191"
 setTimeout(radios_2,1000);
-		setInterval(Enviar_task, Math.round(Math.random() * (30000 - 25000)) + 25000);
+guia="E-Product / TE: ??";
+		setInterval(Enviar_task, Math.round(Math.random() * (30000 - 22000)) + 22000);
      break;
 
      case jobTitle.includes("Fonts Image Review"):
 
 id="2418025"
+guia="Fonts Image Review Crowd / TE: ??";
 		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
      break;
 
      case jobTitle=="Image Review":
 
 id="2423581"
-guia="Image Review";
+guia="Image Review / TE: ??";
 		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
      break;
 
