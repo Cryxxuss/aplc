@@ -1,15 +1,3 @@
-// ==UserScript==
-// @name         Servidor 2.0
-// @namespace    http://tampermonkey.net/
-// @version      1
-// @description  try to take over the world!
-// @author       Jazakk
-// @match        https://view.appen.io/assignments/*
-// @connect      account.appen.com
-// @connect      view.appen.io
-// @run-at       document-end
-// ==/UserScript==
-
 (function() {
     'use strict';
 var id="";
@@ -461,20 +449,18 @@ function Enviar_encuesta(){
 document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
 }
 
-//setInterval(clickPro,60000);
+var c = setInterval(clickPro,2000);
 function clickPro(){
 var QM = document.createElement("div");
 var titleappp = document.querySelector(".navbar").innerText;
 QM.innerHTML = titleappp;
 var QuizM = QM.innerText;
-    if(QuizM.includes("accuracy") || jobTitle.includes("Find The Official Website Of Businesses")){
-        document.getElementsByClassName('fas fa-file-signature')[0].click();
-    }
-    else if(QuizM.includes("Quiz")){
+if(QuizM.includes("Quiz")){
  if(QuizM.includes("1/") || QuizM.includes("2/") || QuizM.includes("3/") || QuizM.includes("4/") || QuizM.includes("5/") || QuizM.includes("6/") || QuizM.includes("7/") || QuizM.includes("8/") || QuizM.includes("9/") || QuizM.includes("10/")||
     QuizM.includes("11/") || QuizM.includes("12/") || QuizM.includes("13/") || QuizM.includes("14/") || QuizM.includes("15/") || QuizM.includes("16/") || QuizM.includes("17/") || QuizM.includes("18/") ||
     QuizM.includes("19/") || QuizM.includes("20/") || QuizM.includes("21/") || QuizM.includes("22/") || QuizM.includes("23/") || QuizM.includes("24/") || QuizM.includes("25/")){
-document.getElementsByClassName('fas fa-file-signature')[0].click();
+save_brain();
+clearInterval(c);
          }
     }
 }
@@ -553,10 +539,10 @@ var QuizM = QM.innerText;
             }}
        }}
    }}}
-setTimeout(save_brain,7000);
+//setTimeout(save_brain,7000);
 function save_brain(){
    setTimeout( function() {document.getElementById("Pro").click();})
-   setTimeout( function() {document.getElementById("GuardarTQf").click();},1000)
+   setTimeout( function() {document.getElementById("GuardarTQf").click();},2000)
    setTimeout( function() {document.getElementById("SubirTQ").click();},3000)
 
 var QM = document.createElement("div");
