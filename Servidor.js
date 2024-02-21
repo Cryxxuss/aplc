@@ -415,6 +415,13 @@ guia="Image Review / TE: ??";
 		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
      break;
 
+     case jobTitle=="Evaluate The Quality Of Q&A System":
+
+autofill_rating_random=["1","2","3","4"];
+autofill_checkboxes_random=["1,2","3","4"];
+		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
+     break;
+
     default:
 
     break;
