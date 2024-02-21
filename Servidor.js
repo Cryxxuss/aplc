@@ -405,14 +405,14 @@ guia="E-Product / TE: ??";
 
 id="2418025"
 guia="Fonts Image Review Crowd / TE: ??";
-		setInterval(Enviar_task, Math.round(Math.random() * (13000 - 11000)) + 11000);
+		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
      break;
 
      case jobTitle=="Image Review":
 
 id="2423581"
 guia="Image Review / TE: ??";
-		setInterval(Enviar_task, Math.round(Math.random() * (13000 - 11000)) + 11000);
+		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
      break;
 
     default:
@@ -477,7 +477,7 @@ var QuizM = QM.innerText;
     for (var hijo of hijos){
 		if (hijo.tagName =='DIV' && !hijo.classList.contains('form-actions')){
 			var stilo = hijo.getAttribute("Style");
-			if (stilo.includes("green")){
+			if (stilo.includes("green") || stilo.includes("5DADE2")){
 				document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
             }}
       }}}
