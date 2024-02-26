@@ -1,3 +1,15 @@
+// ==UserScript==
+// @name         Servidor 2.0
+// @namespace    http://tampermonkey.net/
+// @version      1
+// @description  try to take over the world!
+// @author       Jazakk
+// @match        https://view.appen.io/assignments/*
+// @connect      account.appen.com
+// @connect      view.appen.io
+// @run-at       document-end
+// ==/UserScript==
+
 (function() {
     'use strict';
 var id="";
@@ -412,6 +424,13 @@ guia="Fonts Image Review Crowd / TE: ??";
 
 id="2423581"
 guia="Image Review / TE: ??";
+		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
+     break;
+
+     case jobTitle.includes("Upwork - Human Relevance"):
+
+id="2419768"
+guia="Upwork - Human Relevance Judgements On Search (Profile Link) / TE: ??";
 		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
      break;
 
