@@ -441,7 +441,7 @@ guia="Speech Naturalness link 1 / TE: ??";
 		setInterval(Enviar_task, Math.round(Math.random() * (65000 - 62000)) + 62000);
      break;
 
-     case jobTitle.includes("Speaker Similarity"):
+     case jobTitle.includes("Speech Similarity"):
 
 id="2446355"
 guia="Speech Similarity / TE: ??";
