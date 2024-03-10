@@ -30,7 +30,7 @@ function radios_2(){
                 }
       });
 }
-setTimeout(brain,2000);
+setTimeout(brain,4000);
 function brain(){
     let text = guia;
     const $select = document.querySelector('#mySelect');
