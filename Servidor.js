@@ -478,7 +478,7 @@ function Enviar_encuesta(){
 document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
 }
 
-var c = setInterval(clickPro,2000);
+setTimeout(clickPro,2000);
 function clickPro(){
 var QM = document.createElement("div");
 var titleappp = document.querySelector(".navbar").innerText;
@@ -489,7 +489,8 @@ if(QuizM.includes("Quiz")){
     QuizM.includes("11/") || QuizM.includes("12/") || QuizM.includes("13/") || QuizM.includes("14/") || QuizM.includes("15/") || QuizM.includes("16/") || QuizM.includes("17/") || QuizM.includes("18/") ||
     QuizM.includes("19/") || QuizM.includes("20/") || QuizM.includes("21/") || QuizM.includes("22/") || QuizM.includes("23/") || QuizM.includes("24/") || QuizM.includes("25/")){
 save_brain();
-clearInterval(c);
+ }else{
+clickPro();
          }
     }
 }
