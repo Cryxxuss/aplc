@@ -434,7 +434,7 @@ guia="Upwork - Human Relevance Judgements On Search (Profile Link) / TE: ??";
 		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
      break;
 
-     case jobTitle.includes("Speech"):
+     case jobTitle.includes("Speech")|| jobTitle.includes("Speaker Similarity"):
 
 id="2446355"
 guia="Speech Naturalness link 1 / TE: ??";
