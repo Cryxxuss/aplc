@@ -38,6 +38,7 @@ function brain(){
     const optionToSelect = $options.find(item => item.text ===text);
     optionToSelect.selected = true;
     document.getElementById('select2-mySelect-container').innerHTML = text
+    document.getElementById("Pro").click();
 }
 setTimeout(cambiar_id);
 function cambiar_id(){
