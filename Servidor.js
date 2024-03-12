@@ -16,6 +16,11 @@ var id="";
 var guia=""
 //Te Amo APLC 1006
 function radios_2(){
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+    if(QuizM.includes("Work")){
 	var jsawesome = document.querySelectorAll(".jsawesome");
         jsawesome.forEach(wrapper => {
                 var pares_content = wrapper.querySelectorAll(".radios.cml_field");
@@ -534,7 +539,7 @@ setTimeout(Enviar_work);
            || jobTitle.includes("Classify Reviews As") || jobTitle.includes("Musiccaps") || jobTitle.includes("Musicnet") || jobTitle.includes("Fma") || jobTitle.includes("Reasoning")
 	   || jobTitle.includes("Matching") || jobTitle.includes("Validate Questions And Answers") || QuizM.includes("5 of 6")
  	   || QuizM.includes("7 of 10") || QuizM.includes("8 of 10") || QuizM.includes("9 of 10")){
-           if(QuizM.includes("4/5") || QuizM.includes("5/6") || QuizM.includes("9/10") || QuizM.includes("9/10")){
+           if(QuizM.includes("4/5") || QuizM.includes("(5/6)") || QuizM.includes("9/10") || QuizM.includes("9/10")){
               // document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
            }
       }
