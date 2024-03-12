@@ -171,7 +171,7 @@ setInterval(eliminarnotq,8000);
 id="2448704";
 setInterval(eliminarnotq,8000);
 setTimeout(radios_2,1000);
-guia="Look At Advertisements And Judge Them2024 / TE: ??"
+guia="Look At Advertisements And Judge Them 2024 / TE: ??"
 
         setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
