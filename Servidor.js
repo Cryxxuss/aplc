@@ -56,7 +56,7 @@ var titleapp = document.querySelector(".job-title").innerText;
 titleDivapp.innerHTML = titleapp;
 var jobTitle = titleDivapp.innerText;
 
-    setInterval(getGuia_interval,17000);
+    setInterval(getGuia_interval,8500);
 function getGuia_interval(){
 var QM = document.createElement("div");
 var titleappp = document.querySelector(".navbar").innerText;
