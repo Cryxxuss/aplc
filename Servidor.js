@@ -613,7 +613,7 @@ var QuizM = QM.innerText;
        QuizM=="11/11" ||QuizM =="12/12" || QuizM=="13/13" || QuizM=="14/14" || QuizM=="15/15" || QuizM=="16/16" || QuizM=="17/17" || QuizM=="18/18" ||
        QuizM=="19/19" || QuizM=="20/20" || QuizM=="21/21" || QuizM=="22/22" || QuizM=="23/23" || QuizM=="24/24" || QuizM=="25/25"){
     }else{
-setTimeout(save_brain,19000);
+setTimeout(save_brain,15000);
        }
      }
 function rocktq(){
