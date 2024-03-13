@@ -577,7 +577,7 @@ var QM = document.createElement("div");
 var titleappp = document.querySelector(".navbar").innerText;
 QM.innerHTML = titleappp;
 var QuizM = QM.innerText;
-   if(QuizM.includes("Work") || QuizM.includes("(5/6)")){
+   if(QuizM.includes("Work"){
        if(QuizM.includes("1/") || QuizM.includes("2/") || QuizM.includes("3/") || QuizM.includes("4/") || QuizM.includes("5/")){
     var hijos = document.querySelector("#job_units").childNodes;
    for (var hijo of hijos){
@@ -589,7 +589,7 @@ var QuizM = QM.innerText;
             hijo.previousSibling.remove();
             }
         }else{
-            if (stilo.includes("green")){
+            if (stilo.includes("green")||stilo.includes("#5DADE2")){
             }else{
                  if (hijo.previousSibling.classList.contains('checkboxTotalProjectF8')){
                      hijo.previousSibling.remove();
