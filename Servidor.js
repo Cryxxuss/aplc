@@ -579,7 +579,7 @@ var titleappp = document.querySelector(".navbar").innerText;
 QM.innerHTML = titleappp;
 var QuizM = QM.innerText;
    if(QuizM.includes("Work")){
-       if(QuizM.includes("1/") || QuizM.includes("2/") || QuizM.includes("3/") || QuizM.includes("4/") || QuizM.includes("5/")){
+       if(QuizM=="1/" || QuizM=="2/" || QuizM=="3/" || QuizM=="4/" || QuizM=="5/"){
     var hijos = document.querySelector("#job_units").childNodes;
    for (var hijo of hijos){
     if (hijo.tagName =='DIV' && !hijo.classList.contains('form-actions')){
