@@ -502,6 +502,7 @@ var QuizM = QM.innerText;
     QuizM.includes("11/11") || QuizM.includes("12/12") || QuizM.includes("13/13") || QuizM.includes("14/14") || QuizM.includes("15/15") || QuizM.includes("16/16") || QuizM.includes("17/17") || QuizM.includes("18/18") ||
     QuizM.includes("19/19") || QuizM.includes("20/20") || QuizM.includes("21/21") || QuizM.includes("22/22") || QuizM.includes("23/23") || QuizM.includes("24/24") || QuizM.includes("25/25")){
     setInterval( function() {document.getElementById("Pro").click();},Math.round(Math.random() * (15000 - 7000)) + 7000)
+    setInterval( function() {document.getElementById("Pro").click();},Math.round(Math.random() * (60000 - 8000)) + 8000)
     }else{
 clickPro_interval()
     }}
