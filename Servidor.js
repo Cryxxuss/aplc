@@ -175,7 +175,7 @@ setInterval(eliminarnotq,8000);
      case jobTitle.includes("Look At Advertisements"):
 
 id="2448704";
-setInterval(eliminarnotq,8000);
+//setInterval(eliminarnotq,8000);
 setTimeout(radios_2,1000);
 guia="Look At Advertisements And Judge Them 2024 / TE: ??"
 
