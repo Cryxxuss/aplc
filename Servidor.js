@@ -533,7 +533,7 @@ setTimeout(Enviar_work);
        QuizM=="11/11" ||QuizM =="12/12" || QuizM=="13/13" || QuizM=="14/14" || QuizM=="15/15" || QuizM=="16/16" || QuizM=="17/17" || QuizM=="18/18" ||
        QuizM=="19/19" || QuizM=="20/20" || QuizM=="21/21" || QuizM=="22/22" || QuizM=="23/23" || QuizM=="24/24" || QuizM=="25/25"){
         document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
-       setTimeout(function(){Enviar_task()},7000);
+      // setTimeout(function(){Enviar_task()},7000);
     }else{
         if(jobTitle.includes("Text Classification - Agreement") || jobTitle.includes("Look At Advertisements") || jobTitle.includes("Classify Web Pages")
            || jobTitle.includes("Classify Reviews As") || jobTitle.includes("Musiccaps") || jobTitle.includes("Musicnet") || jobTitle.includes("Fma") || jobTitle.includes("Reasoning")
