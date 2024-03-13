@@ -173,7 +173,7 @@ setInterval(eliminarnotq,8000);
 setTimeout(radios_2,1000);
 guia="Look At Advertisements And Judge Them 2024 / TE: ??"
 
-    //    setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
+        setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
      break;
 
      case jobTitle.includes("Uk_search-Science"):
