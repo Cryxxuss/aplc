@@ -630,7 +630,7 @@ var QuizM = QM.innerText;
           if (stilo === null){
 bandera = true;
         }else{
-            if (stilo.includes("green")){
+            if (stilo.includes("green")||stilo.includes("#5DADE2")){
             }else{
                 //hacer
                 bandera = true;
