@@ -35,8 +35,14 @@ var QuizM = QM.innerText;
                 }
       });
 }}
+
 setTimeout(brain,4000);
 function brain(){
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+if(QuizM.includes("Quiz")){
     let text = guia;
     const $select = document.querySelector('#mySelect');
     const $options = Array.from($select.options);
@@ -44,7 +50,7 @@ function brain(){
     optionToSelect.selected = true;
     document.getElementById('select2-mySelect-container').innerHTML = text
     document.getElementById("Pro").click();
-}
+}}
 setTimeout(cambiar_id);
 function cambiar_id(){
 const span = document.getElementById('assignment-job-id');
@@ -579,7 +585,7 @@ var titleappp = document.querySelector(".navbar").innerText;
 QM.innerHTML = titleappp;
 var QuizM = QM.innerText;
    if(QuizM.includes("Work")){
-       if(QuizM=="1/" || QuizM=="2/" || QuizM=="3/" || QuizM=="4/" || QuizM=="5/"){
+       if(QuizM.includes("1/") || QuizM.includes("2/") ||QuizM.includes("3/") || QuizM.includes("4/")){
     var hijos = document.querySelector("#job_units").childNodes;
    for (var hijo of hijos){
     if (hijo.tagName =='DIV' && !hijo.classList.contains('form-actions')){
