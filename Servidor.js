@@ -534,7 +534,7 @@ var QuizM = QM.innerText;
 			var stilo = hijo.getAttribute("Style");
 			if (stilo.includes("green") || stilo.includes("5DADE2")){
 				document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
-                setTimeout(function(){Enviar_task()},7000);
+             //   setTimeout(function(){Enviar_task()},7000);
             }}
       }}}
 function Enviar_task(){
