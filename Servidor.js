@@ -588,8 +588,8 @@ var QuizM = QM.innerText;
 //setTimeout(save_brain,7000);
 function save_brain(){
    setTimeout( function() {document.getElementById("Pro").click();})
-   setTimeout( function() {document.getElementById("GuardarTQf").click();},2000)
-   setTimeout( function() {document.getElementById("SubirTQ").click();},3000)
+//   setTimeout( function() {document.getElementById("GuardarTQf").click();},2000)
+//   setTimeout( function() {document.getElementById("SubirTQ").click();},3000)
 
 var QM = document.createElement("div");
 var titleappp = document.querySelector("#counttq").innerText;
