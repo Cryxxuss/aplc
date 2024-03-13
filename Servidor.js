@@ -34,7 +34,7 @@ var QuizM = QM.innerText;
                    }
                 }
       });
-}
+}}
 setTimeout(brain,4000);
 function brain(){
     let text = guia;
