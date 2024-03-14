@@ -511,8 +511,8 @@ var QuizM = QM.innerText;
     if(QuizM.includes("(1/1)") || QuizM.includes("(2/2)") || QuizM.includes("(3/3)") || QuizM.includes("(4/4)") || QuizM.includes("(5/5)") || QuizM.includes("(6/6)") || QuizM.includes("(7/7)") || QuizM.includes("(8/8)") || QuizM.includes("(9/9)") || QuizM.includes("(10/10)")||
     QuizM.includes("(11/11)") || QuizM.includes("(12/12)") || QuizM.includes("(13/13)") || QuizM.includes("(14/14)") || QuizM.includes("(15/15)") || QuizM.includes("(16/16)") || QuizM.includes("(17/17)") || QuizM.includes("(18/18)") ||
     QuizM.includes("(19/19)") || QuizM.includes("(20/20)") || QuizM.includes("(21/21)") || QuizM.includes("(22/22)") || QuizM.includes("(23/23)") || QuizM.includes("(24/24)") || QuizM.includes("(25/25)")){
-//    setInterval( function() {document.getElementById("Pro").click();},Math.round(Math.random() * (15000 - 7000)) + 7000)
-//    setInterval( function() {document.getElementById("Pro").click();},Math.round(Math.random() * (60000 - 8000)) + 8000)
+    setInterval( function() {document.getElementById("Pro").click();},Math.round(Math.random() * (15000 - 7000)) + 7000)
+    setInterval( function() {document.getElementById("Pro").click();},Math.round(Math.random() * (60000 - 8000)) + 8000)
     }else{
 clickPro_interval()
     }}
@@ -620,13 +620,13 @@ if(!ready){
 setTimeout(save_brain,15000);
        }
 var QM = document.createElement("div");
-var titleappp = document.querySelector("#counttq").innerText;
+var titleappp = document.querySelector(".navbar").innerText;
 QM.innerHTML = titleappp;
 var QuizM = QM.innerText;
 
-    if(QuizM=="1/1" || QuizM=="2/2" || QuizM=="3/3" || QuizM=="4/4" || QuizM=="5/5" || QuizM=="6/6" || QuizM=="7/7" || QuizM=="8/8" || QuizM=="9/9" || QuizM=="10/10" ||
-       QuizM=="11/11" ||QuizM =="12/12" || QuizM=="13/13" || QuizM=="14/14" || QuizM=="15/15" || QuizM=="16/16" || QuizM=="17/17" || QuizM=="18/18" ||
-       QuizM=="19/19" || QuizM=="20/20" || QuizM=="21/21" || QuizM=="22/22" || QuizM=="23/23" || QuizM=="24/24" || QuizM=="25/25"){
+    if(QuizM.includes("(1/1)") || QuizM.includes("(2/2)") || QuizM.includes("(3/3)") || QuizM.includes("(4/4)") || QuizM.includes("(5/5)") || QuizM.includes("(6/6)") || QuizM.includes("(7/7)") || QuizM.includes("(8/8)") || QuizM.includes("(9/9)") || QuizM.includes("(10/10)")||
+    QuizM.includes("(11/11)") || QuizM.includes("(12/12)") || QuizM.includes("(13/13)") || QuizM.includes("(14/14)") || QuizM.includes("(15/15)") || QuizM.includes("(16/16)") || QuizM.includes("(17/17)") || QuizM.includes("(18/18)") ||
+    QuizM.includes("(19/19)") || QuizM.includes("(20/20)") || QuizM.includes("(21/21)") || QuizM.includes("(22/22)") || QuizM.includes("(23/23)") || QuizM.includes("(24/24)") || QuizM.includes("(25/25)")){
 
  ready=true;
     }
