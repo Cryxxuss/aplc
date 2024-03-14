@@ -671,7 +671,7 @@ var autofill_radios_random=["1","2"];
 var autofill_rating_random=["1","2"];
 var AutoFill_Image_Preference=[""];
 var autofill_checkboxes_random=["1,2"];
-    }
+    }}
 (function() {
     'use strict';
 
