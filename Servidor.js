@@ -21,7 +21,7 @@ var titleappp = document.querySelector(".navbar").innerText;
 QM.innerHTML = titleappp;
 var QuizM = QM.innerText;
     if(QuizM.includes("Work")){
-	var jsawesome = document.querySelectorAll(".jsawesome");
+	/*var jsawesome = document.querySelectorAll(".jsawesome");
         jsawesome.forEach(wrapper => {
                 var pares_content = wrapper.querySelectorAll(".radios.cml_field");
                     for(var preg of pares_content.entries()) {
@@ -33,7 +33,9 @@ var QuizM = QM.innerText;
                      radios[indice].click();
                    }
                 }
-      });
+      });*/
+Array.from(document.querySelectorAll("div > div:nth-child(2) > div.empty_box > div:nth-child(2) > div > div:nth-child(3) > label")).forEach(button=>button.click())
+Array.from(document.querySelectorAll("div > div:nth-child(2) > div.empty_box > div:nth-child(3) > div > div:nth-child(2) > label")).forEach(button=>button.click())
 }}
 
 setTimeout(brain,4000);
@@ -176,7 +178,7 @@ setInterval(eliminarnotq,8000);
 
 id="2448704";
 //setInterval(eliminarnotq,8000);
-//setTimeout(radios_2,1000);
+setTimeout(radios_2,1000);
 guia="Look At Advertisements And Judge Them 2024 / TE: ??"
 
         setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
