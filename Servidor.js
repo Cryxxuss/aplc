@@ -669,7 +669,7 @@ var titleDivap = document.createElement("div");
 var titleap = document.querySelector(".job-title").innerText;
 titleDivap.innerHTML = titleap;
 var jobTitlei = titleDivap.innerText;
- if(!jobTitlei.includes("Look At Advertisements And Judge Them") || !jobTitlei.includes("Olhe O Anúncio E Dê Sua Opinião.") || !jobTitle.includes("Observa Los Anuncios Y Júzgalo Tú Mismo")){
+ if(!jobTitlei.includes("Look At Advertisements And Judge Them") || !jobTitlei.includes("Olhe O Anúncio E Dê Sua Opinião.") || !jobTitlei.includes("Observa Los Anuncios Y Júzgalo Tú Mismo")){
 var auto_fill_radios="";
 var autofill_radios_random=["1","2"];
 var autofill_rating_random=["1","2"];
