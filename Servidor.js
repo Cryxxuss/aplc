@@ -72,9 +72,9 @@ QM.innerHTML = titleappp;
 var QuizM = QM.innerText;
     if(QuizM.includes("Work")){
        if(!QuizM.includes("1/")){
-document.querySelector("#raiac").click();
+document.getElementsByClassName('button-primary')[0].click();
 }}else if(QuizM.includes("Quiz")){
-document.querySelector("#raiac").click();
+document.getElementsByClassName('button-primary')[0].click();
 }}
     setTimeout(getGuia,5000);
 function getGuia(){
