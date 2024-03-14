@@ -161,7 +161,9 @@ id="1957144"
      case jobTitle.includes("Olhe O Anúncio E Dê Sua Opinião."):
 
 id="2231203";
-setInterval(eliminarnotq,8000);
+setTimeout(radios_2,1000);
+//setInterval(eliminarnotq,8000);
+guia="Olhe O Anúncio E Dê Sua Opinião. 2024 / TE: ??"
 
         setInterval(Enviar_task, Math.round(Math.random() * (35000 - 31000)) + 31000);
      break;
