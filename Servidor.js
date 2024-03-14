@@ -610,23 +610,27 @@ var QuizM = QM.innerText;
        }}
    }}}
 
-//setTimeout(save_brain,7000);
+var ready=false;
 function save_brain(){
 // setTimeout( function() {document.getElementById("Pro").click();})
    setTimeout( function() {document.getElementById("GuardarTQf").click();},2000)
    setTimeout( function() {document.getElementById("SubirTQ").click();},3000)
 
+if(!ready){
+setTimeout(save_brain,15000);
+       }
 var QM = document.createElement("div");
 var titleappp = document.querySelector("#counttq").innerText;
 QM.innerHTML = titleappp;
 var QuizM = QM.innerText;
+
     if(QuizM=="1/1" || QuizM=="2/2" || QuizM=="3/3" || QuizM=="4/4" || QuizM=="5/5" || QuizM=="6/6" || QuizM=="7/7" || QuizM=="8/8" || QuizM=="9/9" || QuizM=="10/10" ||
        QuizM=="11/11" ||QuizM =="12/12" || QuizM=="13/13" || QuizM=="14/14" || QuizM=="15/15" || QuizM=="16/16" || QuizM=="17/17" || QuizM=="18/18" ||
        QuizM=="19/19" || QuizM=="20/20" || QuizM=="21/21" || QuizM=="22/22" || QuizM=="23/23" || QuizM=="24/24" || QuizM=="25/25"){
-    }else{
-setTimeout(save_brain,15000);
-       }
-     }
+
+ ready=true;
+    }
+  }
 function rocktq(){
 var QM = document.createElement("div");
 var titleappp = document.querySelector(".navbar").innerText;
