@@ -661,11 +661,11 @@ var titleappp = document.querySelector(".navbar").innerText;
 QM.innerHTML = titleappp;
 var QuizM = QM.innerText;
     if(QuizM.includes("Work")){
-var titleDivappp = document.createElement("div");
-var titleappp = document.querySelector(".job-title").innerText;
-titleDivappp.innerHTML = titleappp;
-var jobTitlee = titleDivapp.innerText;
- if(!jobTitlee.includes("Look At Advertisements And Judge Them")){
+var titleDivap = document.createElement("div");
+var titleap = document.querySelector(".job-title").innerText;
+titleDivap.innerHTML = titleap;
+var jobTitlei = titleDivap.innerText;
+ if(!jobTitlei.includes("Look At Advertisements And Judge Them")){
 var auto_fill_radios="";
 var autofill_radios_random=["1","2"];
 var autofill_rating_random=["1","2"];
