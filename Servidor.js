@@ -549,7 +549,7 @@ var QuizM = QM.innerText;
       }}}
 function Enviar_task(){
 var QM = document.createElement("div");
-var titleappp = document.querySelector("#counttq").innerText;
+var titleappp = document.querySelector(".navbar").innerText;
 QM.innerHTML = titleappp;
 var QuizM = QM.innerText;
 setTimeout(Enviar_work);
