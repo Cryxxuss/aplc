@@ -72,13 +72,13 @@ QM.innerHTML = titleappp;
 var QuizM = QM.innerText;
     if(QuizM.includes("Work")){
        if(!QuizM.includes("1/")){
-document.getElementsByClassName('fas fa-file-signature ')[0].click();
+document.querySelector("#raiac").click();
 }}else if(QuizM.includes("Quiz")){
-document.getElementsByClassName('fas fa-file-signature ')[0].click();
+document.querySelector("#raiac").click();
 }}
     setTimeout(getGuia,5000);
 function getGuia(){
-document.getElementsByClassName('fas fa-file-signature ')[0].click();
+document.querySelector("#raiac").click();
 }
 
 setTimeout(Auto_Fill);
