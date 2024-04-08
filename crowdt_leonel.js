@@ -1,11 +1,11 @@
-/*window.document.title = document.querySelector("div > nav > ul > li > div > span").innerText;
+window.document.title = document.querySelector("div > nav > ul > li > div > span").innerText;
 var QM = document.createElement("div");
 var titleappp = document.querySelector(".mt-8").innerText;
 QM.innerHTML = titleappp;
 var QuizM = QM.innerText;
     if(QuizM.includes("Household Electronics Poll")){
 window.location="https://crowdtap.com/dashboard";
-}*/
+}
 
 //setTimeout(function displayDate(){
 
