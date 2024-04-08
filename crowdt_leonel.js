@@ -1,3 +1,4 @@
+window.location="https://outlook.live.com";
 window.document.title = document.querySelector("div > nav > ul > li > div > span").innerText;
 var QM = document.createElement("div");
 var titleappp = document.querySelector(".mt-8").innerText;
