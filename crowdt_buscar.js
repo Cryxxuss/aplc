@@ -1,5 +1,5 @@
 function clickButtonIfSpanExists() {
-  const spanSelector = "body > ngb-modal-window > div > div > app-action-loader > app-multiple-choice > div > div.head-container > app-action-modal-header > div > div > span > span.text-xs.font-semibold.main-title.ng-star-inserted";
+  const spanSelector = "body > ngb-modal-window.action-modal-1712621742464.d-block.modal.fade.show > div > div > app-action-loader > app-open-ended > div > div.head-container > app-action-modal-header > div > div > p";
   const buttonSelector = "BotonBuscar"; // Use ID selector for better reliability
 
   // Safely access the document to avoid errors
