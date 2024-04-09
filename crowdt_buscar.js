@@ -1,5 +1,5 @@
 function clickButtonIfSpanExists() {
-  const spanSelector = "document.querySelector("span.text-xs.font-semibold.main-title.ng-star-inserted")";
+  const spanSelector = "span.text-xs.font-semibold.main-title.ng-star-inserted";
   const buttonSelector = "BotonBuscar"; // Use ID selector for better reliability
 
   // Safely access the document to avoid errors
