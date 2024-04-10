@@ -1,9 +1,16 @@
 //window.location="https://outlook.live.com";
 window.document.title = document.querySelector("div > nav > ul > li > div > span").innerText;
 
+const spanSelector = ".mt-8"
+const spanElement = document.querySelector(spanSelector);
+
+if (spanElement) {
 const spanText = document.querySelector(".mt-8").innerText;
+
 if (spanText === "Household Electronics Poll") {
+
   location.reload();
+  }
 }
 
 //setTimeout(function displayDate(){
