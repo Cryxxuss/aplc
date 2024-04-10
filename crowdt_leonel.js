@@ -9,7 +9,7 @@ const spanText = document.querySelector(".mt-8").innerText;
 
 if (spanText === "Household Electronics Poll") {
 
-  location.reload();
+  document.querySelector("div > div.head-container > app-action-modal-header > div > button").click()
   }
 }
 
