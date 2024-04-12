@@ -7,7 +7,7 @@ const spanElement = document.querySelector(spanSelector);
 if (spanElement) {
 const spanText = document.querySelector(".mt-8").innerText;
 
-if (spanText === "Household Electronics Poll") {
+if (spanText === "Your Opinions about Energy Resources") {
 
   document.querySelector("div > div.head-container > app-action-modal-header > div > button").click()
   }
