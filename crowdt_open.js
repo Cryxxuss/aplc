@@ -22,27 +22,27 @@ setTimeout( function(){
       if (selectedLine0 === name_task) {
     document.querySelector("#divContainer > div > div > app-tile").click()
 }else if (selectedLine1 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(2) > app-tile").click()
+    document.querySelector("#divContainer > div > div:nth-child(2) > app-tile > button > div.ng-star-inserted > span").click()
 }else if (selectedLine2 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(3) > app-tile").click()
+    document.querySelector("#divContainer > div > div:nth-child(3) > app-tile > button > div.ng-star-inserted > span").click()
 }else if (selectedLine3 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(4) > app-tile").click()
+    document.querySelector("#divContainer > div > div:nth-child(4) > app-tile > button > div.ng-star-inserted > span").click()
 }else if (selectedLine4 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(5) > app-tile").click()
+    document.querySelector("#divContainer > div > div:nth-child(5) > app-tile > button > div.ng-star-inserted > span").click()
 }else if (selectedLine5 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(6) > app-tile").click()
+    document.querySelector("#divContainer > div > div:nth-child(6) > app-tile > button > div.ng-star-inserted > span").click()
 }else if (selectedLine6 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(7) > app-tile").click()
+    document.querySelector("#divContainer > div > div:nth-child(7) > app-tile > button > div.ng-star-inserted > span").click()
 }else if (selectedLine7 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(8) > app-tile").click()
+    document.querySelector("#divContainer > div > div:nth-child(8) > app-tile > button > div.ng-star-inserted > span").click()
 }else if (selectedLine8 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(9) > app-tile").click()
+    document.querySelector("#divContainer > div > div:nth-child(9) > app-tile > button > div.ng-star-inserted > span").click()
 }else if (selectedLine9 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(10) > app-tile").click()
+    document.querySelector("#divContainer > div > div:nth-child(10) > app-tile > button > div.ng-star-inserted > span").click()
 }else if (selectedLine10 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(11) > app-tile").click()
+    document.querySelector("#divContainer > div > div:nth-child(11) > app-tile > button > div.ng-star-inserted > span").click()
 }else if (selectedLine11 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(12) > app-tile").click()
+    document.querySelector("#divContainer > div > div:nth-child(12) > app-tile > button > div.ng-star-inserted > span").click()
  }}},2000)
 
 
