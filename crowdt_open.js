@@ -15,7 +15,7 @@ var selectedLine9 = lines[9];
 var selectedLine10 = lines[10];
 var selectedLine11 = lines[11];
 
-const name_task = "A few questions about you!"
+const name_task = "Let's talk about you!"
 setTimeout( function(){
     if(ventana){
 
@@ -43,7 +43,7 @@ setTimeout( function(){
     document.querySelector("#divContainer > div > div:nth-child(11) > app-tile").click()
 }else if (selectedLine11 === name_task) {
     document.querySelector("#divContainer > div > div:nth-child(12) > app-tile").click()
- }}},1000)
+ }}},2000)
 
 
 const spanSelector = "div > div.head-container > app-action-modal-header > div > div > p"
