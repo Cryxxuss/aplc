@@ -45,7 +45,9 @@ setTimeout( function(){
     document.querySelector("#divContainer > div > div:nth-child(12) > app-tile > button > div.ng-star-inserted > span").click()
  }}},2000)
 
-
+function reloadPage() {
+  location.reload();
+}
 const spanSelector = "div > div.head-container > app-action-modal-header > div > div > p"
 const spanElement = document.querySelector(spanSelector);
 
@@ -55,7 +57,7 @@ const spanText = document.querySelector("div > div.head-container > app-action-m
 if (spanText === name_task) {
     ventana=false
 } else {
-  document.querySelector("div > div.head-container > app-action-modal-header > div > button").click()
+ setInterval(reloadPage, Math.round(Math.random() * (60000 - 1000)) + 1000);
     ventana=true
   }
  }
