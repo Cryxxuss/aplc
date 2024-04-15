@@ -15,7 +15,7 @@ var selectedLine9 = lines[9];
 var selectedLine10 = lines[10];
 var selectedLine11 = lines[11];
 
-const name_task = "Let's talk about you!"
+const name_task = "What's important to you?"
 setTimeout( function(){
     if(ventana){
 
