@@ -1,4 +1,4 @@
-/*const containerText = document.querySelector("#divContainer").innerText
+const containerText = document.querySelector("#divContainer").innerText
 var ventana = true
 const lines = containerText.split("\n"); // Split into an array of lines
 
@@ -15,7 +15,7 @@ var selectedLine9 = lines[9];
 var selectedLine10 = lines[10];
 var selectedLine11 = lines[11];
 
-const name_task = "Let's talk about you!"
+const name_task = "Which of the following do you own?"
 setTimeout( function(){
     if(ventana){
 
@@ -116,6 +116,6 @@ const buttonElement12 = document.querySelector("#divContainer > div > app-tile:n
 }else if (buttonElement12.textContent != "Ready" & buttonElement12.disabled) {
     document.querySelector("#divContainer > div > app-tile:nth-child(12) > button").textContent="Ready";
 }}
-*/
+
 window.document.title = document.querySelector("div > nav > ul > li > div > span").innerText;
 
