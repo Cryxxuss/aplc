@@ -128,7 +128,7 @@ if (spanText === "Your Opinions about Energy Resources") {
 
   document.querySelector("div > div.head-container > app-action-modal-header > div > button").click()
   }
-// nuevo
+// viejo
 }
 
 
