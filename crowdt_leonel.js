@@ -1,5 +1,5 @@
 //window.location="https://outlook.live.com";
-//window.document.title = document.querySelector("div > nav > ul > li > div > span").innerText;
+window.document.title = document.querySelector("div > nav > ul > li > div > span").innerText;
 
 const containerText = document.querySelector("#divContainer").innerText
 var ventana = true
