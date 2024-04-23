@@ -18,7 +18,7 @@ var selectedLine9 = lines[9];
 var selectedLine10 = lines[10];
 var selectedLine11 = lines[11];
 
-const name_task = "Tell us more about you!"
+const name_task = "We're curious to get to know what matters to you!"
 setTimeout( function(){
     if(ventana){
 
@@ -74,7 +74,7 @@ if (multi_choice === name_task) {
     ventana=false
 } else {
 document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
-setTimeout(task_ready,3000);
+setTimeout(task_ready,5000);
     ventana=true
    }
   }
