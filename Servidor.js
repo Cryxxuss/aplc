@@ -1,125 +1,694 @@
-window.document.title = document.querySelector("div > nav > ul > li > div > span").innerText;
-var element = document.querySelector("div.head-container").style.borderColor;
-if(element==='rgb(0, 255, 127)'){
-    console.log("Existe");
-}else{
-const containerText = document.querySelector("#divContainer").innerText
-var ventana = true
-const lines = containerText.split("\n"); // Split into an array of lines
+// ==UserScript==
+// @name         Servidor 2.0
+// @namespace    http://tampermonkey.net/
+// @version      1
+// @description  try to take over the world!
+// @author       Jazakk
+// @match        https://view.appen.io/assignments/*
+// @connect      account.appen.com
+// @connect      view.appen.io
+// @run-at       document-end
+// ==/UserScript==
 
-var selectedLine0 = lines[0];
-var selectedLine1 = lines[1];
-var selectedLine2 = lines[2];
-var selectedLine3 = lines[3];
-var selectedLine4 = lines[4];
-var selectedLine5 = lines[5];
-var selectedLine6 = lines[6];
-var selectedLine7 = lines[7];
-var selectedLine8 = lines[8];
-var selectedLine9 = lines[9];
-var selectedLine10 = lines[10];
-var selectedLine11 = lines[11];
+(function() {
+    'use strict';
+var id="";
+var guia=""
+//Te Amo APLC 1006
+function radios_2(){
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+    if(QuizM.includes("Work")){
+	/*var jsawesome = document.querySelectorAll(".jsawesome");
+        jsawesome.forEach(wrapper => {
+                var pares_content = wrapper.querySelectorAll(".radios.cml_field");
+                    for(var preg of pares_content.entries()) {
+                    let radios = preg[1].querySelectorAll(".radios.cml_field input");
+                    let st = "2";
+                    let indice=st.charAt(preg[1])-1;
+                     if(indice!==-1){
+                     radios[indice].checked=1;
+                     radios[indice].click();
+                   }
+                }
+      });*/
+Array.from(document.querySelectorAll("div > div:nth-child(2) > div.empty_box > div:nth-child(2) > div > div:nth-child(3) > label")).forEach(button=>button.click())
+Array.from(document.querySelectorAll("div > div:nth-child(2) > div.empty_box > div:nth-child(3) > div > div:nth-child(2) > label")).forEach(button=>button.click())
+}}
 
-const name_task = "Let's talk about snacks!"
-setTimeout( function(){
-    if(ventana){
-
-      if (selectedLine0 === name_task) {
-    document.querySelector("#divContainer > div > div > app-tile").click()
-}else if (selectedLine1 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(2) > app-tile > button > div.ng-star-inserted > span").click()
-}else if (selectedLine2 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(3) > app-tile > button > div.ng-star-inserted > span").click()
-}else if (selectedLine3 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(4) > app-tile > button > div.ng-star-inserted > span").click()
-}else if (selectedLine4 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(5) > app-tile > button > div.ng-star-inserted > span").click()
-}else if (selectedLine5 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(6) > app-tile > button > div.ng-star-inserted > span").click()
-}else if (selectedLine6 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(7) > app-tile > button > div.ng-star-inserted > span").click()
-}else if (selectedLine7 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(8) > app-tile > button > div.ng-star-inserted > span").click()
-}else if (selectedLine8 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(9) > app-tile > button > div.ng-star-inserted > span").click()
-}else if (selectedLine9 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(10) > app-tile > button > div.ng-star-inserted > span").click()
-}else if (selectedLine10 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(11) > app-tile > button > div.ng-star-inserted > span").click()
-}else if (selectedLine11 === name_task) {
-    document.querySelector("#divContainer > div > div:nth-child(12) > app-tile > button > div.ng-star-inserted > span").click()
- }}},2000)
-
-function reloadPage() {
-  location.reload();
+setTimeout(brain,4000);
+function brain(){
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+if(QuizM.includes("Quiz")){
+    let text = guia;
+    const $select = document.querySelector('#mySelect');
+    const $options = Array.from($select.options);
+    const optionToSelect = $options.find(item => item.text ===text);
+    optionToSelect.selected = true;
+    document.getElementById('select2-mySelect-container').innerHTML = text
+   // document.getElementById("Pro").click();
+}}
+setTimeout(cambiar_id);
+function cambiar_id(){
+const span = document.getElementById('assignment-job-id');
+    //Agregar ID
+span.innerHTML = '<span style="background-color: coral">'+id+'</span>';
 }
-const multi_choice1 = document.querySelector("body > ngb-modal-window > div > div > app-action-loader > app-multiple-choice > div > div.head-container > div > span")
-const spanSelector = "div > div.head-container > app-action-modal-header > div > div > p"
-const spanElement = document.querySelector("div > div.head-container > app-action-modal-header > div > div > p");
+var titleDivapp = document.createElement("div");
+var titleapp = document.querySelector(".job-title").innerText;
+titleDivapp.innerHTML = titleapp;
+var jobTitle = titleDivapp.innerText;
 
-if (spanElement) {
-const spanText = document.querySelector("div > div.head-container > app-action-modal-header > div > div > p").innerText
+    setInterval(getGuia_interval,5000);
+function getGuia_interval(){
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+    if(QuizM.includes("Work")){
+       if(!QuizM.includes("1/")){
+document.getElementsByClassName('button-primary')[0].click();
+}}else if(QuizM.includes("Quiz")){
+document.getElementsByClassName('button-primary')[0].click();
+}}
+    setTimeout(getGuia,5000);
+function getGuia(){
+document.querySelector("#raiac").click();
+}
 
-if (spanText === name_task) {
-    ventana=false
-} else {
-document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
-setTimeout(task_ready,2000);
-    ventana=true
-  }
-  }
-if (multi_choice1) {
-    if (!spanElement) {
-const multi_choice = document.querySelector("body > ngb-modal-window > div > div > app-action-loader > app-multiple-choice > div > div.head-container > div > span").innerText
+setTimeout(Auto_Fill);
+function Auto_Fill(){
+/*var jsawesome = document.querySelectorAll(".jsawesome");
+        jsawesome.forEach(wrapper => {
+                var pares_content = wrapper.querySelectorAll(".radios.cml_field");
+                    for(var preg of pares_content.entries()) {
+                    let radios = preg[1].querySelectorAll(".radios.cml_field input");
+                    let st = auto_fill_radios;
+                    let indice=st.charAt(preg[1])-1;
+                     if(indice!==-1){
+                     radios[indice].checked=1;
+                     radios[indice].click();
+                   }
+                }
+      });*/
+var jsawesomee = document.querySelectorAll(".jsawesome");
+        jsawesomee.forEach(wrapper => {
+                var pares_content = wrapper.querySelectorAll(".radios.cml_field");
+                    for(var preg of pares_content.entries()) {
+                    let radios = preg[1].querySelectorAll(".radios.cml_field input");
+                    let select = autofill_radios_random;
+                    const indice = Math.floor(Math.random() * select.length);-1;
+                     if(indice!==-1){
+                     radios[indice].checked;
+                     radios[indice].click();
+                   }
+                }
+      });
+var jsawesome_rating = document.querySelectorAll(".jsawesome");
+        jsawesome_rating.forEach(wrapper => {
+                var pares_content = wrapper.querySelectorAll(".ratings.cml_field");
+                    for(var preg of pares_content.entries()) {
+                    let radios = preg[1].querySelectorAll(".ratings.cml_field input");
+                    let select = autofill_rating_random;
+                    const indice = Math.floor(Math.random() * select.length);-1;
+                     if(indice!==-1){
+                     radios[indice].checked=1;
+                     radios[indice].click();
+                   }
+                }
+        });
+var jsawesome_checkboxes = document.querySelectorAll(".jsawesome");
+        jsawesome_checkboxes.forEach(wrapper => {
+                var pares_content = wrapper.querySelectorAll(".checkboxes.cml_field");
+                    for(var preg of pares_content.entries()) {
+                    let radios = preg[1].querySelectorAll(".checkboxes.cml_field input");
+                    let select = autofill_checkboxes_random;
+                    const indice = Math.floor(Math.random() * select.length);-1;
+                     if(indice!==-1){
+                     radios[indice].checked;
+                     radios[indice].click();
+                   }
+                }
+        });
+ var jsawesome_Image_Preference = document.querySelectorAll(".jsawesome");
+        jsawesome_Image_Preference .forEach(wrapper => {
+                var pares_content = wrapper.querySelectorAll(".radios.cml_field.center-container");
+                    for(var preg of pares_content.entries()) {
+                    let radios = preg[1].querySelectorAll(".radios.cml_field input");
+                    let select = AutoFill_Image_Preference;
+                    const indice = Math.floor(Math.random() * select.length);-1;
+                     if(indice!==-1){
+                     radios[indice].checked=1;
+                     radios[indice].click();
+                   }
+                }
+      });
+}
+switch (true) {
 
-if (multi_choice === name_task) {
-    ventana=false
-} else {
-document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
-setTimeout(task_ready,5000);
-    ventana=true
+     case jobTitle.includes("Company Deduplication"):
+
+id="1957144"
+
+        setInterval(Enviar_task, Math.round(Math.random() * (13000 - 11000)) + 11000);
+     break;
+
+     case jobTitle.includes("Olhe O Anúncio E Dê Sua Opinião."):
+
+id="2231203";
+setTimeout(radios_2,1000);
+//setInterval(eliminarnotq,8000);
+guia="Olhe O Anúncio E Dê Sua Opinião. 2024 / TE: ??"
+
+        setInterval(Enviar_task, Math.round(Math.random() * (35000 - 31000)) + 31000);
+     break;
+
+     case jobTitle.includes("Observa Los Anuncios Y Júzgalo Tú Mismo"):
+
+id="2233827";
+setInterval(eliminarnotq,8000);
+
+        setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
+     break;
+
+     case jobTitle.includes("Look At Advertisements"):
+
+id="2448704";
+//setInterval(eliminarnotq,8000);
+setTimeout(radios_2,1000);
+guia="Look At Advertisements And Judge Them 2024 / TE: ??"
+
+        setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
+     break;
+
+     case jobTitle.includes("Uk_search-Science"):
+
+id="2263232"
+
+		setInterval(Enviar_task, Math.round(Math.random() * (11000 - 10000)) + 10000);
+     break;
+
+     case jobTitle.includes("Adult Content According"):
+
+id="2185656"
+setTimeout(radios_2,1000);
+		setInterval(Enviar_Sin_marcar, Math.round(Math.random() * (13000 - 11000)) + 11000);
+     break;
+
+     case jobTitle.includes("Find The Official Website Of Businesses"):
+
+id="1847605";
+
+		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 10000)) + 10000);
+     break;
+
+     case jobTitle.includes("Outline Boxes With 4-Point Polygons"):
+
+id="2186718"
+setTimeout(rocktq,150000);
+
+		setInterval(Enviar_task, Math.round(Math.random() * (184000 - 181000)) + 181000);
+     break;
+
+     case jobTitle.includes("Keyword Relevance"):
+
+id="2238365"
+
+		setInterval(Enviar_task, Math.round(Math.random() * (12000 - 11000)) + 11000);
+     break;
+
+     case jobTitle.includes("Determine Stances In Reddit"):
+
+id="2257660"
+
+		setInterval(Enviar_task, Math.round(Math.random() * (12000 - 11000)) + 11000);
+     break;
+
+     case jobTitle.includes("Find Communities In Reviews"):
+
+id="2258585"
+
+		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
+     break;
+
+     case jobTitle.includes("Select The Product Which"):
+
+id="2261762"
+setInterval(eliminarnotq,5000)
+
+		setTimeout(function(){setInterval(Enviar_task, Math.round(Math.random() * (8000 - 4000)) + 4000)},58000);
+     break;
+
+     case jobTitle.includes("Matching"):
+
+id="2285129"
+
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Classify Web Pages"):
+
+id="2003568"
+
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Evaluating Synthetic Voices"):
+
+id="2267903"
+
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Evaluating Human Faces"):
+
+id="2243270"
+
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Music Description Assessment"):
+
+id="2271691"
+
+		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
+     break;
+
+     case jobTitle.includes("Name Your Job"):
+
+id="2271691"
+
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Classify Text Into Categories") || jobTitle.includes("Classify Webpage Text Into Genre"):
+
+id="2278086"
+
+		setInterval(Enviar_task, Math.round(Math.random() * (12000 - 11000)) + 11000);
+     break;
+
+     case jobTitle.includes("Census Geographic Identifier Research"):
+
+id="2276120"
+setInterval(eliminarnotq,8000)
+
+		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
+     break;
+
+     case jobTitle.includes("Is This 2 Letters Match?") || jobTitle.includes("Letter Match"):
+
+id="2276842"
+
+		setInterval(Enviar_task, Math.round(Math.random() * (12000 - 11000)) + 11000);
+     break;
+
+     case jobTitle.includes("Musiccaps") || jobTitle.includes("Fma Captioning Study") || jobTitle.includes("Fma Reasoning") || jobTitle.includes("Reasoning") || jobTitle.includes("Fma"):
+
+id="2285129"
+
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Musicnet"):
+
+id="2283143"
+
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Image Categorization"):
+
+id="2284443"
+		setInterval(Enviar_encuesta, Math.round(Math.random() * (62000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Is It A Full Font?"):
+
+id="2288322"
+		setInterval(Enviar_encuesta, Math.round(Math.random() * (12000 - 11000)) + 11000);
+     break;
+
+     case jobTitle.includes("Validate Questions And Answers"):
+
+id="2288522"
+		setInterval(Enviar_task, Math.round(Math.random() * (32000 - 31000)) + 31000);
+     break;
+
+     case jobTitle.includes("A_b_llama-2-13B"):
+
+id="2142753"
+		setInterval(Enviar_task, Math.round(Math.random() * (302000 - 301000)) + 301000);
+     break;
+
+     case jobTitle.includes("No sirve"):
+
+id="2277449"
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Home Depot Recommendations"):
+
+id="2301587"
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Intent-Based"):
+
+id="2301431"
+autofill_radios_random=["1","2","1","2"];
+		setInterval(Enviar_task, Math.round(Math.random() * (12000 - 11000)) + 11000);
+     break;
+
+     case jobTitle.includes("Relabelling"):
+
+id="2301963"
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Confirm Bounding Boxes"):
+
+id="2272000"
+		setInterval(Enviar_Sin_marcar, Math.round(Math.random() * (33000 - 32000)) + 32000);
+     break;
+
+     case jobTitle.includes("Outline And Label Items In Bin With Polygons"):
+
+id="2293455"
+setTimeout(rocktq,50000);
+		setInterval(Enviar_task, Math.round(Math.random() * (190000 - 185000)) + 185000);
+     break;
+
+     case jobTitle.includes("Mark The Passages"):
+
+id="2304036"
+setTimeout(eliminarnotq,5000);
+		setInterval(Enviar_task, Math.round(Math.random() * (68000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Which Is The Best Explanation"):
+
+id="2307326"
+		setInterval(Enviar_task, Math.round(Math.random() * (128000 - 121000)) + 121000);
+     break;
+
+     case jobTitle.includes("Compare Intent Relevance"):
+
+id="2308694"
+autofill_radios_random=["1","2"];
+		setInterval(Enviar_task, Math.round(Math.random() * (16000 - 11000)) + 11000);
+     break;
+
+     case jobTitle.includes("Verify Description Of Website"):
+
+id="2309777"
+		setInterval(Enviar_task, Math.round(Math.random() * (66000 - 61000)) + 61000);
+     break;
+
+     case jobTitle.includes("Outline Commerce Items In Image With Polygons"):
+
+id="2122845"
+		setInterval(Enviar_task, Math.round(Math.random() * (126000 - 121000)) + 121000);
+     break;
+
+     case jobTitle.includes("Product Categorization") || jobTitle.includes("20K Sample") || jobTitle.includes("Priority No Batch"):
+
+id="2323516"
+		setInterval(Enviar_task, Math.round(Math.random() * (62000 - 60000)) + 60000);
+     break;
+
+     case jobTitle.includes("E-Product_"):
+
+id="2372191"
+setTimeout(radios_2,1000);
+guia="E-Product / TE: ??";
+		setInterval(Enviar_task, Math.round(Math.random() * (30000 - 22000)) + 22000);
+     break;
+
+     case jobTitle.includes("Fonts Image Review"):
+
+id="2418025"
+guia="Fonts Image Review Crowd / TE: ??";
+		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
+     break;
+
+     case jobTitle=="Image Review":
+
+id="2423581"
+guia="Image Review / TE: ??";
+		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
+     break;
+
+     case jobTitle.includes("Upwork - Human Relevance"):
+
+id="2419768"
+guia="Upwork - Human Relevance Judgements On Search (Profile Link) / TE: ??";
+		setInterval(Enviar_task, Math.round(Math.random() * (15000 - 12000)) + 12000);
+     break;
+
+     case jobTitle.includes("Speech Naturalness"):
+
+id="2446355"
+guia="Speech Naturalness link 1 / TE: ??";
+		setInterval(Enviar_task, Math.round(Math.random() * (65000 - 62000)) + 62000);
+     break;
+
+     case jobTitle.includes("Speech Similarity"):
+
+id="2446355"
+guia="Speech Similarity / TE: ??";
+		setInterval(Enviar_task, Math.round(Math.random() * (65000 - 62000)) + 62000);
+     break;
+
+    default:
+
+    break;
+}
+	function given_up(){document.getElementsByClassName('btn btn-primary')[0].click();}
+
+function Enviar(){document.getElementsByClassName('submit btn btn-cf-blue')[0].click();}
+
+function Enviar_Sin_marcar(){
+var WM = document.createElement("div");
+var titleapppe = document.querySelector(".navbar").innerText;
+WM.innerHTML = titleapppe;
+var QuizMM = WM.innerText;
+        if(QuizMM.includes("Work")){
+        document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
+}}
+   function URL_aleatorio(){
+   var hijos = document.querySelector("#job_units").childNodes;
+   for (var hijo of hijos){
+    if (hijo.tagName =='DIV' && !hijo.classList.contains('form-actions')){
+var nombrecompleto = hijo.querySelector("div > div:nth-child(1) > div > p:nth-child(1)").innerText
+
+nombrecompleto = nombrecompleto.substring(17)
+nombrecompleto = nombrecompleto.replace(/\s+/g, '');
+        nombrecompleto = nombrecompleto.replace('.', '');
+        nombrecompleto = nombrecompleto.replace(',', '');
+console.log(nombrecompleto)
+
+var input = hijo.querySelector("input.domain");
+        input.value = "WWW."+nombrecompleto+".COM"
+      }
    }
-  }
 }
-function task_ready() {
+function Enviar_encuesta(){
+document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
+}
 
-const buttonElement1 = document.querySelector("#divContainer > div > app-tile > button");
-const buttonElement2 = document.querySelector("#divContainer > div > app-tile:nth-child(2) > button");
-const buttonElement3 = document.querySelector("#divContainer > div > app-tile:nth-child(3) > button");
-const buttonElement4 = document.querySelector("#divContainer > div > app-tile:nth-child(4) > button");
-const buttonElement5 = document.querySelector("#divContainer > div > app-tile:nth-child(5) > button");
-const buttonElement6 = document.querySelector("#divContainer > div > app-tile:nth-child(6) > button");
-const buttonElement7 = document.querySelector("#divContainer > div > app-tile:nth-child(7) > button");
-const buttonElement8 = document.querySelector("#divContainer > div > app-tile:nth-child(8) > button");
-const buttonElement9 = document.querySelector("#divContainer > div > app-tile:nth-child(9) > button");
-const buttonElement10 = document.querySelector("#divContainer > div > app-tile:nth-child(10) > button");
-const buttonElement11 = document.querySelector("#divContainer > div > app-tile:nth-child(11) > button");
-const buttonElement12 = document.querySelector("#divContainer > div > app-tile:nth-child(12) > button");
+setTimeout(clickPro_interval,2000);
+function clickPro_interval(){
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+    if(QuizM.includes("(1/1)") || QuizM.includes("(2/2)") || QuizM.includes("(3/3)") || QuizM.includes("(4/4)") || QuizM.includes("(5/5)") || QuizM.includes("(6/6)") || QuizM.includes("(7/7)") || QuizM.includes("(8/8)") || QuizM.includes("(9/9)") || QuizM.includes("(10/10)")||
+    QuizM.includes("(11/11)") || QuizM.includes("(12/12)") || QuizM.includes("(13/13)") || QuizM.includes("(14/14)") || QuizM.includes("(15/15)") || QuizM.includes("(16/16)") || QuizM.includes("(17/17)") || QuizM.includes("(18/18)") ||
+    QuizM.includes("(19/19)") || QuizM.includes("(20/20)") || QuizM.includes("(21/21)") || QuizM.includes("(22/22)") || QuizM.includes("(23/23)") || QuizM.includes("(24/24)") || QuizM.includes("(25/25)")){
+    setInterval( function() {document.getElementById("Pro").click();},Math.round(Math.random() * (15000 - 7000)) + 7000)
+    setInterval( function() {document.getElementById("Pro").click();},Math.round(Math.random() * (60000 - 8000)) + 8000)
+    }else{
+clickPro_interval()
+    }}
+setTimeout(clickPro,2000);
+function clickPro(){
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+if(QuizM.includes("Quiz")){
+ if(QuizM.includes("1/") || QuizM.includes("2/") || QuizM.includes("3/") || QuizM.includes("4/") || QuizM.includes("5/") || QuizM.includes("6/") || QuizM.includes("7/") || QuizM.includes("8/") || QuizM.includes("9/") || QuizM.includes("10/")||
+    QuizM.includes("11/") || QuizM.includes("12/") || QuizM.includes("13/") || QuizM.includes("14/") || QuizM.includes("15/") || QuizM.includes("16/") || QuizM.includes("17/") || QuizM.includes("18/") ||
+    QuizM.includes("19/") || QuizM.includes("20/") || QuizM.includes("21/") || QuizM.includes("22/") || QuizM.includes("23/") || QuizM.includes("24/") || QuizM.includes("25/")){
+save_brain();
+ }else{
+clickPro();
+         }
+    }
+}
+function Enviar_work(){
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+    if(QuizM.includes("Work")){
+	 var hijos = document.querySelector("#job_units").childNodes;
+    for (var hijo of hijos){
+		if (hijo.tagName =='DIV' && !hijo.classList.contains('form-actions')){
+			var stilo = hijo.getAttribute("Style");
+			if (stilo.includes("green") || stilo.includes("5DADE2")){
+				document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
+             //   setTimeout(function(){Enviar_task()},7000);
+            }}
+      }}}
+function Enviar_task(){
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+setTimeout(Enviar_work);
+    if(QuizM.includes("(1/1)") || QuizM.includes("(2/2)") || QuizM.includes("(3/3)") || QuizM.includes("(4/4)") || QuizM.includes("(5/5)") || QuizM.includes("(6/6)") || QuizM.includes("(7/7)") || QuizM.includes("(8/8)") || QuizM.includes("(9/9)") || QuizM.includes("(10/10)")||
+    QuizM.includes("(11/11)") || QuizM.includes("(12/12)") || QuizM.includes("(13/13)") || QuizM.includes("(14/14)") || QuizM.includes("(15/15)") || QuizM.includes("(16/16)") || QuizM.includes("(17/17)") || QuizM.includes("(18/18)") ||
+    QuizM.includes("(19/19)") || QuizM.includes("(20/20)") || QuizM.includes("(21/21)") || QuizM.includes("(22/22)") || QuizM.includes("(23/23)") || QuizM.includes("(24/24)") || QuizM.includes("(25/25)")){
+        document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
+      // setTimeout(function(){Enviar_task()},7000);
+    }else{
+        if(jobTitle.includes("Text Classification - Agreement") || jobTitle.includes("Look At Advertisements") || jobTitle.includes("Classify Web Pages")
+           || jobTitle.includes("Classify Reviews As") || jobTitle.includes("Musiccaps") || jobTitle.includes("Musicnet") || jobTitle.includes("Fma") || jobTitle.includes("Reasoning")
+	   || jobTitle.includes("Matching") || jobTitle.includes("Validate Questions And Answers") || QuizM.includes("5 of 6")
+ 	   || QuizM.includes("7 of 10") || QuizM.includes("8 of 10") || QuizM.includes("9 of 10")){
+           if(QuizM.includes("4/5") || QuizM.includes("(5/6)") || QuizM.includes("9/10") || QuizM.includes("9/10")){
+              // document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
+           }
+      }
+}}
 
-      if (buttonElement1.textContent != "Ready" & buttonElement1.disabled) {
-    document.querySelector("#divContainer > div > app-tile > button").textContent="Ready"
-}else if (buttonElement2.textContent != "Ready" & buttonElement2.disabled) {
-    document.querySelector("#divContainer > div > app-tile:nth-child(2) > button").textContent="Ready";
-}else if (buttonElement3.textContent != "Ready" & buttonElement3.disabled) {
-    document.querySelector("#divContainer > div > app-tile:nth-child(3) > button").textContent="Ready";
-}else if (buttonElement4.textContent != "Ready" & buttonElement4.disabled) {
-    document.querySelector("#divContainer > div > app-tile:nth-child(4) > button").textContent="Ready";
-}else if (buttonElement5.textContent != "Ready" & buttonElement5.disabled) {
-    document.querySelector("#divContainer > div > app-tile:nth-child(5) > button").textContent="Ready";
-}else if (buttonElement6.textContent != "Ready" & buttonElement6.disabled) {
-    document.querySelector("#divContainer > div > app-tile:nth-child(6) > button").textContent="Ready";
-}else if (buttonElement7.textContent != "Ready" & buttonElement7.disabled) {
-    document.querySelector("#divContainer > div > app-tile:nth-child(7) > button").textContent="Ready";
-}else if (buttonElement8.textContent != "Ready" & buttonElement8.disabled) {
-    document.querySelector("#divContainer > div > app-tile:nth-child(8) > button").textContent="Ready";
-}else if (buttonElement9.textContent != "Ready" & buttonElement9.disabled) {
-    document.querySelector("#divContainer > div > app-tile:nth-child(9) > button").textContent="Ready";
-}else if (buttonElement10.textContent != "Ready" & buttonElement10.disabled) {
-    document.querySelector("#divContainer > div > app-tile:nth-child(10) > button").textContent="Ready";
-}else if (buttonElement11.textContent != "Ready" & buttonElement11.disabled) {
-    document.querySelector("#divContainer > div > app-tile:nth-child(11) > button").textContent="Ready";
-}else if (buttonElement12.textContent != "Ready" & buttonElement12.disabled) {
-    document.querySelector("#divContainer > div > app-tile:nth-child(12) > button").textContent="Ready";
+setInterval(enviar_WM,30000);
+function enviar_WM(){
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+   if(QuizM.includes("Work")){
+       if(QuizM.includes("accuracy")){
+           }else{
+               document.getElementsByClassName('submit btn btn-cf-blue')[0].click();
+       }
    }
 }
-}
+
+function eliminarnotq(){
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+   if(QuizM.includes("Work")){
+       if(QuizM.includes("1/") || QuizM.includes("2/") ||QuizM.includes("3/") || QuizM.includes("4/")){
+    var hijos = document.querySelector("#job_units").childNodes;
+   for (var hijo of hijos){
+    if (hijo.tagName =='DIV' && !hijo.classList.contains('form-actions')){
+        var stilo = hijo.getAttribute("Style");
+        if (stilo === null){
+            hijo.style.display = 'none';
+            if (hijo.previousSibling.classList.contains('checkboxTotalProjectF8')){
+            hijo.previousSibling.remove();
+            }
+        }else{
+            if (stilo.includes("green")||stilo.includes("#5DADE2")){
+            }else{
+                 if (hijo.previousSibling.classList.contains('checkboxTotalProjectF8')){
+                     hijo.previousSibling.remove();
+            }
+                hijo.style.display = 'none';
+            }}
+       }}
+   }}}
+
+var ready=false;
+function save_brain(){
+// setTimeout( function() {document.getElementById("Pro").click();})
+   setTimeout( function() {document.getElementById("GuardarTQf").click();},2000)
+   setTimeout( function() {document.getElementById("SubirTQ").click();},3000)
+
+if(!ready){
+setTimeout(save_brain,15000);
+       }
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+
+    if(QuizM.includes("(1/1)") || QuizM.includes("(2/2)") || QuizM.includes("(3/3)") || QuizM.includes("(4/4)") || QuizM.includes("(5/5)") || QuizM.includes("(6/6)") || QuizM.includes("(7/7)") || QuizM.includes("(8/8)") || QuizM.includes("(9/9)") || QuizM.includes("(10/10)")||
+    QuizM.includes("(11/11)") || QuizM.includes("(12/12)") || QuizM.includes("(13/13)") || QuizM.includes("(14/14)") || QuizM.includes("(15/15)") || QuizM.includes("(16/16)") || QuizM.includes("(17/17)") || QuizM.includes("(18/18)") ||
+    QuizM.includes("(19/19)") || QuizM.includes("(20/20)") || QuizM.includes("(21/21)") || QuizM.includes("(22/22)") || QuizM.includes("(23/23)") || QuizM.includes("(24/24)") || QuizM.includes("(25/25)")){
+
+ ready=true;
+    }
+  }
+function rocktq(){
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+    if(QuizM.includes("Work")){
+    var hijos = document.querySelector("#job_units").childNodes;
+   for (var hijo of hijos){
+    if (hijo.tagName =='DIV' && !hijo.classList.contains('form-actions')){
+        var stilo = hijo.getAttribute("Style");
+        var bandera = false;
+          if (stilo === null){
+bandera = true;
+        }else{
+            if (stilo.includes("green")||stilo.includes("#5DADE2")){
+            }else{
+                //hacer
+                bandera = true;
+            }}
+        if (bandera){
+        var inputs = hijo.querySelectorAll('input[type="hidden"]');
+        var resp = '[{"name":"4592ce62-9914-47d8-b543-55be424b977a","number":1,"type":"box","coordinates":{"x":182,"y":174,"w":144,"h":160}}]';
+        for (var inpu of inputs){
+                 if (inpu.classList.contains("annotation")){
+                     inpu.value = resp;
+        }}}}
+    }}}
+})();
+
+var QM = document.createElement("div");
+var titleappp = document.querySelector(".navbar").innerText;
+QM.innerHTML = titleappp;
+var QuizM = QM.innerText;
+    if(QuizM.includes("Work")){
+var titleDivap = document.createElement("div");
+var titleap = document.querySelector(".job-title").innerText;
+titleDivap.innerHTML = titleap;
+var jobTitlei = titleDivap.innerText;
+ if(!jobTitlei.includes("Look At Advertisements And Judge Them") || !jobTitlei.includes("Olhe O Anúncio E Dê Sua Opinião.") || !jobTitlei.includes("Observa Los Anuncios Y Júzgalo Tú Mismo")){
+var auto_fill_radios="";
+var autofill_radios_random=["1","2"];
+var autofill_rating_random=["1","2"];
+var AutoFill_Image_Preference=[""];
+var autofill_checkboxes_random=["1","2"];
+    }}
+(function() {
+    'use strict';
+
+    var audios = document.querySelectorAll("audio");
+
+    if (audios.length > 0) {
+        for (var i = 0; i < audios.length; i++) {
+            var link = document.createElement("a");
+            link.href = audios[i].src;
+            link.textContent = audios[i].src;
+            link.style.display = "block";
+            audios[i].parentNode.insertBefore(link, audios[i].nextSibling);
+        }
+    }
+})();
+console.log("brain agregado 2");
