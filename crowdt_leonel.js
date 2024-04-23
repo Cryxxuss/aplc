@@ -74,7 +74,7 @@ if (multi_choice === name_task) {
     ventana=false
 } else {
 document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
-setTimeout(task_ready,3000);
+setTimeout(task_ready,5000);
     ventana=true
    }
   }
