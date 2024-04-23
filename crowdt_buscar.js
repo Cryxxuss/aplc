@@ -1,4 +1,4 @@
-function clickButtonIfSpanExists() {
+/*function clickButtonIfSpanExists() {
   const spanSelector = "span.text-xs.font-semibold.main-title.ng-star-inserted";
   const buttonSelector = "BotonBuscar"; // Use ID selector for better reliability
 
@@ -30,3 +30,4 @@ function clickButtonIfSpanExists() {
 
 // Call the function to initiate the process
 clickButtonIfSpanExists();
+*/
