@@ -1,5 +1,4 @@
-//window.location="https://outlook.live.com";
-window.document.title = document.querySelector("div > nav > ul > li > div > span").innerText;
+window.document.title = document.querySelector("div > nav > ul > li > div > span").innerText; //ver saldo
 
 const containerText = document.querySelector("#divContainer").innerText
 var ventana = true
@@ -18,7 +17,7 @@ var selectedLine9 = lines[9];
 var selectedLine10 = lines[10];
 var selectedLine11 = lines[11];
 
-const name_task = "Primary Cook"
+const name_task = "Let's talk about snacks!"
 setTimeout( function(){
     if(ventana){
 
@@ -51,6 +50,8 @@ setTimeout( function(){
 function reloadPage() {
   location.reload();
 }
+var element = document.querySelector("div.head-container").style.borderColor;
+
 const multi_choice1 = document.querySelector("body > ngb-modal-window > div > div > app-action-loader > app-multiple-choice > div > div.head-container > div > span")
 const spanSelector = "div > div.head-container > app-action-modal-header > div > div > p"
 const spanElement = document.querySelector("div > div.head-container > app-action-modal-header > div > div > p");
@@ -61,10 +62,13 @@ const spanText = document.querySelector("div > div.head-container > app-action-m
 if (spanText === name_task) {
     ventana=false
 } else {
+if(element==='rgb(0, 255, 127)'){
+    console.log("Existe");
+}else{
 document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
-setTimeout(task_ready,2000);
+setTimeout(task_ready,5000);
     ventana=true
-  }
+  }}
   }
 if (multi_choice1) {
     if (!spanElement) {
@@ -73,10 +77,14 @@ const multi_choice = document.querySelector("body > ngb-modal-window > div > div
 if (multi_choice === name_task) {
     ventana=false
 } else {
+
+if(element==='rgb(0, 255, 127)'){
+    console.log("Existe");
+}else{
 document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
 setTimeout(task_ready,5000);
     ventana=true
-   }
+   }}
   }
 }
 function task_ready() {
@@ -118,12 +126,5 @@ const buttonElement12 = document.querySelector("#divContainer > div > app-tile:n
     document.querySelector("#divContainer > div > app-tile:nth-child(11) > button").textContent="Ready";
 }else if (buttonElement12.textContent != "Ready" & buttonElement12.disabled) {
     document.querySelector("#divContainer > div > app-tile:nth-child(12) > button").textContent="Ready";
-}}
-
-
-//setTimeout(function displayDate(){
-
-//window.document.title = document.querySelector("div > nav > ul > li.ng-tns-c12-1.points.rounded-3xl.coin-item.sm\\:mr-6.relative.progress-2 > div > span").innerText;
-//setTimeout(displayDate,120000);
-
-//},3000);
+   }
+}
