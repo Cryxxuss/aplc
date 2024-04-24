@@ -50,7 +50,6 @@ setTimeout( function(){
 function reloadPage() {
   location.reload();
 }
-var element = document.querySelector("div.head-container").style.borderColor;
 
 const multi_choice1 = document.querySelector("body > ngb-modal-window > div > div > app-action-loader > app-multiple-choice > div > div.head-container > div > span")
 const spanSelector = "div > div.head-container > app-action-modal-header > div > div > p"
@@ -75,6 +74,7 @@ if (multi_choice === name_task) {
     ventana=false
 } else {
 
+var element = document.querySelector("div.head-container").style.borderColor;
 if(element==='rgb(0, 255, 127)'){
     console.log("Existe");
 }else{
