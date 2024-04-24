@@ -1,3 +1,16 @@
+// ==UserScript==
+// @name         crowdtap_open
+// @namespace    http://tampermonkey.net/
+// @version      2024-04-22
+// @description  try to take over the world!
+// @author       You
+// @match        http://*/*
+// @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+// @grant        none
+// ==/UserScript==
+
+//window.location="https://outlook.live.com";
+
 window.document.title = document.querySelector("div > nav > ul > li > div > span").innerText; //ver saldo
 
 const containerText = document.querySelector("#divContainer").innerText
@@ -17,7 +30,7 @@ var selectedLine9 = lines[9];
 var selectedLine10 = lines[10];
 var selectedLine11 = lines[11];
 
-const name_task = "Tell us more about you!"
+const name_task = "Primary Cook"
 setTimeout( function(){
     if(ventana){
 
@@ -62,14 +75,11 @@ const spanText = document.querySelector("div > div.head-container > app-action-m
 if (spanText === name_task) {
     ventana=false
 } else {
-if(element==='rgb(0, 255, 127)'){
-    console.log("Existe");
-}else{
 document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
 setTimeout(task_ready,5000);
     ventana=true
-  }}
   }
+}
 if (multi_choice1) {
     if (!spanElement) {
 const multi_choice = document.querySelector("body > ngb-modal-window > div > div > app-action-loader > app-multiple-choice > div > div.head-container > div > span").innerText
