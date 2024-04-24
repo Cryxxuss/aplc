@@ -1,16 +1,3 @@
-// ==UserScript==
-// @name         crowdtap_open
-// @namespace    http://tampermonkey.net/
-// @version      2024-04-22
-// @description  try to take over the world!
-// @author       You
-// @match        http://*/*
-// @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-// @grant        none
-// ==/UserScript==
-
-//window.location="https://outlook.live.com";
-
 window.document.title = document.querySelector("div > nav > ul > li > div > span").innerText; //ver saldo
 
 const containerText = document.querySelector("#divContainer").innerText
@@ -30,7 +17,7 @@ var selectedLine9 = lines[9];
 var selectedLine10 = lines[10];
 var selectedLine11 = lines[11];
 
-const name_task = "Health Conditions"
+const name_task = "Let’s talk about hair care appliances!"
 setTimeout( function(){
     if(ventana){
 
