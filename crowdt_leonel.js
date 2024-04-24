@@ -101,26 +101,37 @@ const buttonElement12 = document.querySelector("#divContainer > div > app-tile:n
 
       if (buttonElement1.textContent != "Ready" & buttonElement1.disabled) {
     document.querySelector("#divContainer > div > app-tile > button").textContent="Ready"
+    task_ready()
 }else if (buttonElement2.textContent != "Ready" & buttonElement2.disabled) {
     document.querySelector("#divContainer > div > app-tile:nth-child(2) > button").textContent="Ready";
+    task_ready()
 }else if (buttonElement3.textContent != "Ready" & buttonElement3.disabled) {
     document.querySelector("#divContainer > div > app-tile:nth-child(3) > button").textContent="Ready";
+    task_ready()
 }else if (buttonElement4.textContent != "Ready" & buttonElement4.disabled) {
     document.querySelector("#divContainer > div > app-tile:nth-child(4) > button").textContent="Ready";
+    task_ready()
 }else if (buttonElement5.textContent != "Ready" & buttonElement5.disabled) {
     document.querySelector("#divContainer > div > app-tile:nth-child(5) > button").textContent="Ready";
+    task_ready()
 }else if (buttonElement6.textContent != "Ready" & buttonElement6.disabled) {
     document.querySelector("#divContainer > div > app-tile:nth-child(6) > button").textContent="Ready";
+    task_ready()
 }else if (buttonElement7.textContent != "Ready" & buttonElement7.disabled) {
     document.querySelector("#divContainer > div > app-tile:nth-child(7) > button").textContent="Ready";
+    task_ready()
 }else if (buttonElement8.textContent != "Ready" & buttonElement8.disabled) {
     document.querySelector("#divContainer > div > app-tile:nth-child(8) > button").textContent="Ready";
+    task_ready()
 }else if (buttonElement9.textContent != "Ready" & buttonElement9.disabled) {
     document.querySelector("#divContainer > div > app-tile:nth-child(9) > button").textContent="Ready";
+    task_ready()
 }else if (buttonElement10.textContent != "Ready" & buttonElement10.disabled) {
     document.querySelector("#divContainer > div > app-tile:nth-child(10) > button").textContent="Ready";
+    task_ready()
 }else if (buttonElement11.textContent != "Ready" & buttonElement11.disabled) {
     document.querySelector("#divContainer > div > app-tile:nth-child(11) > button").textContent="Ready";
+    task_ready()
 }else if (buttonElement12.textContent != "Ready" & buttonElement12.disabled) {
     document.querySelector("#divContainer > div > app-tile:nth-child(12) > button").textContent="Ready";
    }
