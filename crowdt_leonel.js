@@ -22,7 +22,7 @@ var selectedLine9 = lines[9];
 var selectedLine10 = lines[10];
 var selectedLine11 = lines[11];
 
-const name_task = "Dog Treats - What do you prefer?"
+const name_task = "We want to know more about you!"
 setTimeout( function(){
     if(ventana){
 
