@@ -22,7 +22,7 @@ var selectedLine9 = lines[9];
 var selectedLine10 = lines[10];
 var selectedLine11 = lines[11];
 
-const name_task = "Shopping Habits Survey"
+const name_task = "Shopping Habits Surv"
 setTimeout( function(){
     if(ventana){
 
