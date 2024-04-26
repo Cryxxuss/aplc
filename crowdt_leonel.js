@@ -17,7 +17,7 @@ var selectedLine9 = lines[9];
 var selectedLine10 = lines[10];
 var selectedLine11 = lines[11];
 
-const name_task = "Question Time!"
+const name_task = "Where you shop and what you would bu"
 setTimeout( function(){
     if(ventana){
 
@@ -45,7 +45,7 @@ setTimeout( function(){
     document.querySelector("#divContainer > div > div:nth-child(11) > app-tile > button > div.ng-star-inserted > span").click()
 }else if (selectedLine11 === name_task) {
     document.querySelector("#divContainer > div > div:nth-child(12) > app-tile > button > div.ng-star-inserted > span").click()
- }}},2000)
+ }}})
 
 function reloadPage() {
   location.reload();
@@ -74,14 +74,14 @@ if (multi_choice === name_task) {
     ventana=false
 } else {
 
-var element = document.querySelector("div.head-container").style.borderColor;
+/*var element = document.querySelector("div.head-container").style.borderColor;
 if(element==='rgb(0, 255, 127)'){
     console.log("Existe");
-}else{
+}else{*/
 document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
 setTimeout(task_ready,5000);
     ventana=true
-   }}
+   }
   }
 }
 function task_ready() {
