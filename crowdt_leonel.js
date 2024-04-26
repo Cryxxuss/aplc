@@ -1,3 +1,8 @@
+//window.location="https://outlook.live.com";
+/*var element = document.querySelector("div.head-container").style.borderColor;
+if(element==='rgb(0, 255, 127)'){
+    console.log("Existe");
+}else{*/
 window.document.title = document.querySelector("div > nav > ul > li > div > span").innerText; //ver saldo
 
 const containerText = document.querySelector("#divContainer").innerText
@@ -45,7 +50,8 @@ setTimeout( function(){
     document.querySelector("#divContainer > div > div:nth-child(11) > app-tile > button > div.ng-star-inserted > span").click()
 }else if (selectedLine11 === name_task) {
     document.querySelector("#divContainer > div > div:nth-child(12) > app-tile > button > div.ng-star-inserted > span").click()
- }}})
+ }}
+})
 
 function reloadPage() {
   location.reload();
@@ -61,10 +67,14 @@ const spanText = document.querySelector("div > div.head-container > app-action-m
 if (spanText === name_task) {
     ventana=false
 } else {
+setTimeout( function(){
+if (spanText === name_task) {
+    ventana=false
+} else {
 document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
-setTimeout(task_ready,5000);
+setTimeout(task_ready,3000);
     ventana=true
-  }
+  }},3000)}
 }
 if (multi_choice1) {
     if (!spanElement) {
@@ -73,16 +83,14 @@ const multi_choice = document.querySelector("body > ngb-modal-window > div > div
 if (multi_choice === name_task) {
     ventana=false
 } else {
-
-/*var element = document.querySelector("div.head-container").style.borderColor;
-if(element==='rgb(0, 255, 127)'){
-    console.log("Existe");
-}else{*/
+setTimeout( function(){
+if (multi_choice === name_task) {
+    ventana=false
+} else {
 document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
-setTimeout(task_ready,5000);
+setTimeout(task_ready,3000);
     ventana=true
-   }
-  }
+  }},3000)}}
 }
 function task_ready() {
 
