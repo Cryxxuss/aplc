@@ -22,7 +22,7 @@ var selectedLine9 = lines[9];
 var selectedLine10 = lines[10];
 var selectedLine11 = lines[11];
 
-const name_task = "How many vehicles does your household own?"
+const name_task = "How many bathrooms does your residence currently have (including half baths)?"
 setTimeout( function(){
     if(ventana){
 
