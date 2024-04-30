@@ -3,7 +3,7 @@
 if(element==='rgb(0, 255, 127)'){
     console.log("Existe");
 }else{*/
-/*
+
 window.document.title = document.querySelector("div > nav > ul > li > div > span").innerText; //ver saldo
 
 const containerText = document.querySelector("#divContainer").innerText
@@ -23,7 +23,7 @@ var selectedLine9 = lines[9];
 var selectedLine10 = lines[10];
 var selectedLine11 = lines[11];
 
-const name_task = "How many bathrooms does your residence currently have (including half baths)?"
+const name_task = "How many{{"
 setTimeout( function(){
     if(ventana){
 
@@ -145,4 +145,4 @@ const buttonElement12 = document.querySelector("#divContainer > div > app-tile:n
     document.querySelector("#divContainer > div > app-tile:nth-child(12) > button").textContent="Ready";
    }
 }
-*/
+
