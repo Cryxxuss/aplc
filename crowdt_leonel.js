@@ -23,7 +23,7 @@ var selectedLine9 = lines[9];
 var selectedLine10 = lines[10];
 var selectedLine11 = lines[11];
 
-const name_task = "Holidays!"
+const name_task = "Video games and WWE"
 setTimeout( function(){
     if(ventana){
 
