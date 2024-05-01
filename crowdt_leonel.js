@@ -23,7 +23,7 @@ var selectedLine9 = lines[9];
 var selectedLine10 = lines[10];
 var selectedLine11 = lines[11];
 
-const name_task = "How many times have you been to Disneyland or Disney World?"
+const name_task = "How many bathrooms does your residence currently have (including half baths)?"
 setTimeout( function(){
     if(ventana){
 
