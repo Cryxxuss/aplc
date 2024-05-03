@@ -6,7 +6,7 @@ if(element==='rgb(0, 255, 127)'){
 
 window.document.title = document.querySelector("div > nav > ul > li > div > span").innerText; //ver saldo
 
-const containerText = document.querySelector("#divContainer").innerText
+/*const containerText = document.querySelector("#divContainer").innerText
 var ventana = true
 const lines = containerText.split("\n"); // Split into an array of lines
 
@@ -145,4 +145,4 @@ const buttonElement12 = document.querySelector("#divContainer > div > app-tile:n
     document.querySelector("#divContainer > div > app-tile:nth-child(12) > button").textContent="Ready";
    }
 }
-
+*/
