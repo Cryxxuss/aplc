@@ -1,4 +1,4 @@
-/*function clickButtonIfSpanExists() {
+function clickButtonIfSpanExists() {
   const spanSelector = "span.text-xs.font-semibold.main-title.ng-star-inserted";
   const buttonSelector = "BotonBuscar"; // Use ID selector for better reliability
 
@@ -18,7 +18,7 @@
         } else {
           console.warn("Button element not found.");
         }
-      }, Math.random() * (5000 - 1000) + 1000); // Random delay in milliseconds
+      }, Math.random() * (5000 - 20000) + 20000); // Random delay in milliseconds
     } else {
       console.log("Span element not found. Button not clicked.");
     }
@@ -30,4 +30,4 @@
 
 // Call the function to initiate the process
 clickButtonIfSpanExists();
-*/
+
