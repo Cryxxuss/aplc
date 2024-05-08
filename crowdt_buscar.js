@@ -15,10 +15,11 @@ function clickButtonIfSpanExists() {
         if (buttonElement) {
           console.log("Clicking button...");
           buttonElement.click();
+          setTimeout(enviar, Math.random() * (10000 - 15000) + 15000)
         } else {
           console.warn("Button element not found.");
         }
-      }, Math.random() * (5000 - 20000) + 20000); // Random delay in milliseconds
+      }, Math.random() * (15000 - 30000) + 30000); // Random delay in milliseconds
     } else {
       console.log("Span element not found. Button not clicked.");
     }
@@ -27,7 +28,9 @@ function clickButtonIfSpanExists() {
     document.addEventListener("DOMContentLoaded", clickButtonIfSpanExists); // Try again when ready
   }
 }
-
-// Call the function to initiate the process
+function enviar(){
+var element = document.querySelector("div.head-container").style.borderColor;
+if(element==='rgb(0, 255, 127)'){
+    document.querySelector("#BotonEnviar").click()
+}}
 clickButtonIfSpanExists();
-
