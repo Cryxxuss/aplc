@@ -146,3 +146,16 @@ const buttonElement12 = document.querySelector("#divContainer > div > app-tile:n
    }
 }
 */
+window.document.title = document.querySelector("div > nav > ul > li > div > span").innerText;
+const spanSelector = ".mt-8"
+const spanElement = document.querySelector(spanSelector);
+
+if (spanElement) {
+const spanText = document.querySelector(".mt-8").innerText;
+
+if (spanText === "Extreme Weather Events") {
+
+  document.querySelector("div > div.head-container > app-action-modal-header > div > button").click()
+  }
+// viejo
+}
