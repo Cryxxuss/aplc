@@ -155,7 +155,7 @@ const spanText = document.querySelector(".mt-8").innerText;
 
 if (spanText === "Extreme Weather Events") {
 
-  document.querySelector("div > div.head-container > app-action-modal-header > div > button").click()
+ // document.querySelector("div > div.head-container > app-action-modal-header > div > button").click()
   }
 // viejo
 }
