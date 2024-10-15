@@ -1,17 +1,3 @@
-// ==UserScript==
-// @name         White caucasian NC
-// @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  Ejemplo de cómo obtener datos de una web con GM_xmlhttpRequest
-// @author       Tu Nombre
-// @match        https://crowdtap.com/*
-// @match        https://www.google.com/
-// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
-// @grant        GM_xmlhttpRequest
-// @grant        GM_setValue
-// @grant        GM_getValue
-// ==/UserScript==
-
 if(window.location.href.includes('google')){
 if(!GM_getValue('Data')){
 location.href ='https://crowdtap.com/auth/account-create-email';
