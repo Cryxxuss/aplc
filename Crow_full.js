@@ -522,11 +522,11 @@ if (elemento && elemento.textContent.includes("This is an open end question, whe
     }else{
 if (star) {
 
-  setTimeout(function(){ star.click();},2000)
+  setTimeout(function(){ star.click();},1000)
 }
 if (enviar) {
 
- setTimeout(function(){ enviar.click();},2000)
+ setTimeout(function(){ enviar.click();},1000)
 }
 }
 }
