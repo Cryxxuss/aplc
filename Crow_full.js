@@ -674,13 +674,16 @@ function task_ready() {}
 }
 else{
 
-setTimeout(function() {
-var muestra = document.querySelector("#main-content > article > div.center-column > h1")
-if(muestra){
-if(muestra.innerText==="Get verified"){
+data_alerta();
+function data_alerta() {
+var miDiv = document.querySelector("#divContainer > div > div:nth-child(12) > app-tile > button > div.ng-star-inserted > span");
+if(miDiv){
 alert(GM_getValue('Data'));
-}}
-},10000)
+}else {
+setTimeout(data_alerta(),10000)
+}
+}
+
 function fetchPublicIP(callback) {
     GM_xmlhttpRequest({
         method: 'GET',
