@@ -25,12 +25,12 @@ GM_xmlhttpRequest({
         inputField.value = newNumber;
         inputField.dispatchEvent(inputEvent);
 
-console.log(match[1])
+setTimeout( function(){document.querySelector("#main-content > article > div.center-column > section > form > section.text-center > button").click()},2000)
 
-setInterval( function get_code(){
+setTimeout( function get_code(){
 GM_xmlhttpRequest({
     method: "GET",
-    url: 'https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getStatus&id=' + match[1] + new Date().getTime(),
+    url: 'https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getStatus&id=' + match[1],
     onload: function(response) {
         console.log(response.responseText)
         var bodyContent = response.responseText; // Obtiene el contenido de la respuesta
@@ -47,11 +47,11 @@ if(bodyContent == "STATUS_WAIT_CODE"){
 }
         var code_ok = document.querySelector('input.block')
         if(code_ok & code_ok.textLength==6){
-            document.querySelector('.mb-4').click()
+            setTimeout( function(){document.querySelector("#main-content > article > div.center-column > section > form > section.text-center > button").click()},2000)
         }
 }
 });
-},30000);
+},40000);
     }
 });
 
