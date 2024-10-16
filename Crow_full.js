@@ -520,8 +520,8 @@ clickAllCheckboxesExcept("38-45");
 var star= document.querySelector('.animation-submit-btn');
 var enviar = document.querySelector('div.primaryTitle:nth-child(1)');
 
-if (elemento && elemento.textContent.includes("This is an open end question, where we encourage you to tell us how you feel")
-|| elemento.textContent.includes("Which social media platforms do you use regularly? (Select all that apply")){
+if (elemento && (elemento.textContent.includes("This is an open end question, where we encourage you to tell us how you feel")
+|| elemento.textContent.includes("Which social media platforms do you use regularly? (Select all that apply"))){
     }else{
 if (star) {
 
