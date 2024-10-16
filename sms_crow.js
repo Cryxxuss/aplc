@@ -25,7 +25,7 @@ GM_xmlhttpRequest({
         inputField.value = newNumber;
         inputField.dispatchEvent(inputEvent);
 
-setTimeout( function(){document.querySelector("#main-content > article > div.center-column > section > form > section.text-center > button").click()},2000)
+setTimeout( function(){document.querySelector("#main-content > article > div.center-column > section > form > section.text-center > button").click()},1000)
 
 setTimeout( function get_code(){
 GM_xmlhttpRequest({
@@ -43,12 +43,10 @@ if(bodyContent == "STATUS_WAIT_CODE"){
     if(inputField){
         inputField.value = match[1];
         inputField.dispatchEvent(inputEvent);
+        setTimeout( function(){document.querySelector("#main-content > article > div.center-column > section > form > section.text-center > button").click()},1000)
     }
 }
-        var code_ok = document.querySelector('input.block')
-        if(code_ok & code_ok.textLength==6){
-            setTimeout( function(){document.querySelector("#main-content > article > div.center-column > section > form > section.text-center > button").click()},2000)
-        }
+
 }
 });
 },40000);
