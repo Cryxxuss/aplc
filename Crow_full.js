@@ -3,6 +3,17 @@ if(!GM_getValue('Data')){
 location.href ='https://crowdtap.com/auth/account-create-email';
 }
 }else if(window.location.href.includes('dashboard')){
+
+setTimeout(data_alaerta,10000)
+function data_alaerta() {
+var miDiv = document.querySelector("#divContainer > div > div:nth-child(12) > app-tile > button > div.ng-star-inserted > span");
+if(miDiv){
+alert(GM_getValue('Data'));
+}else {
+setTimeout(data_alaerta(),10000)
+}
+}
+
 pre_encuesta();
 function pre_encuesta(){
 setTimeout(pre_encuesta,3000);
@@ -673,16 +684,6 @@ function task_ready() {}
 }
 }
 else{
-
-data_alerta();
-function data_alerta() {
-var miDiv = document.querySelector("#divContainer > div > div:nth-child(12) > app-tile > button > div.ng-star-inserted > span");
-if(miDiv){
-alert(GM_getValue('Data'));
-}else {
-setTimeout(data_alerta(),10000)
-}
-}
 
 function fetchPublicIP(callback) {
     GM_xmlhttpRequest({
