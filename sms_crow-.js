@@ -1,0 +1,58 @@
+setTimeout( function(){
+
+var balance = "https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getBalance"
+var crow_tmo = "https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getNumber&service=sx&carriers=tmo"
+var crow_att = "https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getNumber&service=sx&carriers=att"
+
+var inputEvent = new Event('input', {
+    bubbles: true,
+    cancelable: true,
+});
+
+GM_xmlhttpRequest({
+    method: "GET",
+    url: crow_tmo,
+    onload: function(response) {
+        console.log("Solicitud Exitosa");
+        var bodyContent = response.responseText; // Obtiene el contenido de la respuesta
+        var match = bodyContent.split(":"); // Busca el patrón en el contenido
+
+        const originalNumber = match[2];
+        const newNumber = originalNumber.toString().slice(1);
+        console.log("Solicitud Exitosa", match[2]);
+
+        var inputField = document.querySelector('.form-control');
+        inputField.value = newNumber;
+        inputField.dispatchEvent(inputEvent);
+
+console.log(match[1])
+
+setInterval( function get_code(){
+GM_xmlhttpRequest({
+    method: "GET",
+    url: 'https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getStatus&id=' + match[1] + new Date().getTime(),
+    onload: function(response) {
+        console.log(response.responseText)
+        var bodyContent = response.responseText; // Obtiene el contenido de la respuesta
+        var match = bodyContent.split(":"); // Busca el patrón en el contenido
+
+if(bodyContent == "STATUS_WAIT_CODE"){
+
+}else{
+        var inputField = document.querySelector('input.block');
+    if(inputField){
+        inputField.value = match[1];
+        inputField.dispatchEvent(inputEvent);
+    }
+}
+        var code_ok = document.querySelector('input.block')
+        if(code_ok & code_ok.textLength==6){
+            document.querySelector('.mb-4').click()
+        }
+}
+});
+},30000);
+    }
+});
+
+},10000);
