@@ -20,8 +20,10 @@ location.href ='https://crowdtap.com/auth/account-create-email';
 
 setTimeout(data_alaerta,10000)
 function data_alaerta() {
-var miDiv = document.querySelector("#divContainer > div > div:nth-child(12) > app-tile > button > div.ng-star-inserted > span");
-if(miDiv){
+var miDiv_12 = document.querySelector("#divContainer > div > div:nth-child(12) > app-tile > button > div.ng-star-inserted > span");
+var miDiv_9 = document.querySelector("#divContainer > div > div:nth-child(9) > app-tile > button > div.ng-star-inserted > span");
+
+if(miDiv_12 || miDiv_9){
 alert(GM_getValue('Data'));
 }else {
 setTimeout(data_alaerta,10000)
