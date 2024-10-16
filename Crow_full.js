@@ -1,3 +1,17 @@
+// ==UserScript==
+// @name         White caucasian NC
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  Ejemplo de cómo obtener datos de una web con GM_xmlhttpRequest
+// @author       Tu Nombre
+// @match        https://crowdtap.com/*
+// @match        https://www.google.com/
+// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
+// @grant        GM_xmlhttpRequest
+// @grant        GM_setValue
+// @grant        GM_getValue
+// ==/UserScript==
+
 if(window.location.href.includes('google')){
 if(!GM_getValue('Data')){
 location.href ='https://crowdtap.com/auth/account-create-email';
@@ -10,12 +24,13 @@ var miDiv = document.querySelector("#divContainer > div > div:nth-child(12) > ap
 if(miDiv){
 alert(GM_getValue('Data'));
 }else {
-setTimeout(data_alaerta(),10000)
+setTimeout(data_alaerta,10000)
 }
 }
 
 pre_encuesta();
 function pre_encuesta(){
+
 setTimeout(pre_encuesta,3000);
 
 var elemento = document.querySelector('div.bg-body-light:nth-child(2)');
@@ -635,7 +650,7 @@ document.querySelector("#solver-button").click()
 var ventana = true
 setTimeout(corriendo,10000)
 function corriendo(){
-setTimeout(corriendo,10000)
+setTimeout(corriendo,11000)
 var containerText = document.querySelector("#divContainer")
 if(containerText){
 containerText = document.querySelector("#divContainer").textContent
