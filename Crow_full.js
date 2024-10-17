@@ -695,7 +695,7 @@ var selectedLine7 = lines[6];
 if (selectedLine2 === "Crowdtap 101: The Basics") {
 document.querySelector("#divContainer > div > div:nth-child(2) > app-tile > button > div.ng-star-inserted > span").click()
 ventana=false
-}else /*if (selectedLine3 === "Crowdtap 101: Your Membership")*/ {
+}else{ if(selectedLine3 === "Crowdtap 101: Your Membership") {
 document.querySelector("#divContainer > div > div:nth-child(4) > app-tile > button > div.ng-star-inserted > span").click()
 ventana=false
 }
