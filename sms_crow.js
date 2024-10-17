@@ -59,7 +59,7 @@ if(bodyContent == "STATUS_WAIT_CODE"){
 
 }
 });
-},30000);
+},40000);
     }
 });
 
