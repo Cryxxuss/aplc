@@ -551,11 +551,11 @@ if (star) {
 
   setTimeout(function(){ star.click();},1500)
 }
-else if (enviar) {
+else{ if (enviar) {
 
  setTimeout(function(){ enviar.click();},1500)
-}
-}
+  }}
+ }
 }
 
 
