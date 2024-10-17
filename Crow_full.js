@@ -719,7 +719,7 @@ if (spanText === "Crowdtap 101: Getting Rewarded" || spanText === "Crowdtap 101:
 ventana=false
 }
 }
-else if (antes && antes.innerText.includes("Crowdtap 101: Learning More About You!")){
+else if (antes && antes.textContent.includes("Crowdtap 101: Learning More About You!")){
 document.querySelector(".close-modal-btn").click()
     ventana=true
 
@@ -759,8 +759,7 @@ function checkIPChange() {
         if (newIP !== null && newIP !== currentIP) {
             console.log('La dirección IP ha cambiado:', newIP);
 var segundoPaso = document.querySelector("#main-content > article > div.center-column > form > div:nth-child(2) > label")
-if(segundoPaso && segundoPaso.innerText.includes("City")){
-    console.log("existe")
+if(segundoPaso && segundoPaso.textContent.includes("City")){
 document.querySelector("#main-content > article > div.center-column > form > section > button.relative.font-bold.text-white.rounded-full.w-68.h-14.bg-blue-dark").click();
 }
             currentIP = newIP;
