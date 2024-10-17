@@ -700,7 +700,7 @@ document.querySelector("#divContainer > div > div:nth-child(4) > app-tile > butt
 ventana=false
 }
  }
-
+}
 var spanElement = document.querySelector("div > div.head-container > app-action-modal-header > div > div > p");
 if (spanElement) {
 const spanText = document.querySelector("div > div.head-container > app-action-modal-header > div > div > p").innerText
