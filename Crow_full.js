@@ -548,8 +548,7 @@ var star = document.querySelector("h2.text-sm")
 var star_boton = document.querySelector('.animation-submit-btn');
 var enviar = document.querySelector('div.primaryTitle:nth-child(1)');
 var antess = document.querySelector("body > ngb-modal-window > div > div > app-cover div > div.modal-content > h2")
-if (antess.textContent.includes("Crowdtap 101: Learning More About You!")
-||antess.textContent.includes("Crowdtap 101: Influencing Brands")){
+if (antess && antess.textContent.includes("Crowdtap 101: Influencing Brands")){
 
     }else{
 if (star && star_boton.textContent.includes("Get started")) {
