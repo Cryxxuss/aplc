@@ -549,7 +549,7 @@ if (elemento && (elemento.textContent.includes("No se necesita")
     }else{
 if (star) {
 
-  setTimeout(function(){ star.click();},1500)
+  setTimeout(function(){ star_boton.click();},1500)
 }
 else{ if (enviar) {
 
