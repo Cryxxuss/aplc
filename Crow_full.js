@@ -677,7 +677,7 @@ document.querySelector("#solver-button").click()
 var ventana = true
 setTimeout(corriendo,10000)
 function corriendo(){
-setTimeout(corriendo,7000)
+setTimeout(corriendo,8000)
 var containerText = document.querySelector("#divContainer")
 if(containerText){
 containerText = document.querySelector("#divContainer").textContent
@@ -713,7 +713,7 @@ setTimeout( function(){
 document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
     ventana=true
 setTimeout(corriendo,3000);
-  },2000)}
+  },3000)}
 }
 
 }
