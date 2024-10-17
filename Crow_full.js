@@ -1,22 +1,10 @@
-// ==UserScript==
-// @name         White caucasian NC
-// @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  Ejemplo de cómo obtener datos de una web con GM_xmlhttpRequest
-// @author       Tu Nombre
-// @match        https://crowdtap.com/*
-// @match        https://www.google.com/
-// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
-// @grant        GM_xmlhttpRequest
-// @grant        GM_setValue
-// @grant        GM_getValue
-// ==/UserScript==
-
 if(window.location.href.includes('google')){
 if(!GM_getValue('Data')){
 location.href ='https://crowdtap.com/auth/account-create-email';
 }
-}else if(window.location.href.includes('dashboard')){
+}
+
+else if(window.location.href.includes('dashboard')){
 
 setTimeout(data_alaerta,10000)
 function data_alaerta() {
@@ -30,6 +18,7 @@ setTimeout(data_alaerta,10000)
 }
 }
 
+
 pre_encuesta();
 var puerta = false
 function pre_encuesta(){
@@ -37,8 +26,8 @@ function pre_encuesta(){
 setTimeout(pre_encuesta,4000);
 
 var elemento = document.querySelector('div.bg-body-light:nth-child(2)');
-var star2 = document.querySelector("h2.text-sm")
-if (elemento || star2) {
+var star_boton1 = document.querySelector('.animation-submit-btn');
+if (elemento || star_boton1) {
 
 //Crowdtap 101: Getting Rewarded
 if (elemento && elemento.textContent.includes("Every 1000 points")) {
@@ -555,10 +544,11 @@ if (star && star_boton.textContent.includes("Get started")) {
 else{ if (enviar) {
 
  setTimeout(function(){ enviar.click();},1500)
-  }}
+  }
  }
 }
-
+}
+}
 
 
    setTimeout(keep ,10000)
@@ -719,7 +709,8 @@ setTimeout(corriendo,3000);
 
 }
 }
-}}
+}
+
 else{
 
 function fetchPublicIP(callback) {
