@@ -547,7 +547,7 @@ var enviar = document.querySelector('div.primaryTitle:nth-child(1)');
 if (elemento && (elemento.textContent.includes("No se necesita")
 || elemento.textContent.includes("Which social media platforms do you use regularly? (Select all that apply"))){
     }else{
-if (star) {
+if (star && star.textContent.includes("Get started")) {
 
   setTimeout(function(){ star_boton.click();},1500)
 }
@@ -654,7 +654,6 @@ setTimeout(verifiedd_interval,5000);
 }
 }
 function verifiedd(){
-alert(GM_getValue('Data'));
 document.querySelector("#divContainer > app-unlock-full-experience > div > div.buttons-container > button").click()
 setTimeout(function(){
 
