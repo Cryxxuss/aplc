@@ -700,25 +700,26 @@ var selectedLine7 = lines[6];
 if (selectedLine2 === "Crowdtap 101: The Basics") {
 document.querySelector("#divContainer > div > div:nth-child(2) > app-tile > button > div.ng-star-inserted > span").click()
 ventana=false
-}else{ if(selectedLine3 === "Crowdtap 101: Your Membership") {
+}
+else{ if(selectedLine3 === "Crowdtap 101: Your Membership") {
 document.querySelector("#divContainer > div > div:nth-child(4) > app-tile > button > div.ng-star-inserted > span").click()
 ventana=false
 }
  }
 }
+
 var spanElement = document.querySelector("div > div.head-container > app-action-modal-header > div > div > p");
 if (spanElement) {
+var antes = document.querySelector("body > ngb-modal-window > div > div > app-cover div > div.modal-content > h2")
 const spanText = document.querySelector("div > div.head-container > app-action-modal-header > div > div > p").innerText
 if (spanText === "Crowdtap 101: Getting Rewarded" || spanText === "Crowdtap 101: Your Membership"
     || spanText === "Crowdtap 101: Survey Types" || spanText === "Crowdtap 101: Your Crowdtap Habits"
     || spanText === "Crowdtap 101: The Basics" ){
 ventana=false
-}else if (spanText === "Crowdtap 101: Learning More About You!" || spanText === "Crowdtap 101: Influencing Brands"){
-setTimeout( function(){
+}else if (antes === "Crowdtap 101: Learning More About You!" || antes === "Crowdtap 101: Influencing Brands"){
 document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
     ventana=true
-//setTimeout(corriendo,2000);
-  },2000)}
+
 }
 
 }
