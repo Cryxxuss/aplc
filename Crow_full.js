@@ -547,7 +547,7 @@ var enviar = document.querySelector('div.primaryTitle:nth-child(1)');
 if (elemento && (elemento.textContent.includes("No se necesita")
 || elemento.textContent.includes("Which social media platforms do you use regularly? (Select all that apply"))){
     }else{
-if (star && star.textContent.includes("Get started")) {
+if (star && star_boton.textContent.includes("Get started")) {
 
   setTimeout(function(){ star_boton.click();},1500)
 }
