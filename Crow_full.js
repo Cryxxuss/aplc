@@ -720,8 +720,7 @@ if (spanText === "Crowdtap 101: Getting Rewarded" || spanText === "Crowdtap 101:
 ventana=false
 }
 }
-else if (antes.innerText.includes("Crowdtap 101: Learning More About You!")
-|| antes.innerText.includes("Crowdtap 101: Influencing Brands")){
+else if (antes && antes.innerText.includes("Crowdtap 101: Learning More About You!")){
 document.querySelector(".close-modal-btn").click()
     ventana=true
 
