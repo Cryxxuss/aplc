@@ -550,7 +550,7 @@ if (star && !enviar) {
 
   setTimeout(function(){ star.click();},1500)
 }
-if (enviar) {
+if (enviar && !star) {
 
  setTimeout(function(){ enviar.click();},1500)
 }
@@ -707,7 +707,7 @@ if (spanText === "Crowdtap 101: Getting Rewarded" || spanText === "Crowdtap 101:
     || spanText === "Crowdtap 101: Survey Types" || spanText === "Crowdtap 101: Your Crowdtap Habits"
     || spanText === "Crowdtap 101: The Basics" ){
 ventana=false
-}else if (spanText === "Crowdtap 101: Learning More About You!" || spanText === "Crowdtap 101: Influencing Brands"){
+}else if f(spanText === "Crowdtap 101: Learning More About You!" || spanText === "Crowdtap 101: Influencing Brands"){
 setTimeout( function(){
 document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
     ventana=true
