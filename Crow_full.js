@@ -547,9 +547,10 @@ clickAllCheckboxesExcept("38-45");
 var star = document.querySelector("h2.text-sm")
 var star_boton = document.querySelector('.animation-submit-btn');
 var enviar = document.querySelector('div.primaryTitle:nth-child(1)');
+var antess = document.querySelector("body > ngb-modal-window > div > div > app-cover div > div.modal-content > h2")
+if (antess.textContent.includes("Crowdtap 101: Learning More About You!")
+||antess.textContent.includes("Crowdtap 101: Influencing Brands")){
 
-if (elemento && (elemento.textContent.includes("No se necesita")
-|| elemento.textContent.includes("Which social media platforms do you use regularly? (Select all that apply"))){
     }else{
 if (star && star_boton.textContent.includes("Get started")) {
 
@@ -682,7 +683,7 @@ document.querySelector("#solver-button").click()
 var ventana = true
 setTimeout(corriendo,2000)
 function corriendo(){
-setTimeout(corriendo,8000)
+setTimeout(corriendo,5000)
 var containerText = document.querySelector("#divContainer")
 if(containerText){
 containerText = document.querySelector("#divContainer").textContent
@@ -707,21 +708,24 @@ ventana=false
 }
  }
 }
-
+setTimeout(function() {
 var spanElement = document.querySelector("div > div.head-container > app-action-modal-header > div > div > p");
-if (spanElement) {
 var antes = document.querySelector("body > ngb-modal-window > div > div > app-cover div > div.modal-content > h2")
+if (spanElement) {
+
 const spanText = document.querySelector("div > div.head-container > app-action-modal-header > div > div > p").innerText
 if (spanText === "Crowdtap 101: Getting Rewarded" || spanText === "Crowdtap 101: Your Membership"
     || spanText === "Crowdtap 101: Survey Types" || spanText === "Crowdtap 101: Your Crowdtap Habits"
     || spanText === "Crowdtap 101: The Basics" ){
 ventana=false
-}else if (antes === "Crowdtap 101: Learning More About You!" || antes === "Crowdtap 101: Influencing Brands"){
-document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
+}
+}
+else if (antes.innerText.includes("Crowdtap 101: Learning More About You!")
+|| antes.innerText.includes("Crowdtap 101: Influencing Brands")){
+document.querySelector(".close-modal-btn").click()
     ventana=true
 
-}
-
+}},1000)
 }
 }
 }
