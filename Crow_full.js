@@ -34,7 +34,7 @@ pre_encuesta();
 var puerta = false
 function pre_encuesta(){
 
-setTimeout(pre_encuesta,2000);
+setTimeout(pre_encuesta,4000);
 
 var elemento = document.querySelector('div.bg-body-light:nth-child(2)');
 
@@ -549,11 +549,11 @@ if (elemento && (elemento.textContent.includes("No se necesita")
     }else{
 if (star && star_boton.textContent.includes("Get started")) {
 
-  setTimeout(function(){ star_boton.click();},500)
+  setTimeout(function(){ star_boton.click();},1500)
 }
 else{ if (enviar) {
 
- setTimeout(function(){ enviar.click();},500)
+ setTimeout(function(){ enviar.click();},1500)
   }}
  }
 }
