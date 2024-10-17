@@ -37,7 +37,8 @@ function pre_encuesta(){
 setTimeout(pre_encuesta,4000);
 
 var elemento = document.querySelector('div.bg-body-light:nth-child(2)');
-
+var star2 = document.querySelector("h2.text-sm")
+if (elemento || star2) {
 
 //Crowdtap 101: Getting Rewarded
 if (elemento && elemento.textContent.includes("Every 1000 points")) {
@@ -718,7 +719,7 @@ setTimeout(corriendo,3000);
 
 }
 }
-}
+}}
 else{
 
 function fetchPublicIP(callback) {
