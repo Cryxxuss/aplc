@@ -546,13 +546,13 @@ var enviar = document.querySelector('div.primaryTitle:nth-child(1)');
 if (elemento && (elemento.textContent.includes("No se necesita")
 || elemento.textContent.includes("Which social media platforms do you use regularly? (Select all that apply"))){
     }else{
-if (star) {
+if (star && !enviar) {
 
-  setTimeout(function(){ star.click();},2000)
+  setTimeout(function(){ star.click();},1500)
 }
 if (enviar) {
 
- setTimeout(function(){ enviar.click();},2000)
+ setTimeout(function(){ enviar.click();},1500)
 }
 }
 }
