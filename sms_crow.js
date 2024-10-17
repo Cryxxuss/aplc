@@ -1,14 +1,8 @@
-// ==UserScript==
-// @name         SMS GET
-// @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  Obtiene datos de FakeNameGenerator
-// @match        https://crowdtap.com/*
-// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
-// @grant        GM_xmlhttpRequest
-// ==/UserScript==
-
 setTimeout( function(){
+
+var muestra = document.querySelector("#main-content > article > div.center-column > h1")
+if(muestra){
+if(muestra.innerText==="Get verified"){
 
 var balance = "https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getBalance"
 var crow_tmo = "https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getNumber&service=sx&carriers=tmo"
@@ -53,7 +47,18 @@ if(bodyContent == "STATUS_WAIT_CODE"){
     if(inputField){
         inputField.value = match[1];
         inputField.dispatchEvent(inputEvent);
-        setTimeout( function(){document.querySelector("#main-content > article > div.center-column > section > form > section.text-center > button").click()},1000)
+        setTimeout( function(){
+document.querySelector("#main-content > article > div.center-column > section > form > section.text-center > button").click()
+//marcar como realizado
+GM_xmlhttpRequest({
+    method: "GET",
+    url: `https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=setStatus&id=${match[1]}&status=6`,
+    onload: function(response) {
+
+        console.log(response.responseText)
+}
+});
+},1000)
     }
 }
 
@@ -62,5 +67,5 @@ if(bodyContent == "STATUS_WAIT_CODE"){
 },40000);
     }
 });
-
+}}
 },10000);
