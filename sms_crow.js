@@ -15,7 +15,7 @@ var inputEvent = new Event('input', {
 
 GM_xmlhttpRequest({
     method: "GET",
-    url: crow_tmo,
+    url: crow_att,
     onload: function(response) {
         console.log("Solicitud Exitosa");
         var bodyContent = response.responseText; // Obtiene el contenido de la respuesta
