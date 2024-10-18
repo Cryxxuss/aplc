@@ -9,7 +9,6 @@
 // @grant        none
 // ==/UserScript==
 
-if(window.location.href.includes('account-create-email')){
 
 function fetchPublicIP(callback) {
     GM_xmlhttpRequest({
@@ -356,4 +355,3 @@ var zip = direccion[11]
 // Verificar cambios cada cierto tiempo (por ejemplo, cada 5 segundos)
 setTimeout(create, 5000);
 
-}
