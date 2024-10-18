@@ -721,6 +721,8 @@ ventana=false
 }
 else if (antes && antes.textContent.includes("Crowdtap 101: Learning More About You!")){
 document.querySelector(".close-modal-btn").click()
+}
+else{
 var cerrar = document.querySelector("div > div.head-container > app-action-modal-header > div > div > p")
 if (cerrar && cerrar.textContent.includes("Crowdtap 101: Learning More About You!")){
 document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
