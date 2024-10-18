@@ -901,7 +901,7 @@ if(tercerpaso==="Employment status"){
 
 GM_xmlhttpRequest({
         method: "GET",
-        url: "https://litport.net/sys/rotate-ip?key=a0f9e64d765bab0ec97cb54300030e9d",
+        url: "https://litport.net/sys/rotate-ip?key=95c5c51fee7200cceffbcea9b5db3605",
         onload: function(response) {
             console.log(response.responseText);
         },
@@ -910,7 +910,7 @@ GM_xmlhttpRequest({
         }
     });
 setTimeout( function() {
-//document.querySelector("#main-content > article > div.center-column > form > section > button.relative.font-bold.text-white.rounded-full.w-68.h-14.bg-blue-dark").click();
+document.querySelector("#main-content > article > div.center-column > form > section > button.relative.font-bold.text-white.rounded-full.w-68.h-14.bg-blue-dark").click();
 },40000)
 
 
