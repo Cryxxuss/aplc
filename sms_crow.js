@@ -9,7 +9,7 @@
 // @connect      daisysms.com
 // ==/UserScript==
 
-setTimeout(verified,5000);
+setTimeout(verified,10000);
 function verified(){
 
 var muestra = document.querySelector("#main-content > article > div.center-column > h1")
@@ -81,7 +81,8 @@ GM_xmlhttpRequest({
     }
 });
 }
-else{setTimeout(verified,5000);
+
     }
+else{setTimeout(verified,5000);
     }
 }
