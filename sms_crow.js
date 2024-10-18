@@ -1,4 +1,16 @@
-setTimeout( function(){
+// ==UserScript==
+// @name         SMS GET
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  Obtiene datos de FakeNameGenerator
+// @match        https://crowdtap.com/*
+// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
+// @grant        GM_xmlhttpRequest
+// @connect      daisysms.com
+// ==/UserScript==
+
+setTimeout(verified,10000);
+function verified(){
 
 var muestra = document.querySelector("#main-content > article > div.center-column > h1")
 if(muestra){
@@ -68,5 +80,8 @@ GM_xmlhttpRequest({
 },40000);
     }
 });
-}}
-},10000);
+}
+else{setTimeout(verified,5000);
+    }
+    }
+}
