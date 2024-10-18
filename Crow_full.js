@@ -680,12 +680,10 @@ document.querySelector("#solver-button").click()
 }
 }
 var ventana = true
-setTimeout(corriendo,2000)
+setTimeout(corriendo,10000)
 function corriendo(){
-setTimeout(corriendo,5000)
-var containerText = document.querySelector("#divContainer")
-if(containerText){
-containerText = document.querySelector("#divContainer").textContent
+setTimeout(corriendo,10000)
+var containerText = document.querySelector("#divContainer").textContent
 var lines = containerText.split("  ");
 
 var selectedLine1 = lines[0];
@@ -697,45 +695,38 @@ var selectedLine6 = lines[5];
 var selectedLine7 = lines[6];
     if(ventana){
 
-if (selectedLine2 === "Crowdtap 101: The Basics") {
-document.querySelector("#divContainer > div > div:nth-child(2) > app-tile > button > div.ng-star-inserted > span").click()
+if (selectedLine1 === "Crowdtap 101: The Basics") {
+document.querySelector("#divContainer > div > div:nth-child(1) > app-tile > button > div.ng-star-inserted > span").click()
 ventana=false
-}
-else{ if(selectedLine3 === "Crowdtap 101: Your Membership") {
-document.querySelector("#divContainer > div > div:nth-child(4) > app-tile > button > div.ng-star-inserted > span").click()
+}if (selectedLine2 === "Crowdtap 101: Your Membership") {
+document.querySelector("#divContainer > div > div:nth-child(3) > app-tile > button > div.ng-star-inserted > span").click()
 ventana=false
-}
+}else if (selectedLine3 === "Crowdtap 101: Survey Types") {
+document.querySelector("#divContainer > div > div:nth-child(6) > app-tile > button > div.ng-star-inserted > span").click()
+ventana=false
+  }
  }
-}
-setTimeout(function() {
-var spanElement = document.querySelector("div > div.head-container > app-action-modal-header > div > div > p");
-var antes = document.querySelector("body > ngb-modal-window > div > div > app-cover div > div.modal-content > h2")
-if (spanElement) {
 
+var spanElement = document.querySelector("div > div.head-container > app-action-modal-header > div > div > p");
+if (spanElement) {
 const spanText = document.querySelector("div > div.head-container > app-action-modal-header > div > div > p").innerText
 if (spanText === "Crowdtap 101: Getting Rewarded" || spanText === "Crowdtap 101: Your Membership"
     || spanText === "Crowdtap 101: Survey Types" || spanText === "Crowdtap 101: Your Crowdtap Habits"
     || spanText === "Crowdtap 101: The Basics" ){
 ventana=false
-}
-}
-else if (antes && antes.textContent.includes("Crowdtap 101: Learning More About You!")){
-document.querySelector(".close-modal-btn").click()
-    ventana=true
-}
-else{
-var cerrar = document.querySelector("div > div.head-container > app-action-modal-header > div > div > p")
-if (cerrar && cerrar.textContent.includes("Crowdtap 101: Learning More About You!")){
+} else {
+setTimeout( function(){
 document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
-}
+setTimeout(task_ready,3000);
     ventana=true
-
-}},1000)
-}
-}
+setTimeout(corriendo,3000);
+  },3000)}
 }
 
-else{
+function task_ready() {}
+
+}
+}else{
 
 function fetchPublicIP(callback) {
     GM_xmlhttpRequest({
