@@ -8,7 +8,7 @@ var balance = "https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H
 var crow_tmo = "https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getNumber&service=sx&carriers=tmo"
 var crow_att = "https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getNumber&service=sx&carriers=att"
 var crow_vz = "https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getNumber&service=sx&carriers=vz"
-
+var area_NC = "https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getNumber&service=sx&252,336,704,828,910,919,980"
 var inputEvent = new Event('input', {
     bubbles: true,
     cancelable: true,
@@ -16,7 +16,7 @@ var inputEvent = new Event('input', {
 
 GM_xmlhttpRequest({
     method: "GET",
-    url: crow_tmo,
+    url: area_NC,
     onload: function(response) {
         console.log("Solicitud Exitosa");
         var bodyContent = response.responseText; // Obtiene el contenido de la respuesta
