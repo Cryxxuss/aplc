@@ -9,7 +9,7 @@
 // @connect      daisysms.com
 // ==/UserScript==
 
-setTimeout(verified,10000);
+setTimeout(verified,5000);
 function verified(){
 
 var muestra = document.querySelector("#main-content > article > div.center-column > h1")
