@@ -37,7 +37,7 @@ pre_encuesta();
 var puerta = false
 function pre_encuesta(){
 
-setTimeout(pre_encuesta,4000);
+setTimeout(pre_encuesta,3000);
 
 var elemento = document.querySelector('div.bg-body-light:nth-child(2)');
 var star_boton1 = document.querySelector('.animation-submit-btn');
@@ -682,7 +682,7 @@ document.querySelector("#solver-button").click()
 var ventana = true
 setTimeout(corriendo,10000)
 function corriendo(){
-setTimeout(corriendo,10000)
+setTimeout(corriendo,9000)
 var containerText = document.querySelector("#divContainer").textContent
 var lines = containerText.split("  ");
 
