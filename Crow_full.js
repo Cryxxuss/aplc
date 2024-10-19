@@ -576,7 +576,7 @@ if (existe){
 document.querySelector(".button-cta").click()
 
 setTimeout( function(){
-document.querySelector("#divContainer > div > div:nth-child(1) > app-tile > button > div.ng-star-inserted > span").click()
+//document.querySelector("#divContainer > div > div:nth-child(1) > app-tile > button > div.ng-star-inserted > span").click()
 },7000)
 
 }
