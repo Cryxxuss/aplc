@@ -702,7 +702,7 @@ ventana=false
 document.querySelector("#divContainer > div > div:nth-child(4) > app-tile > button > div.ng-star-inserted > span").click()
 ventana=false
 }else if (selectedLine3 === "Crowdtap 101: Survey Types") {
-document.querySelector("#divContainer > div > div:nth-child(6) > app-tile > button > div.ng-star-inserted > span").click()
+//document.querySelector("#divContainer > div > div:nth-child(6) > app-tile > button > div.ng-star-inserted > span").click()
 ventana=false
   }
  }
