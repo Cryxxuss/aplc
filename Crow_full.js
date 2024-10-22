@@ -113,7 +113,7 @@ let element = document.querySelector("div.text-sm > svg:nth-child(1)");
 if (element) {
     // Crea un nuevo evento de clic
     let event = new MouseEvent('click', {
-        view: window,
+     //   view: window,
         bubbles: true,
         cancelable: true
     });
@@ -670,7 +670,7 @@ var star_boton = document.querySelector('.animation-submit-btn');
 var enviar = document.querySelector('div.primaryTitle:nth-child(1)');
 
 if (elemento && (elemento.textContent.includes("No se necesita")
-|| elemento.textContent.includes("Which social media platforms do you use regularly? (Select all that apply"))){
+|| elemento.textContent.includes("Hundreds of brands look to Crowdtap members to hear"))){
     }else{
 if (star && star_boton.textContent.includes("Get started")) {
 
