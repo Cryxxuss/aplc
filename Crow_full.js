@@ -44,7 +44,7 @@ var star_boton1 = document.querySelector('.animation-submit-btn');
 if (elemento || star_boton1) {
 
 //Crowdtap 101: Getting Rewarded
-if (elemento && elemento.textContent.includes("Every 1000 points")) {
+if (elemento && elemento.textContent.includes("Every 1,000 points equals $5")) {
 
 function clickAllCheckboxesExcept(textToExclude) {
   // Obtiene todos los elementos label en la página
@@ -106,8 +106,49 @@ var event = new Event('input', {
 textarea.dispatchEvent(event);
 }
 
+if (elemento && elemento.textContent.includes("For quality assurance purposes, how many picture frames")) {
+
+let element = document.querySelector("div.text-sm > svg:nth-child(1)");
+
+if (element) {
+    // Crea un nuevo evento de clic
+    let event = new MouseEvent('click', {
+        view: window,
+        bubbles: true,
+        cancelable: true
+    });
+
+    // Dispara el evento en el elemento seleccionado
+    element.dispatchEvent(event);
+	setTimeout(() => {
+        document.querySelector(".ft-x").click();
+    }, 500);
+
+}
+
+function clickAll2(textToExclude) {
+  // Obtiene todos los elementos label en la página
+  var labels = document.getElementsByTagName('label');
+
+  // Itera a través de cada label
+  for (var i = 0; i < labels.length; i++) {
+    // Comprueba si el texto del label NO contiene el texto a excluir
+    if (labels[i].textContent.trim() === textToExclude) {
+      // Encuentra el checkbox dentro del label y hace clic en él
+      var checkbox = labels[i].querySelector('input[type="radio"]');
+      if (checkbox) {
+        checkbox.click();
+      }
+    }
+  }
+}
+
+// Llamada a la función con el texto a excluir
+clickAll2('2');
+}
+
 ////Crowdtap 101: The Basic
-if (elemento && elemento.textContent.includes("Now that you're joined Crowdtap, you can achieve")) {
+if (elemento && elemento.textContent.includes("Now that you've joined Crowdtap, you can achieve")) {
 
 var textoIgnorar = "Do not select";
 
@@ -135,6 +176,15 @@ rangeInputs4.forEach((rangeInput4) => {
 });
 }
 
+if (elemento && elemento.textContent.includes("A grid question allows you to rate multiple items using")) {
+
+var checkboxes3 = [
+  'input#radio-0-2',
+  'input#radio-1-2',
+  'input#radio-2-2'
+];
+checkboxes3.forEach(selector => document.querySelector(selector)?.click());
+}
 
 var marcador1 = document.querySelector("#\\30 ")
 if (marcador1) {
@@ -155,6 +205,23 @@ if (marcador1.textContent.trim() === '' && elemento && elemento.textContent.incl
     document.querySelector("#\\36 ").click()
     document.querySelector("#l01").click()
     document.querySelector("#\\37 ").click()
+    document.querySelector("#l01").click()
+
+}
+}
+
+if (marcador1) {
+if (marcador1.textContent.trim() === '' && elemento && elemento.textContent.includes("In a rank question, you arrange items in order of preference")) {
+
+    document.querySelector("#\\30 ").click()
+    document.querySelector("#l01").click()
+    document.querySelector("#\\31 ").click()
+    document.querySelector("#l01").click()
+    document.querySelector("#\\32 ").click()
+    document.querySelector("#l01").click()
+    document.querySelector("#\\33 ").click()
+    document.querySelector("#l01").click()
+    document.querySelector("#\\34 ").click()
     document.querySelector("#l01").click()
 
 }
@@ -203,7 +270,7 @@ function clickAll2(textToExclude) {
 }
 
 // Llamada a la función con el texto a excluir
-clickAll2('Give dishonest or inappropriate answers');
+clickAll2('Give dishonest answers');
 }
 
 if (elemento && elemento.textContent.includes("We want to make sure the data we provide")) {
@@ -217,6 +284,35 @@ rangeInputs.forEach((rangeInput) => {
     rangeInput.dispatchEvent(new Event('input'));
 });
 }
+
+
+if (elemento && elemento.textContent.includes("Please select all of the options that end in an odd number.")) {
+function clickCheckboxesByText(texts) {
+    let labels = document.querySelectorAll('label');
+    let foundCheckboxes = 0;
+
+    texts.forEach(text => {
+        let checkboxFound = false;
+
+        labels.forEach(label => {
+            if (label.textContent.trim() === text) {
+                let checkbox = document.getElementById(label.getAttribute('for'));
+                if (checkbox && checkbox.type === 'checkbox' && !checkbox.checked) {
+
+                    checkbox.click();
+                }
+
+                checkboxFound = true;
+                foundCheckboxes++;
+            }
+        });
+
+    });
+}
+
+clickCheckboxesByText(['6789', '1001']);
+}
+
 
 if (elemento && elemento.textContent.includes("Accidents happen! If you select an answer by mistake it's okay,")) {
 function clickAll2(textToExclude) {
@@ -263,7 +359,32 @@ function clickAll2(textToExclude) {
 clickAll2("I'm not sure");
 }
 
-//Crowdtap 101: Survey Types
+//Crowdtap 101: Question Types
+
+if (elemento && elemento.textContent.includes("Here's an example of a rating question, where you'll")) {
+
+var rangeInputs8 = document.querySelectorAll('input[type="range"]');
+// Recorre cada input y establece su valor en 400
+rangeInputs8.forEach((rangeInput8) => {
+    rangeInput8.value = 300;
+
+    // Opcional: Dispara el evento 'input' para actualizar la UI
+    rangeInput8.dispatchEvent(new Event('input'));
+});
+}
+
+if (elemento && elemento.textContent.includes("Now let's try a scale question! A scale helps brands understand")) {
+
+var rangeInputs9 = document.querySelectorAll('input[type="range"]');
+// Recorre cada input y establece su valor en 400
+rangeInputs9.forEach((rangeInput9) => {
+    rangeInput9.value = 300;
+
+    // Opcional: Dispara el evento 'input' para actualizar la UI
+    rangeInput9.dispatchEvent(new Event('input'));
+});
+}
+
 if (marcador1) {
 if (marcador1.textContent.trim() === '' && elemento && elemento.textContent.includes("Ranking questions work just like you might think.")) {
 
@@ -547,17 +668,17 @@ clickAllCheckboxesExcept("38-45");
 var star = document.querySelector("h2.text-sm")
 var star_boton = document.querySelector('.animation-submit-btn');
 var enviar = document.querySelector('div.primaryTitle:nth-child(1)');
-var antess = document.querySelector("body > ngb-modal-window > div > div > app-cover div > div.modal-content > h2")
-if (antess && antess.textContent.includes("Olvidalo xd")){
 
+if (elemento && (elemento.textContent.includes("No se necesita")
+|| elemento.textContent.includes("Which social media platforms do you use regularly? (Select all that apply"))){
     }else{
 if (star && star_boton.textContent.includes("Get started")) {
 
-  setTimeout(function(){ star_boton.click();},1500)
+  setTimeout(function(){ star_boton.click();},500)
 }
 else{ if (enviar) {
 
- setTimeout(function(){ enviar.click();},1500)
+ setTimeout(function(){ enviar.click();},500)
   }
  }
 }
