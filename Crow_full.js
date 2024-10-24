@@ -37,7 +37,7 @@ pre_encuesta();
 var puerta = false
 function pre_encuesta(){
 
-//setTimeout(pre_encuesta,3000);
+setTimeout(pre_encuesta,3000);
 
 var elemento = document.querySelector('div.bg-body-light:nth-child(2)');
 var star_boton1 = document.querySelector('.animation-submit-btn');
