@@ -37,11 +37,194 @@ pre_encuesta();
 var puerta = false
 function pre_encuesta(){
 
-setTimeout(pre_encuesta,3000);
+//setTimeout(pre_encuesta,3000);
 
 var elemento = document.querySelector('div.bg-body-light:nth-child(2)');
 var star_boton1 = document.querySelector('.animation-submit-btn');
 if (elemento || star_boton1) {
+
+//
+
+if (elemento && elemento.textContent.includes("Our top members use Crowdtap daily to earn big rewards, and tracking your")) {
+
+function clickAllCheckboxesExcept(textToExclude) {
+  // Obtiene todos los elementos label en la página
+  var labels = document.getElementsByTagName('label');
+
+  // Itera a través de cada label
+  for (var i = 0; i < labels.length; i++) {
+    // Comprueba si el texto del label NO contiene el texto a excluir
+    if (labels[i].textContent.trim() === textToExclude) {
+      // Encuentra el checkbox dentro del label y hace clic en él
+      var checkbox = labels[i].querySelector('input[type="radio"]');
+      if (checkbox) {
+        checkbox.click();
+      }
+    }
+  }
+}
+
+// Llamada a la función con el texto a excluir
+clickAllCheckboxesExcept('I’m excited to track my streak and participate daily!');
+}
+
+if (elemento && elemento.textContent.includes("Let's be honest, scrolling through social media")) {
+function clickCheckboxesByText(texts) {
+    let labels = document.querySelectorAll('label');
+    let foundCheckboxes = 0;
+
+    texts.forEach(text => {
+        let checkboxFound = false;
+
+        labels.forEach(label => {
+            if (label.textContent.trim() === text) {
+                let checkbox = document.getElementById(label.getAttribute('for'));
+                if (checkbox && checkbox.type === 'checkbox' && !checkbox.checked) {
+
+                    checkbox.click();
+                }
+
+                checkboxFound = true;
+                foundCheckboxes++;
+            }
+        });
+
+    });
+}
+
+clickCheckboxesByText(['Facebook', 'TikTok', 'Instagram']);
+}
+
+if (elemento && elemento.textContent.includes("Accessing Crowdtap through a VPN (Virtual Private Network)")) {
+
+function clickAllCheckboxesExcept(textToExclude) {
+  // Obtiene todos los elementos label en la página
+  var labels = document.getElementsByTagName('label');
+
+  // Itera a través de cada label
+  for (var i = 0; i < labels.length; i++) {
+    // Comprueba si el texto del label NO contiene el texto a excluir
+    if (labels[i].textContent.trim() === textToExclude) {
+      // Encuentra el checkbox dentro del label y hace clic en él
+      var checkbox = labels[i].querySelector('input[type="radio"]');
+      if (checkbox) {
+        checkbox.click();
+      }
+    }
+  }
+}
+
+// Llamada a la función con el texto a excluir
+clickAllCheckboxesExcept('I rarely use a VPN, so this likely won’t be an issue.');
+}
+
+if (elemento && elemento.textContent.includes("Before diving into more surveys, we'd love to know")) {
+// Selecciona el textarea por su id
+var textarea = document.getElementById('response');
+
+// Establece el valor del textarea
+textarea.value = 'My first impression of Crowdtap is that it is a simple and engaging platform to earn rewards by sharing reviews about products and services the activities seem fast and varied';
+
+// Crea un nuevo evento de entrada
+var event = new Event('input', {
+  bubbles: true,
+  cancelable: true,
+});
+
+textarea.dispatchEvent(event);
+}
+
+if (elemento && elemento.textContent.includes("To ensure you are paying attention, which of these animals can fly?")) {
+
+function clickAllCheckboxesExcept(textToExclude) {
+  // Obtiene todos los elementos label en la página
+  var labels = document.getElementsByTagName('label');
+
+  // Itera a través de cada label
+  for (var i = 0; i < labels.length; i++) {
+    // Comprueba si el texto del label NO contiene el texto a excluir
+    if (labels[i].textContent.trim() === textToExclude) {
+      // Encuentra el checkbox dentro del label y hace clic en él
+      var checkbox = labels[i].querySelector('input[type="radio"]');
+      if (checkbox) {
+        checkbox.click();
+      }
+    }
+  }
+}
+
+// Llamada a la función con el texto a excluir
+clickAllCheckboxesExcept('Bird');
+}
+
+if (elemento && elemento.textContent.includes("Honesty is Crowdtap's top priority! When we say we want your opinion, we mean")) {
+
+let textarea = document.getElementById('response');
+textarea.value = 'Crowdtap feels engaging and straightforward, It’s refreshing that they value honest opinions, making it easy to share thoughts without feeling pressured';
+let event = new Event('input', {
+  bubbles: true,
+  cancelable: true,
+});
+textarea.dispatchEvent(event);
+}
+
+if (elemento && elemento.textContent.includes("Subscribing to email and push notifications is the best way")) {
+
+let textarea = document.getElementById('response');
+textarea.value = 'I would be interested in contests related to technology, entertainment and consumer products, as long as they are fun and relevant';
+let event = new Event('input', {
+  bubbles: true,
+  cancelable: true,
+});
+textarea.dispatchEvent(event);
+}
+
+if (elemento && elemento.textContent.includes("How can you subscribe to push notifications? Great question")) {
+
+function clickAllCheckboxesExcept(textToExclude) {
+  // Obtiene todos los elementos label en la página
+  var labels = document.getElementsByTagName('label');
+
+  // Itera a través de cada label
+  for (var i = 0; i < labels.length; i++) {
+    // Comprueba si el texto del label NO contiene el texto a excluir
+    if (labels[i].textContent.trim() === textToExclude) {
+      // Encuentra el checkbox dentro del label y hace clic en él
+      var checkbox = labels[i].querySelector('input[type="radio"]');
+      if (checkbox) {
+        checkbox.click();
+      }
+    }
+  }
+}
+
+// Llamada a la función con el texto a excluir
+clickAllCheckboxesExcept('I only plan on using Crowdtap on the web.');
+}
+
+if (elemento && elemento.textContent.includes("For quality assurance purposes, what do you typically use to write?")) {
+
+function clickAllCheckboxesExcept(textToExclude) {
+  // Obtiene todos los elementos label en la página
+  var labels = document.getElementsByTagName('label');
+
+  // Itera a través de cada label
+  for (var i = 0; i < labels.length; i++) {
+    // Comprueba si el texto del label NO contiene el texto a excluir
+    if (labels[i].textContent.trim() === textToExclude) {
+      // Encuentra el checkbox dentro del label y hace clic en él
+      var checkbox = labels[i].querySelector('input[type="radio"]');
+      if (checkbox) {
+        checkbox.click();
+      }
+    }
+  }
+}
+
+// Llamada a la función con el texto a excluir
+clickAllCheckboxesExcept('A pencil');
+}
+
 
 //Crowdtap 101: Getting Rewarded
 if (elemento && elemento.textContent.includes("Every 1,000 points equals $5")) {
@@ -92,18 +275,18 @@ clickAll2('Save up points for something big');
 
 if (elemento && elemento.textContent.includes('Filling out your profile ensures you get more surveys, which means more points! Type "points"')) {
 // Selecciona el textarea por su id
-var textarea = document.getElementById('response');
+var textarea2 = document.getElementById('response');
 
 // Establece el valor del textarea
-textarea.value = 'points';
+textarea2.value = 'points';
 
 // Crea un nuevo evento de entrada
-var event = new Event('input', {
+var event2 = new Event('input', {
   bubbles: true,
   cancelable: true,
 });
 
-textarea.dispatchEvent(event);
+textarea2.dispatchEvent(event);
 }
 
 if (elemento && elemento.textContent.includes("For quality assurance purposes, how many picture frames")) {
@@ -148,6 +331,31 @@ clickAll2('2');
 }
 
 ////Crowdtap 101: The Basic
+
+if (elemento && elemento.textContent.includes("To get the most out of Crowdtap and start earning rewards at places like Amazon")) {
+
+function clickAll2(textToExclude) {
+  // Obtiene todos los elementos label en la página
+  var labels = document.getElementsByTagName('label');
+
+  // Itera a través de cada label
+  for (var i = 0; i < labels.length; i++) {
+    // Comprueba si el texto del label NO contiene el texto a excluir
+    if (labels[i].textContent.trim() === textToExclude) {
+      // Encuentra el checkbox dentro del label y hace clic en él
+      var checkbox = labels[i].querySelector('input[type="radio"]');
+      if (checkbox) {
+        checkbox.click();
+      }
+    }
+  }
+}
+
+// Llamada a la función con el texto a excluir
+clickAll2('I’ll try to find a balance between answering quickly and being thoughtful.');
+}
+
+
 if (elemento && elemento.textContent.includes("Now that you've joined Crowdtap, you can achieve")) {
 
 var textoIgnorar = "Do not select";
@@ -816,8 +1024,8 @@ var selectedLine6 = lines[5];
 var selectedLine7 = lines[6];
     if(ventana){
 
-if (selectedLine2 === "Crowdtap 101: The Basics") {
-document.querySelector("#divContainer > div > div:nth-child(2) > app-tile > button > div.ng-star-inserted > span").click()
+if (selectedLine1) {
+document.querySelector("#divContainer > div > div:nth-child(1) > app-tile > button > div.ng-star-inserted > span").click()
 ventana=false
 }else if (selectedLine2 === "Crowdtap 101: Question Types") {
 document.querySelector("#divContainer > div > div:nth-child(3) > app-tile > button > div.ng-star-inserted > span").click()
@@ -837,10 +1045,10 @@ if (spanText === "Crowdtap 101: Getting Rewarded" || spanText === "Crowdtap 101:
 ventana=false
 } else {
 setTimeout( function(){
-document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
-setTimeout(task_ready,3000);
-    ventana=true
-setTimeout(corriendo,3000);
+//document.querySelector("div > div.head-container > app-action-modal-header > div > button").click();
+//setTimeout(task_ready,3000);
+  //  ventana=true
+//setTimeout(corriendo,3000);
   },3000)}
 }
 
