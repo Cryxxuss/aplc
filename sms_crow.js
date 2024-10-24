@@ -14,7 +14,7 @@ function verified(){
 
 var muestra = document.querySelector("#main-content > article > div.center-column > h1")
 if(muestra){
-if(muestra.innerText==="Get verified"){
+if(muestra.innerText==="Let’s get you verified"){
 
 var balance = "https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getBalance"
 var crow_tmo = "https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getNumber&service=sx&carriers=tmo"
