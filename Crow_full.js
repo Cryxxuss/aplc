@@ -14,7 +14,7 @@
 
 if(window.location.href.includes('google')){
 if(!GM_getValue('Data')){
-location.href ='https://crowdtap.com/auth/account-create-email';
+//location.href ='https://crowdtap.com/auth/account-create-email';
 }
 }
 
