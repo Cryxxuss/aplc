@@ -20,7 +20,7 @@ if(!GM_getValue('Data')){
 
 else if(window.location.href.includes('dashboard')){
 
-setTimeout(data_alaerta,10000)
+setTimeout(data_alaerta,5000)
 function data_alaerta() {
 var miDiv_12 = document.querySelector("#divContainer > div > div:nth-child(12) > app-tile > button > div.ng-star-inserted > span");
 var miDiv_9 = document.querySelector("#divContainer > div > div:nth-child(9) > app-tile > button > div.ng-star-inserted > span");
