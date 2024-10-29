@@ -355,5 +355,5 @@ var zip = direccion[11]
 }
 
 // Verificar cambios cada cierto tiempo (por ejemplo, cada 5 segundos)
-setTimeout(create, 5000);
+setTimeout(create, 4000);
 
