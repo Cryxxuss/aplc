@@ -16,11 +16,11 @@ var muestra = document.querySelector("#main-content > article > div.center-colum
 if(muestra){
 if(muestra.innerText==="Let’s get you verified"){
 
-var balance = "https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getBalance"
-var crow_tmo = "https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getNumber&service=sx&carriers=tmo"
-var crow_att = "https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getNumber&service=sx&carriers=att"
-var crow_vz = "https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getNumber&service=sx&carriers=vz"
-var area_NC = "https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getNumber&service=sx&areas=252,336,704,828,910,919,980"
+var balance = "https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getBalance"
+var crow_tmo = "https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getNumber&service=sx&carriers=tmo"
+var crow_att = "https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getNumber&service=sx&carriers=att"
+var crow_vz = "https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getNumber&service=sx&carriers=vz"
+var area_NC = "https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getNumber&service=sx&areas=252,336,704,828,910,919,980"
 var inputEvent = new Event('input', {
     bubbles: true,
     cancelable: true,
@@ -47,7 +47,7 @@ setTimeout( function(){document.querySelector("#main-content > article > div.cen
 setTimeout( function get_code(){
 GM_xmlhttpRequest({
     method: "GET",
-    url: 'https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=getStatus&id=' + match[1],
+    url: 'https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getStatus&id=' + match[1],
     onload: function(response) {
         console.log(response.responseText)
         var bodyContent = response.responseText; // Obtiene el contenido de la respuesta
@@ -66,7 +66,7 @@ document.querySelector("#main-content > article > div.center-column > section > 
 //marcar como realizado
 GM_xmlhttpRequest({
     method: "GET",
-    url: `https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=setStatus&id=${done}&status=6`,
+    url: `https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=setStatus&id=${done}&status=6`,
     onload: function(response) {
 
         console.log(response.responseText)
