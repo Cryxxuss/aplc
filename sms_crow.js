@@ -65,7 +65,7 @@ document.querySelector("#main-content > article > div.center-column > section > 
 //marcar como realizado
 GM_xmlhttpRequest({
     method: "GET",
-    url: `https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=setStatus&id=${match[1]}&status=6`,
+    url: `https://daisysms.com/stubs/handler_api.php?api_key=unSpOrrT7ebF3H1GhT3ibpUDuLPKfk&action=setStatus&id=${done}&status=6`,
     onload: function(response) {
 
         console.log(response.responseText)
