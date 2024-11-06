@@ -84,6 +84,6 @@ GM_xmlhttpRequest({
 }
 
     }
-else{setTimeout(verified,10000);
+else{setTimeout(verified,5000);
     }
 }
