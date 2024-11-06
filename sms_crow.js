@@ -60,6 +60,7 @@ if(bodyContent == "STATUS_WAIT_CODE"){
     if(inputField){
         inputField.value = match[1];
         inputField.dispatchEvent(inputEvent);
+        var done = match[1];
         setTimeout( function(){
 document.querySelector("#main-content > article > div.center-column > section > form > section.text-center > button").click()
 //marcar como realizado
