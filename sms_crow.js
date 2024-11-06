@@ -32,11 +32,11 @@ GM_xmlhttpRequest({
     onload: function(response) {
         console.log("Solicitud Exitosa");
         var bodyContent = response.responseText; // Obtiene el contenido de la respuesta
-        var match = bodyContent.split(":"); // Busca el patrón en el contenido
+        var match1 = bodyContent.split(":"); // Busca el patrón en el contenido
 
-        const originalNumber = match[2];
+        const originalNumber = match1[2];
         const newNumber = originalNumber.toString().slice(1);
-        console.log("Solicitud Exitosa", match[2]);
+        console.log("Solicitud Exitosa", match1[2]);
 
         var inputField = document.querySelector('.form-control');
         inputField.value = newNumber;
@@ -47,7 +47,7 @@ setTimeout( function(){document.querySelector("#main-content > article > div.cen
 setTimeout( function get_code(){
 GM_xmlhttpRequest({
     method: "GET",
-    url: 'https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getStatus&id=' + match[1],
+    url: 'https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getStatus&id=' + match1[1],
     onload: function(response) {
         console.log(response.responseText)
         var bodyContent = response.responseText; // Obtiene el contenido de la respuesta
@@ -60,8 +60,7 @@ if(bodyContent == "STATUS_WAIT_CODE"){
     if(inputField){
         inputField.value = match[1];
         inputField.dispatchEvent(inputEvent);
-        var done = match[1];
-console.log(done);
+        var done = match1[1];
         setTimeout( function(){
 document.querySelector("#main-content > article > div.center-column > section > form > section.text-center > button").click()
 //marcar como realizado
