@@ -73,7 +73,7 @@ function crearboton(){
 setTimeout(crearboton, 2000);
         (function() {
     var textofinal;
-    var prefcorreo = "@hotmail.com"
+    var prefcorreo = "@gmail.com"
 
 var inputEvent = new Event('input', {
     bubbles: true,
@@ -185,7 +185,7 @@ if(tercerpaso==="Employment status"){
 
 GM_xmlhttpRequest({
         method: "GET",
-        url: "https://litport.net/sys/rotate-ip?key=b6cd04542f7e0ebc68b282f68c084fc8",
+        url: "https://litport.net/sys/rotate-ip?key=629c52a241427cde111070f7baf58fe2",
         onload: function(response) {
             console.log(response.responseText);
         },
