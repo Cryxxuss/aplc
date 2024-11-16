@@ -4,17 +4,25 @@
 // @version      0.1
 // @description  Obtiene datos de FakeNameGenerator
 // @match        https://crowdtap.com/*
+// @match        https://www.google.com/
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
 // @grant        GM_xmlhttpRequest
 // @connect      daisysms.com
 // ==/UserScript==
 
-setTimeout(verified,10000);
-function verified(){
+window.onload = function () {
+     setTimeout(() => {
+        getBalance();
+    }, 1000);
+}
 
-var muestra = document.querySelector("#main-content > article > div.center-column > h1")
-if(muestra){
-if(muestra.innerText==="Let’s get you verified"){
+var getBalance = async () => {
+   var timestamp = Date.now();
+   var response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(`https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getNumber&service=sx&_=${timestamp}`)}`, {
+       cache: 'no-store'
+   });
+   var data = await response.json();
+   console.log(data.contents);
 
 var balance = "https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getBalance"
 var crow_global = "https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getNumber&service=sx"
@@ -26,14 +34,10 @@ var inputEvent = new Event('input', {
     bubbles: true,
     cancelable: true,
 });
-
-GM_xmlhttpRequest({
-    method: "GET",
-    url: crow_global,
-    onload: function(response) {
-        console.log("Solicitud Exitosa");
-        var bodyContent = response.responseText; // Obtiene el contenido de la respuesta
+    var bodyContent = data.contents; // Obtiene el contenido de la respuesta
+    console.log(bodyContent)
         var match1 = bodyContent.split(":"); // Busca el patrón en el contenido
+    console.log(match1)
 
         const originalNumber = match1[2];
         const newNumber = originalNumber.toString().slice(1);
@@ -45,16 +49,24 @@ GM_xmlhttpRequest({
 
 setTimeout( function(){document.querySelector("#main-content > article > div.center-column > section > form > section.text-center > button").click()},1000)
 
-setTimeout( function get_code(){
-GM_xmlhttpRequest({
-    method: "GET",
-    url: 'https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getStatus&id=' + match1[1],
-    onload: function(response) {
-        console.log(response.responseText)
-        var bodyContent = response.responseText; // Obtiene el contenido de la respuesta
+var muestra = document.querySelector("#main-content > article > div.center-column > h1")
+if(muestra){
+if(muestra.innerText==="Let’s get you verified"){
+
+setTimeout(() => {getCode();}, 10000);
+var getCode = async () => {
+   var timestamp = Date.now();
+   var response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(`https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getStatus&id=${match1[1]}&_=${timestamp}`)}`, {
+       cache: 'no-store'
+   });
+   var data = await response.json();
+   console.log(data.contents);
+
+    var bodyContent = data.contents; // Obtiene el contenido de la respuesta
         var match = bodyContent.split(":"); // Busca el patrón en el contenido
 
-if(bodyContent == "STATUS_WAIT_CODE"){
+if(match[0] !== "STATUS_OK"){
+setTimeout(() => {getCode();}, 10000);
 
 }else{
         var inputField = document.querySelector('input.block');
@@ -64,27 +76,22 @@ if(bodyContent == "STATUS_WAIT_CODE"){
         var done = match1[1];
         setTimeout( function(){
 document.querySelector("#main-content > article > div.center-column > section > form > section.text-center > button").click()
-//marcar como realizado
-GM_xmlhttpRequest({
-    method: "GET",
-    url: `https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=setStatus&id=${done}&status=6`,
-    onload: function(response) {
 
-        console.log(response.responseText)
-}
-});
-},1000)
-    }
-}
+var funcion_realizado = async () => {
+   var timestamp = Date.now();
+   var response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(`https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=setStatus&id=${done}&status=6&_=${timestamp}`)}`, {
+       cache: 'no-store'
+   });
+   var data = await response.json();
+   console.log(data.contents);
+};
 
-}
-});
-},50000);
-    }
-});
-}
+funcion_realizado();
 
-    }
-else{setTimeout(verified,3000);
+            },1000);
     }
 }
+}
+}
+};
+};
