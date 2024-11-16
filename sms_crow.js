@@ -17,6 +17,7 @@ if(muestra){
 if(muestra.innerText==="Let’s get you verified"){
 
 var balance = "https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getBalance"
+var crow_global = "https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getNumber&service=sx"
 var crow_tmo = "https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getNumber&service=sx&carriers=tmo"
 var crow_att = "https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getNumber&service=sx&carriers=att"
 var crow_vz = "https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getNumber&service=sx&carriers=vz"
@@ -28,7 +29,7 @@ var inputEvent = new Event('input', {
 
 GM_xmlhttpRequest({
     method: "GET",
-    url: crow_tmo,
+    url: crow_global,
     onload: function(response) {
         console.log("Solicitud Exitosa");
         var bodyContent = response.responseText; // Obtiene el contenido de la respuesta
