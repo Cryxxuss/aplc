@@ -63,6 +63,12 @@ var getCode = async () => {
    console.log(data.contents);
 
     var bodyContent = data.contents; // Obtiene el contenido de la respuesta
+
+if(bodyContent == "STATUS_WAIT_CODE"){
+
+        setTimeout(() => {getCode();}, 10000);
+
+    }else{//else global
         var match = bodyContent.split(":"); // Busca el patrón en el contenido
 
 if(match[0] !== "STATUS_OK"){
@@ -89,7 +95,7 @@ var funcion_realizado = async () => {
 funcion_realizado();
 
             },1000);
-    }
+    }}
 }
 }
 }
