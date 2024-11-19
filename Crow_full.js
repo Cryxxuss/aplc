@@ -1,10 +1,4 @@
-if(window.location.href.includes('google')){
-if(!GM_getValue('Data')){
-//location.href ='https://crowdtap.com/auth/account-create-email';
-}
-}
-
-else if(window.location.href.includes('dashboard')){
+if(window.location.href.includes('dashboard')){
 
 setTimeout(data_alaerta,10000)
 function data_alaerta() {
