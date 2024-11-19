@@ -1240,7 +1240,7 @@ async function fillGmailForm() {
 }
 
 function delay(ms) {
-    return new Promise(resolve => setTimeout(resolve, (ms+2000)));
+    return new Promise(resolve => setTimeout(resolve, (ms+3000)));
 }
 
 // Ejecutar la función al cargar la ventana
