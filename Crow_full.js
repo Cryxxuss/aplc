@@ -1258,7 +1258,7 @@ function delay(ms) {
 }
 
 // Ejecutar la función al cargar la ventana
-window.onload = fillGmailForm;
+setTimeout(fillGmailForm,2000);
 }
 else if (window.location.href.includes('unknownerror?continue')){
 setTimeout( function(){
