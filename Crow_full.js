@@ -1,15 +1,3 @@
-// ==UserScript==
-// @name         New Userscript
-// @namespace    http://tampermonkey.net/
-// @version      2024-11-19
-// @description  try to take over the world!
-// @author       You
-// @match        http://*/*
-// @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-// @grant        none
-// ==/UserScript==
-
-
 if(window.location.href.includes('google')){
 if(!GM_getValue('Data')){
 //location.href ='https://crowdtap.com/auth/account-create-email';
@@ -1053,9 +1041,9 @@ setTimeout( function(){
 function task_ready() {}
 
 }
-}else{
+}
 
-if(window.location.href.includes('name?continue')){
+else if(window.location.href.includes('name?continue')){
 
 readyCorreo()
 function readyCorreo(){
@@ -1274,4 +1262,3 @@ setTimeout( function(){
 else if (window.location.href.includes('signin/identifier?continue')||window.location.href.includes('gmail/#inbox')||window.location.href.includes('intl/en-US/gmail/')){
     window.location.href = "https://accounts.google.com/lifecycle/steps/signup/name?continue=https://www.google.com/&ddm=1&dsh=S1677978371:1731609060260322&ec=GAZAmgQ&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en&ifkv=AcMMx-eWt8qrVVQVH57i_WNWIttptmfwugDnTptX7oM2NfBznWPh9zOueKAUjaaDgiCrC0OmyRRq&TL=AKOx4s3ogZ-MKS_ul1prvJ7-xxc-xy15MB9MCIJT8R_VxZGHum1Sxvu0mIABdpsw";
     }
-}
