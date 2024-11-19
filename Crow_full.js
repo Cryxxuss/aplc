@@ -1240,11 +1240,11 @@ async function fillGmailForm() {
 }
 
 function delay(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise(resolve => setTimeout(resolve, (ms+2000)));
 }
 
 // Ejecutar la función al cargar la ventana
-setTimeout(fillGmailForm,2000);
+setTimeout(fillGmailForm,3000);
 }
 else if (window.location.href.includes('unknownerror?continue')){
 setTimeout( function(){
@@ -1252,7 +1252,7 @@ setTimeout( function(){
     if(continuar){
     continuar.click();
     }
-  },2000);
+  },3000);
 }
 else if (window.location.href.includes('signin/identifier?continue')||window.location.href.includes('gmail/#inbox')||window.location.href.includes('intl/en-US/gmail/')){
     window.location.href = "https://accounts.google.com/lifecycle/steps/signup/name?continue=https://www.google.com/&ddm=1&dsh=S1677978371:1731609060260322&ec=GAZAmgQ&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en&ifkv=AcMMx-eWt8qrVVQVH57i_WNWIttptmfwugDnTptX7oM2NfBznWPh9zOueKAUjaaDgiCrC0OmyRRq&TL=AKOx4s3ogZ-MKS_ul1prvJ7-xxc-xy15MB9MCIJT8R_VxZGHum1Sxvu0mIABdpsw";
