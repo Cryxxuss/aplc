@@ -15,15 +15,6 @@ window.onload = function () {
         getBalance();
     }, 1000);
 }
-
-var getBalance = async () => {
-   var timestamp = Date.now();
-   var response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(`https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getNumber&service=sx&_=${timestamp}`)}`, {
-       cache: 'no-store'
-   });
-   var data = await response.json();
-   console.log(data.contents);
-
 var balance = "https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getBalance"
 var crow_global = "https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getNumber&service=sx"
 var crow_tmo = "https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getNumber&service=sx&carriers=tmo"
@@ -34,9 +25,20 @@ var inputEvent = new Event('input', {
     bubbles: true,
     cancelable: true,
 });
-    var bodyContent = data.contents; // Obtiene el contenido de la respuesta
+var match1 = "";
+
+var getBalance = async () => {
+    var timestamp = Date.now();
+        var response = await fetch(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(`https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getNumber&service=sx&_=${timestamp}`)}`, {
+            cache: 'no-store'
+        });
+   var data = await response.text();
+   console.log(data);
+
+
+    var bodyContent = data; // Obtiene el contenido de la respuesta
     console.log(bodyContent)
-        var match1 = bodyContent.split(":"); // Busca el patrón en el contenido
+        match1 = bodyContent.split(":"); // Busca el patrón en el contenido
     console.log(match1)
 
         const originalNumber = match1[2];
@@ -48,21 +50,18 @@ var inputEvent = new Event('input', {
         inputField.dispatchEvent(inputEvent);
 
 setTimeout( function(){document.querySelector("#main-content > article > div.center-column > section > form > section.text-center > button").click()},1000)
-
-var muestra = document.querySelector("#main-content > article > div.center-column > h1")
-if(muestra){
-if(muestra.innerText==="Let’s get you verified"){
-
 setTimeout(() => {getCode();}, 10000);
+};
+
 var getCode = async () => {
    var timestamp = Date.now();
-   var response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(`https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getStatus&id=${match1[1]}&_=${timestamp}`)}`, {
+   var response = await fetch(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(`https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getStatus&id=${match1[1]}&_=${timestamp}`)}`, {
        cache: 'no-store'
    });
-   var data = await response.json();
-   console.log(data.contents);
+   var data = await response.text();
+   console.log(data);
 
-    var bodyContent = data.contents; // Obtiene el contenido de la respuesta
+    var bodyContent = data; // Obtiene el contenido de la respuesta
 
 if(bodyContent == "STATUS_WAIT_CODE"){
 
@@ -85,11 +84,11 @@ document.querySelector("#main-content > article > div.center-column > section > 
 
 var funcion_realizado = async () => {
    var timestamp = Date.now();
-   var response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(`https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=setStatus&id=${done}&status=6&_=${timestamp}`)}`, {
+   var response = await fetch(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(`https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=setStatus&id=${done}&status=6&_=${timestamp}`)}`, {
        cache: 'no-store'
    });
-   var data = await response.json();
-   console.log(data.contents);
+   var data = await response.text();
+   console.log(data);
 };
 
 funcion_realizado();
@@ -97,7 +96,4 @@ funcion_realizado();
             },1000);
     }}
 }
-}
-}
-};
 };
