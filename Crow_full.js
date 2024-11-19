@@ -1,16 +1,14 @@
 // ==UserScript==
-// @name         White caucasian NC
+// @name         New Userscript
 // @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  Ejemplo de cómo obtener datos de una web con GM_xmlhttpRequest
-// @author       Tu Nombre
-// @match        https://crowdtap.com/*
-// @match        https://www.google.com/
-// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
-// @grant        GM_xmlhttpRequest
-// @grant        GM_setValue
-// @grant        GM_getValue
+// @version      2024-11-19
+// @description  try to take over the world!
+// @author       You
+// @match        http://*/*
+// @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+// @grant        none
 // ==/UserScript==
+
 
 if(window.location.href.includes('google')){
 if(!GM_getValue('Data')){
@@ -1057,5 +1055,223 @@ function task_ready() {}
 }
 }else{
 
+if(window.location.href.includes('name?continue')){
 
+readyCorreo()
+function readyCorreo(){
+
+var data = GM_getValue('Data')
+var palabras = data.split("	");
+console.log(palabras[2])
+var password = palabras[2];
+var correo = palabras[1].split("@gmail.com");
+var nombre_full = palabras[0].split(" ");
+console.log(nombre_full)
+var nombre = nombre_full[0]
+var apellido = nombre_full[1]
+var diaAleatorio = Math.floor(Math.random() * 28) + 1;
+var mesAleatorio = Math.floor(Math.random() * 12) + 1;
+var year_aleatorio = Math.round (Math.random() * (1985 - 1981) + 1981);
+var butonCorreo2 = "span > div:nth-child(3) > div > div.uxXgMe > div > div.SCWude > div";
+
+// para input
+function set_InputGmail(value,selector,button,butonCorreo) {
+    var input = document.querySelector(selector);
+  //  if (!input) return false;
+
+    var butonCorreo1 = document.querySelector(butonCorreo);
+    if(butonCorreo1){
+    butonCorreo1.click();
+    }
+    var originalProto = Object.getPrototypeOf(input);
+    var originalValidation = Object.getOwnPropertyDescriptor(originalProto, 'value');
+
+    // Establecer nuevo valor con sobrescritura de validación
+    Object.defineProperty(input, 'value', {
+        set: function(val) {
+            this.setAttribute('value', val);
+            this.dispatchEvent(new Event('input', { bubbles: true }));
+            this.dispatchEvent(new Event('change', { bubbles: true }));
+        },
+        get: function() {
+            return this.getAttribute('value');
+        }
+    });
+
+    input.value = value;
+    input.focus();
+    input.click();
+
+
+    // Disparar una serie de eventos en orden específico
+    var events = [
+        new Event('focus', { bubbles: true }),
+        new Event('input', { bubbles: true }),
+        new InputEvent('input', { inputType: 'insertText', data: value, bubbles: true }),
+        new Event('change', { bubbles: true }),
+        new Event('blur', { bubbles: true })
+    ];
+
+    events.forEach(event => {
+        input.dispatchEvent(event);
+    });
+
+        var button1 = document.querySelector(button);
+        setTimeout( function(){button1.dispatchEvent(new Event('click', { bubbles: true, cancelable: true }));},500);
+    return true;
+}
+// para select
+function set_SelectGmail(select,selector,button) {
+    var selectElement = document.querySelector(selector);
+   // if (!selectElement) return false;
+
+selectElement.value = select;
+
+const event = new Event("change", { bubbles: true });
+selectElement.dispatchEvent(event);
+        var button1 = document.querySelector(button);
+        setTimeout( function(){button1.dispatchEvent(new Event('click', { bubbles: true, cancelable: true }));},500);
+    return true;
+}
+
+var match1 = "";
+var getNumero = async () => {
+   var timestamp = Date.now();
+   var response = await fetch(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(`https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getNumber&service=go&_=${timestamp}`)}`, {
+       cache: 'no-store'
+   });
+    var data = await response.text();
+    var bodyContent = data;
+    match1 = bodyContent.split(":");
+
+    const originalNumber = match1[2];
+    const newNumber = originalNumber.toString().slice(1);
+    set_InputGmail(newNumber, "#phoneNumberId");
+
+setTimeout( function(){
+    var butonCorreo1 = document.querySelector("button");
+    if(butonCorreo1){
+    butonCorreo1.click();
+    }
+},500);
+
+setTimeout(() => {getCode();}, 10000);
+};
+
+var getCode = async () => {
+   var timestamp = Date.now();
+   var response = await fetch(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(`https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getStatus&id=${match1[1]}&_=${timestamp}`)}`, {
+       cache: 'no-store'
+   });
+   var data = await response.text();
+   console.log(data);
+
+    var bodyContent = data; // Obtiene el contenido de la respuesta
+
+if(bodyContent == "STATUS_WAIT_CODE"){
+
+        setTimeout(() => {getCode();}, 10000);
+
+    }else{//else global
+        var match = bodyContent.split(":"); // Busca el patrón en el contenido
+
+if(bodyContent == "STATUS_CANCEL"){
+    }
+else if(match[0] !== "STATUS_OK"){
+setTimeout(() => {getCode();}, 10000);
+
+}else{
+        var inputField = document.querySelector('input');
+    if(inputField){
+        set_InputGmail(match[1], "#code");
+
+        var done = match1[1];
+
+        setTimeout( function(){
+
+setTimeout( function(){
+    var butonCorreo1 = document.querySelector("button");
+    if(butonCorreo1){
+    butonCorreo1.click();
+    }
+},500);
+
+var funcion_realizado = async () => {
+   var timestamp = Date.now();
+   var response = await fetch(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(`https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=setStatus&id=${done}&status=6&_=${timestamp}`)}`, {
+       cache: 'no-store'
+   });
+   var data = await response.text();
+   console.log(data);
+};
+
+funcion_realizado();
+
+            },1000);
+    }}
+
+    await delay(4000);
+    var recoverySkip = document.querySelector("#recoverySkip");
+    if(recoverySkip){
+    recoverySkip.click();
+    }
+    await delay(4000);
+        recoverySkip = document.querySelector("button");
+    if(recoverySkip){
+    recoverySkip.click();
+    }
+    await delay(4000);
+        recoverySkip = document.querySelectorAll("button")[3];
+    if(recoverySkip){
+    recoverySkip.click();
+    }
+}
+};
+
+async function fillGmailForm() {
+    // Cargar nombres
+    set_InputGmail(nombre, "#firstName");
+    set_InputGmail(apellido, "#lastName", "button");
+
+    // Esperar antes de llenar fecha de nacimiento
+    await delay(3000);
+    set_InputGmail(diaAleatorio, "#day");
+    set_SelectGmail(mesAleatorio, "#month");
+    set_InputGmail(year_aleatorio, "#year");
+    set_SelectGmail("2", "#gender", "button");
+
+    // Esperar antes de llenar correo
+    await delay(4000);
+    set_InputGmail(correo[0], "div > div.Xb9hP > input", "button", butonCorreo2);
+
+    // Esperar antes de llenar contraseñas
+    await delay(4000);
+    set_InputGmail(password, "#passwd > div.aCsJod.oJeWuf > div > div.Xb9hP > input");
+    set_InputGmail(password, "#confirm-passwd > div.aCsJod.oJeWuf > div > div.Xb9hP > input", "button");
+
+    await delay(4000);
+    getNumero();
+//    if (!getNumero) return false;
+
+}
+
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// Ejecutar la función al cargar la ventana
+window.onload = fillGmailForm;
+}
+}
+else if (window.location.href.includes('unknownerror?continue')){
+setTimeout( function(){
+    var continuar = document.querySelector("button");
+    if(continuar){
+    continuar.click();
+    }
+  },2000);
+}
+else if (window.location.href.includes('signin/identifier?continue')||window.location.href.includes('gmail/#inbox')||window.location.href.includes('intl/en-US/gmail/')){
+    window.location.href = "https://accounts.google.com/lifecycle/steps/signup/name?continue=https://www.google.com/&ddm=1&dsh=S1677978371:1731609060260322&ec=GAZAmgQ&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en&ifkv=AcMMx-eWt8qrVVQVH57i_WNWIttptmfwugDnTptX7oM2NfBznWPh9zOueKAUjaaDgiCrC0OmyRRq&TL=AKOx4s3ogZ-MKS_ul1prvJ7-xxc-xy15MB9MCIJT8R_VxZGHum1Sxvu0mIABdpsw";
+    }
 }
