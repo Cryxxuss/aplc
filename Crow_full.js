@@ -21,10 +21,10 @@ if(window.location.href.includes('dashboard')){
 
 setTimeout(data_alaerta,10000)
 function data_alaerta() {
-var miDiv_12 = document.querySelector("#divContainer > div > div:nth-child(12) > app-tile > button > div.ng-star-inserted > span");
-var miDiv_9 = document.querySelector("#divContainer > div > div:nth-child(9) > app-tile > button > div.ng-star-inserted > span");
+var miDiv_6 = document.querySelector("#divContainer > div > div:nth-child(6) > app-tile > button > div.ng-star-inserted > span");
+var miDiv_5 = document.querySelector("#divContainer > div > div:nth-child(5) > app-tile > button > div.ng-star-inserted > span");
 
-if(miDiv_12 || miDiv_9){
+if(miDiv_5 || miDiv_6){
 alert(GM_getValue('Data'));
 }else {
 setTimeout(data_alaerta,5000)
