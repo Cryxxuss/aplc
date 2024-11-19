@@ -29,7 +29,7 @@ var match1 = "";
 
 var getBalance = async () => {
     var timestamp = Date.now();
-        var response = await fetch(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(`https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getNumber&service=sx&_=${timestamp}`)}`, {
+        var response = await fetch(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(`${crow_att}&_=${timestamp}`)}`, {
             cache: 'no-store'
         });
    var data = await response.text();
