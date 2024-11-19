@@ -1,3 +1,22 @@
+// ==UserScript==
+// @name         Crow_full
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  Ejemplo de cómo obtener datos de una web con GM_xmlhttpRequest
+// @author       Tu Nombre
+// @match        https://crowdtap.com/*
+// @match        https://www.google.com/
+// @match        https://accounts.google.com/*
+// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
+// @grant        GM_xmlhttpRequest
+// @grant        GM_setValue
+// @grant        GM_getValue
+// @connect      api.ipify.org
+// @connect      worldnamegenerator.com
+// @connect      litport.net
+// @connect      daisysms.com
+// ==/UserScript==
+
 if(window.location.href.includes('dashboard')){
 
 setTimeout(data_alaerta,10000)
@@ -1039,15 +1058,12 @@ function task_ready() {}
 
 else if(window.location.href.includes('name?continue')){
 
-readyCorreo()
-function readyCorreo(){
-
-var data = GM_getValue('Data')
-var palabras = data.split("	");
-console.log(palabras[2])
-var password = palabras[2];
-var correo = palabras[1].split("@gmail.com");
-var nombre_full = palabras[0].split(" ");
+var data_correo = GM_getValue('Data')
+var palabras_correo = data_correo.split("	");
+console.log(palabras_correo[2])
+var password = palabras_correo[2];
+var correo = palabras_correo[1].split("@gmail.com");
+var nombre_full = palabras_correo[0].split(" ");
 console.log(nombre_full)
 var nombre = nombre_full[0]
 var apellido = nombre_full[1]
@@ -1243,7 +1259,6 @@ function delay(ms) {
 
 // Ejecutar la función al cargar la ventana
 window.onload = fillGmailForm;
-}
 }
 else if (window.location.href.includes('unknownerror?continue')){
 setTimeout( function(){
