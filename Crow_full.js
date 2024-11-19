@@ -1204,6 +1204,11 @@ funcion_realizado();
     if(recoverySkip){
     recoverySkip.click();
     }
+    await delay(2000);
+        recoverySkip = document.querySelectorAll("button")[6];
+    if(recoverySkip){
+    recoverySkip.click();
+    }
 }
 };
 
