@@ -56,7 +56,7 @@ setInterval(checkIPChange, 4000);
 
 function create() {
 // URL de la página web
-var url = "https://www.worldnamegenerator.com/World_Address/get_us_address1";
+var url = "https://www.worldnamegenerator.com/World_Address/get_us_address1/sex/Female";
 
 GM_xmlhttpRequest({
     method: "GET",
@@ -84,12 +84,15 @@ var event = new Event('change', {
 });
 
 
-var nombrefull = $(response.responseText).find("#main > div > div.col-sm-9.no-padding > div > div:nth-child(4) > div:nth-child(2) > table > tbody > tr:nth-child(1) > td:nth-child(2) > b").text();
+var nombrefull = $(response.responseText).find("table.common-table:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > b:nth-child(1)").text()
+
 nombrefull = nombrefull.match(/\b\w{2,}\b/g);
+
 var palabras = nombrefull
+
 var nombre = palabras[0]+" "+palabras[1];
 
-var direccion_response = $(response.responseText).find("#main > div > div.col-sm-9.no-padding > div > table:nth-child(7)").text();
+var direccion_response = $(response.responseText).find("table.table:nth-child(7)").text();
 var direccion = direccion_response.split(/[\t\n\r ]{2,}/);
 
 
@@ -194,7 +197,7 @@ GM_xmlhttpRequest({
         }
     });
 setTimeout( function() {
-document.querySelector("#main-content > article > div.center-column > form > section > button.relative.font-bold.text-white.rounded-full.w-68.h-14.bg-blue-dark").click();
+//document.querySelector("#main-content > article > div.center-column > form > section > button.relative.font-bold.text-white.rounded-full.w-68.h-14.bg-blue-dark").click();
 },50000)
 
 
@@ -289,10 +292,13 @@ inputCiudad.value = selectedLine0;
 inputCiudad.dispatchEvent(inputEvent);
 
 //Estado
-var selectEstado = document.querySelector('[formcontrolname="state_id"]');
-var opcionSeleccionada1 = selectEstado.querySelector('option[value="4ff12f39-04ad-463b-a62d-5d29334512b1"]');
-opcionSeleccionada1.selected = true;
-selectEstado.dispatchEvent(event);
+var select = document.querySelector('.form-select');
+var opcion = Array.from(select.options).find(option => option.text === direccion[7]);
+if (opcion) {
+    select.value = opcion.value;
+    select.dispatchEvent(event);
+}
+
 
 //Codigo Postal
 var inputCodigo = document.querySelector("#main-content > article > div > form > div:nth-child(4) > div > input");
@@ -317,7 +323,7 @@ if (checkbox) {
 
         correofinal = nombrecompleto[0]+nombrecompleto[1]+code_correo+prefcorreo;
 
-     return correofinal;
+     return correofinal.toLowerCase();
     }
 
     function generarclave(nombrecompleto){
@@ -341,7 +347,8 @@ var estado = direccion[7]
 var zip = direccion[11]
 
 
-    return ciudad +"\t"+estado+"\t"+zip
+
+    return ciudad+"\t"+estado+"\t"+zip
     }
 
     function getRandomArbitrary(min, max) {
