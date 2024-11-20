@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Alfonso_Force
+// @name         Create_Random
 // @namespace    http://tampermonkey.net/
 // @version      2024-10-17
 // @description  try to take over the world!
@@ -56,7 +56,7 @@ setInterval(checkIPChange, 4000);
 
 function create() {
 // URL de la página web
-var url = "https://www.worldnamegenerator.com/World_Address/get_us_address1/sex/Female/state/NC";
+var url = "https://www.worldnamegenerator.com/World_Address/get_us_address1";
 
 GM_xmlhttpRequest({
     method: "GET",
@@ -356,4 +356,3 @@ var zip = direccion[11]
 
 // Verificar cambios cada cierto tiempo (por ejemplo, cada 5 segundos)
 setTimeout(create, 2000);
-
