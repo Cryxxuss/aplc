@@ -73,7 +73,7 @@ function crearboton(){
 setTimeout(crearboton, 2000);
         (function() {
     var textofinal;
-    var prefcorreo = "@gmail.com"
+    var prefcorreo = "@hotmail.com"
 
 var inputEvent = new Event('input', {
     bubbles: true,
