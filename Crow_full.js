@@ -13,7 +13,7 @@ setTimeout(data_alaerta,5000)
 }
 
 
-//pre_encuesta();
+pre_encuesta();
 var puerta = false
 function pre_encuesta(){
 
