@@ -10,9 +10,9 @@
 // @connect      daisysms.com
 // ==/UserScript==
 
+function smsGet() {
 
-
-window.onload = function interval() {
+function interval() {
 var selector = document.querySelector('.form-control');
 if (!selector) return interval();
      setTimeout(() => {
@@ -101,3 +101,4 @@ funcion_realizado();
     }}
 }
 };
+}
