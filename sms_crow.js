@@ -9,7 +9,7 @@
 // @grant        GM_xmlhttpRequest
 // @connect      daisysms.com
 // ==/UserScript==
-
+/*
 function smsGet() {
 
 function interval() {
@@ -102,3 +102,4 @@ funcion_realizado();
 }
 };
 }
+*/
