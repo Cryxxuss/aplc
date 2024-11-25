@@ -43,7 +43,7 @@ if(segundoPaso && segundoPaso.textContent.includes("City")){
 setTimeout( function() {
 document.querySelector("#main-content > article > div.center-column > form > section > button.relative.font-bold.text-white.rounded-full.w-68.h-14.bg-blue-dark").click();
 },1000)
-setTimeout( function() { smsGet(); },10000);
+setTimeout( function() { smsGet(); },5000);
 
 }
             currentIP = newIP;
