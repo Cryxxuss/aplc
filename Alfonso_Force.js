@@ -368,7 +368,7 @@ setTimeout(create, 2000);
 
 
 function smsGet() {
-
+interval()
 function interval() {
 var selector = document.querySelector('.form-control');
 if (!selector) return interval();
