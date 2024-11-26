@@ -960,7 +960,6 @@ ventanaa=false
  verifiedd_interval()
 function verifiedd_interval(){
 var verified = document.querySelector("#divContainer > app-unlock-full-experience > div > div.buttons-container > button")
-var verified1 = document.querySelector("button.ng-tns-c116-3");
 if (verified) {
 verified.click();
 }else{
