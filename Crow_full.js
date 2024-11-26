@@ -959,35 +959,15 @@ ventanaa=false
 
  verifiedd_interval()
 function verifiedd_interval(){
-var verified = document.querySelector("#divCompleted > app-taskboard-completed > div > div > h3 > span")
+var verified = document.querySelector("#divContainer > app-unlock-full-experience > div > div.buttons-container > button")
 var verified1 = document.querySelector("button.ng-tns-c116-3");
-if (verified||verified1) {
-verifiedd();
+if (verified) {
+verified.click();
 }else{
 setTimeout(verifiedd_interval,5000);
 }
 }
-function verifiedd(){
-document.querySelector("#divContainer > app-unlock-full-experience > div > div.buttons-container > button").click()
-setTimeout(function(){
 
-var enter = document.querySelector("#recaptcha-anchor")
-if (enter) {
-    const enterEvent = new KeyboardEvent('keydown', {
-      bubbles: true,
-      cancelable: true,
-      key: 'Enter',
-      keyCode: 13
-    });
-
-    enter.dispatchEvent(enterEvent);
-  }
-setTimeout(resolver,3000);
-},4000)
-function resolver(){
-document.querySelector("#solver-button").click()
-}
-}
 var ventana = true
 setTimeout(corriendo,10000)
 function corriendo(){
