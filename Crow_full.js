@@ -961,7 +961,7 @@ ventanaa=false
 function verifiedd_interval(){
 var verified = document.querySelector("#divContainer > app-unlock-full-experience > div > div.buttons-container > button")
 if (verified) {
-verified.click();
+setTimeout( function() { verified.click() },3000);
 }else{
 setTimeout(verifiedd_interval,5000);
 }
