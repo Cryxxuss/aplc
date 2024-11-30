@@ -65,7 +65,7 @@ GM_xmlhttpRequest({
     url: url,
     onload: function(response) {
 let datos = ""
-const code_correo = Math.round (Math.random() * (999999 - 100000) + 100000);
+const code_correo = Math.round (Math.random() * (9999 - 1000) + 1000);
 const code_clave = Math.round (Math.random() * (99999 - 10000) + 10000);
 const añoo = Math.round (Math.random() * (1985 - 1981) + 1981);
 const mess = Math.round (Math.random() * (12 - 1) + 1);
@@ -323,7 +323,7 @@ if (checkbox) {
     function generarcorreo(nombrecompleto){
     var correofinal;
 
-        correofinal = nombrecompleto[0]+nombrecompleto[1]+code_correo+prefcorreo;
+        correofinal = nombrecompleto[0]+code_correo+nombrecompleto[1]+prefcorreo;
 
      return correofinal.toLowerCase();
     }
