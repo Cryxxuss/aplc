@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Create_Random
+// @name         Luis Armando
 // @namespace    http://tampermonkey.net/
 // @version      2024-10-17
 // @description  try to take over the world!
@@ -58,7 +58,7 @@ setInterval(checkIPChange, 4000);
 
 function create() {
 // URL de la página web
-var url = "https://www.worldnamegenerator.com/World_Address/get_us_address1/sex/Female/state/TX";
+var url = "https://www.worldnamegenerator.com/World_Address/get_us_address1/sex/Male/state/CA";
 
 GM_xmlhttpRequest({
     method: "GET",
@@ -156,7 +156,7 @@ inputFecha.dispatchEvent(inputEvent);
 
 //Your gender preference
 var select_gender = document.querySelector('[formcontrolname="gender"]');
-var value_female = select_gender.querySelector('option[value="1"]');
+var value_female = select_gender.querySelector('option[value="2"]');
 value_female.selected = true;
 select_gender.dispatchEvent(event);
 
@@ -244,7 +244,7 @@ var select_size_of_household = document.querySelector('[formcontrolname="househo
     var cuatro = "409ac301-5777-4c23-81dd-8fc098419de0"
     var cinco_mas = "428127c4-34e7-4973-8c7d-f5cbd009031f"
 
-value_option = select_size_of_household.querySelector('option[value="428127c4-34e7-4973-8c7d-f5cbd009031f"]'); // 5+ POR DEFECTO
+value_option = select_size_of_household.querySelector('option[value="06620023-41bd-4b97-92f1-ee2e9df44a62"]'); // 5+ POR DEFECTO
 value_option.selected = true;
 select_size_of_household.dispatchEvent(event);
 
@@ -282,7 +282,7 @@ var select_combined_household_income = document.querySelector('[formcontrolname=
     var $150000_or_more = "40c7d945-55e8-4883-8daa-849a7647d4ec"
     var I_prefer_not_to_answerr = "0a64e748-cab4-4f00-8489-e0c280127138"
 
-value_option = select_combined_household_income.querySelector('option[value="16bad03e-b8f1-4131-89f6-50df8417eae1"]'); //   $75000_$99999  POR DEFECTO
+value_option = select_combined_household_income.querySelector('option[value="40c7d945-55e8-4883-8daa-849a7647d4ec"]'); //   $75000_$99999  POR DEFECTO
 value_option.selected = true;
 select_combined_household_income.dispatchEvent(event);
 
