@@ -331,7 +331,7 @@ if (checkbox) {
     function generarclave(nombrecompleto){
     var clavefull;
 
-        clavefull = nombrecompleto[0]+nombrecompleto[1]+"*/-"+code_clave;
+        clavefull = nombrecompleto[0]+nombrecompleto[1]+"*"+code_clave;
     return clavefull;
     }
 
