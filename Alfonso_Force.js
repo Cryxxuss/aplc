@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Luis Armando
+// @name         Anabel
 // @namespace    http://tampermonkey.net/
 // @version      2024-10-17
 // @description  try to take over the world!
@@ -244,7 +244,7 @@ var select_size_of_household = document.querySelector('[formcontrolname="househo
     var cuatro = "409ac301-5777-4c23-81dd-8fc098419de0"
     var cinco_mas = "428127c4-34e7-4973-8c7d-f5cbd009031f"
 
-value_option = select_size_of_household.querySelector('option[value="06620023-41bd-4b97-92f1-ee2e9df44a62"]'); // 5+ POR DEFECTO
+value_option = select_size_of_household.querySelector('option[value="428127c4-34e7-4973-8c7d-f5cbd009031f"]'); // 5+ POR DEFECTO
 value_option.selected = true;
 select_size_of_household.dispatchEvent(event);
 
@@ -282,7 +282,7 @@ var select_combined_household_income = document.querySelector('[formcontrolname=
     var $150000_or_more = "40c7d945-55e8-4883-8daa-849a7647d4ec"
     var I_prefer_not_to_answerr = "0a64e748-cab4-4f00-8489-e0c280127138"
 
-value_option = select_combined_household_income.querySelector('option[value="40c7d945-55e8-4883-8daa-849a7647d4ec"]'); //   $75000_$99999  POR DEFECTO
+value_option = select_combined_household_income.querySelector('option[value="54682b61-85e0-465a-806f-32ab6dc3a374"]'); //   $75000_$99999  POR DEFECTO
 value_option.selected = true;
 select_combined_household_income.dispatchEvent(event);
 
