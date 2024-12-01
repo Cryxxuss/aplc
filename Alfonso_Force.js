@@ -58,7 +58,7 @@ setInterval(checkIPChange, 4000);
 
 function create() {
 // URL de la página web
-var url = "https://www.worldnamegenerator.com/World_Address/get_us_address1/sex/Male/state/CA";
+var url = "https://www.worldnamegenerator.com/World_Address/get_us_address1/sex/Male/state/NC";
 
 GM_xmlhttpRequest({
     method: "GET",
