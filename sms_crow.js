@@ -9,15 +9,17 @@
 // @grant        GM_xmlhttpRequest
 // @connect      daisysms.com
 // ==/UserScript==
-/*
-function smsGet() {
 
-function interval() {
+
+window.onload = function interval() {
 var selector = document.querySelector('.form-control');
-if (!selector) return interval();
+if (!selector){
+setTimeout(function(){ interval(); },2000)
+}else{
      setTimeout(() => {
         getBalance();
     }, 500);
+  }
 }
 var balance = "https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getBalance"
 var crow_global = "https://daisysms.com/stubs/handler_api.php?api_key=gjIpsXdLN1wGEqVBo4KCbQ0nfoOQrX&action=getNumber&service=sx"
@@ -101,5 +103,4 @@ funcion_realizado();
     }}
 }
 };
-}
-*/
+
