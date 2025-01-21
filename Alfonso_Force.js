@@ -58,7 +58,7 @@ setInterval(checkIPChange, 4000);
 
 function create() {
 // URL de la página web
-var url = "https://www.worldnamegenerator.com/World_Address/get_us_address1/sex/Male/state/NC";
+var url = "https://www.worldnamegenerator.com/World_Address/get_us_address1/sex/Male/state/TX";
 
 GM_xmlhttpRequest({
     method: "GET",
@@ -178,7 +178,7 @@ var select_education = document.querySelector('[formcontrolname="education_id"]'
             var Graduate_or_professional_degree = "5a1abe67-353f-4101-ba98-f086bfbdf71e"
             var prefer_not_answer = "8ecd787f-6803-4d87-ae9c-3737c55eccf6"
 //colocar en value la opcion deseada
-var value_option = select_education.querySelector('option[value="5a1abe67-353f-4101-ba98-f086bfbdf71e"]'); //Graduate_or_professional_degree por defecto
+var value_option = select_education.querySelector('option[value="8ecd787f-6803-4d87-ae9c-3737c55eccf6"]'); //
 value_option.selected = true;
 select_education.dispatchEvent(event);
 }
@@ -216,7 +216,7 @@ var select_employment = document.querySelector('[formcontrolname="employment_id"
     var Unable_to_work = "a9830f20-8b64-419a-bd2a-053a2f868475"
     var prefer_not_to_answer = "485386e7-8102-4b50-85b9-6a2a670c6577"
 
-value_option = select_employment.querySelector('option[value="7aa2e6a4-09c9-4ec6-9420-b167b55428d4"]'); // Employed_full_time POR DEFECTO
+value_option = select_employment.querySelector('option[value="6d297cd1-d3a6-4542-adff-e44cef89ff4a"]');
 value_option.selected = true;
 select_employment.dispatchEvent(event);
 
